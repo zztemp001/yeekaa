@@ -1,0 +1,26 @@
+div.description {
+    border-style: dashed;
+    border-width: 1px;
+    padding: 2px;
+    margin-bottom: 5px;
+    background-color: #f0f8ff;
+}
+
+div#commandbar {
+    padding: 15px 0px;
+}
+
+div#result {
+    padding:20px 0px;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: #fffff0;
+}
+
+.btn {
+    border-style: outset;
+    border-width: 2px;
+    padding: 5px;
+    margin-right: 5px;
+    background-color: #dcdcdc;
+}

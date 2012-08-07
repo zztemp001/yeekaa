@@ -1,0 +1,53 @@
+{% extends 'baseinfo_base.html' %}
+
+{% block title %}基础信息管理：地点 - Yeekaa{% endblock %}
+
+{% block main_title %}<h2>地点信息管理</h2>{% endblock %}
+
+{% block content %}
+    <div class="description">
+        <p>地点信息包括：国家、省份、城市、区域、商圈、标志性地点</p>
+    </div>
+
+    <div id="new_place">
+        <form id='place_form' method="post" action="/baseinfo/place/">
+            <label for="id_level">地点类型:</label>{{ form.level }}&nbsp;
+            <select id="continent" level="1" class="parent">请选择</select>&nbsp;
+            <select id="country" level="2" class="parent">请选择</select>&nbsp;
+            <select id="district" level="3" class="parent">请选择</select>&nbsp;
+            <select id="province" level="4" class="parent">请选择</select>&nbsp;
+            <select id="city" level="5" class="parent">请选择</select>&nbsp;
+            <select id="zone" level="6" class="parent">请选择</select>&nbsp;
+            <select id="circle" level="7" class="parent">请选择</select>&nbsp;
+            {{ form.parent }}
+            <label for="id_title">名称：</label>{{ form.title }}&nbsp;
+            <input type="submit" value="新增">
+        </form>
+    </div>
+    
+    <div id="place_list">
+        <div class="place">
+            <span class="pk">编号</span>
+            <span class="title">称谓</span>
+            <span class="parent">所属地点</span>
+            <span class="level">所属层级</span>
+        </div>
+        {% for p in places %}
+        <div class="place">
+            <span class="pk">{{ p.id }}</span>
+            <span class="title">{{ p.title }}</span>
+            <span class="parent">{{ p.parent.title }}</span>
+            <span class="level">{{ p.level }}</span>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div id="result">结果</div>
+    <div id="sub_result"></div>
+    <div id="commandbar">
+        <span id="getting" class="btn">GET</span>
+        <span id="posting" class="btn">POST</span>
+        <span id="json" class="btn">JSON</span>
+    </div>
+
+{% endblock %}
