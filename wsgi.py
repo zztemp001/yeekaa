@@ -2,6 +2,15 @@
 __author__ = 'Administrator'
 
 import os
+import sys
+
+path = "/var/www/yeekaa"
+if path not in sys.path:
+    sys.path.append(path)
+
+ppath = "/var/www"
+if ppath not in sys.path:
+    sys.path.append(ppath)
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "yeekaa.settings")
 
