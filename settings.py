@@ -1,6 +1,9 @@
+# encoding=utf-8
 # Django settings for yeekaa project.
 
 import os.path
+
+WSGI_APPLICATION = "yeekaa.wsgi.application"
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
