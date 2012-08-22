@@ -12,15 +12,6 @@ from django.core.mail import send_mail
 
 def default(request):
     greeting = u'欢迎进入基础信息管理页面。'
-    '''
-    send_mail(
-        'zhao_subject',
-        'Here is weiming',
-        'yeekaa@yeekaa.com',
-        ['zhaoweiming@hotmail.com', 'zhaowm@bankofshanghai.com'],
-        fail_silently=False
-    )
-    '''
     return render_to_response('baseinfo_default.html', locals())
 
 def place(request):

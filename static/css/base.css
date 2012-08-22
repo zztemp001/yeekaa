@@ -10,11 +10,12 @@ div#commandbar {
     padding: 15px 0px;
 }
 
-div#result {
+div#result, div#sub_result, div#place_list {
     padding:20px 0px;
     border-style: dashed;
     border-width: 1px;
     background-color: #fffff0;
+    margin: 10px 0px;
 }
 
 .btn {
@@ -23,4 +24,29 @@ div#result {
     padding: 5px;
     margin-right: 5px;
     background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+.parent {
+    width: 8em;
+}
+
+div.place {
+    line-height: 2em;
+}
+
+div.place span {
+    display: inline-block;
+}
+
+span.pk {
+    width: 3em;
+}
+
+span.title {
+    width: 10em;
+}
+
+span.parent {
+    width: 10em;
 }

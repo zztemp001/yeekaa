@@ -1,168 +1,11 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    {% load static %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    {% block js_lib %}{% endblock %}
-    <script type="text/javascript" charset="utf-8">
-        $(document).ready(function() {
-            $("#getting").click(function() {
-                $.get("/baseinfo/testajax/", function(data) {
-                    // alert($("#result").html());
-                    // $("#result").html(data);
-                    // document.getElementById("result").innerHTML=data;
-                    // alert(document.getElementById("result").innerHTML);
-                    // alert($("#result").html());
-                    $("#result").html(data);
-                    $("#dks").change(function() {
-                        $.post("/baseinfo/testajax/", {title: $(this).val(), foo:"bar"}, function(data) {
-                            $("#sub_result").html(data);
-                        });
-                    });
-                });
-            });
+    <script type="text/javascript" src="/static/js/lib/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="/static/js/base.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
 
-            $("#posting").click(function() {
-                $.post("/baseinfo/testajax/", {title: "Monty 中文", foo:"bar"}, function(data) {
-                    $("#result").html(data);
-                });
-            });
-
-            $(".target").change(function() {
-                $.post("/baseinfo/testajax/", {title: $(this).val(), foo:"bar"}, function(data) {
-                    $("#result").html(data);
-                });
-            });
-
-            $("#json").click(function() {
-                $.get("/baseinfo/testjson/", function(data) {
-                    obj= $.parseJSON(data);
-                    //$("#result").html(obj[1].fields.title);
-                    alert(data);
-                    alert(obj);
-                    $.each(obj, function(key, value) {
-                       alert(key + ":" + value);
-                    });
-                });
-            });
-
-            $("#dks").change(function() {
-                $.post("/baseinfo/testajax/", {title: $(this).val(), foo:"bar"}, function(data) {
-                    $("#sub_result").html(data);
-                });
-            });
-
-            $("select.parent").hide();
-
-            $("#id_level").change(function() {
-                $("select.parent").hide();
-                var lv = $(this).val() - 1;
-                if (lv > 0){
-                    //$("#result").html(lv);
-                    $("select.parent:lt(" + lv +")").show();
-                    $.post(
-                        "/baseinfo/getparent/",
-                        {"level": $(this).val()},  //传递的是拟增加地点的真是层级数
-                        function(data) {
-                            obj = $.parseJSON(data);
-                            $.each(obj, function(k, v) {
-                                //alert(k + ":" + v);
-                                $("select.parent:[level=" + k +"]").html(v);
-                            });
-                        }
-                    );
-                }
-                $("#id_title").focus();
-            });
-
-            $("select.parent").change(function() {
-                var lv = $(this).attr("level");
-                if (lv < $("#id_level").val()-1) {
-                    $(this).nextAll().empty();
-                    var next = $(this).next();
-                    $.post(
-                        "/baseinfo/getnextparent/",
-                        {"level": lv, "parent": $(this).val()},
-                        function(data) {
-                            if (data.length==0) {
-                                alert("下一级尚无内容");
-                            }
-                            else {
-                                next.html(data);
-                            }
-                        });
-                }
-                else {
-                    $("#id_title").focus();
-                }
-            });
-
-            $("#place_form").submit(function() {
-                var lv = $("#id_level").val() - 1;  //得到拟新增地点层级向上一级，就是最后一个下拉框的顺序
-                var pr = $("select.parent:[level=" + lv +"]").val();  //得到最后一个下拉框的值，就是新增地点的父节点
-                $("#id_parent").val(pr);  //将表单的parent设置为父节点的值
-                // alert($("#id_parent").val());
-                if (!$("#id_parent").val().length || !$("#id_title").val().length) {
-                    return false;
-                }  //如果parent的值为空，则取消提交
-            });
-        });
-    </script>
-    <style type="text/css">
-        div.description {
-            border-style: dashed;
-            border-width: 1px;
-            padding: 2px;
-            margin-bottom: 5px;
-            background-color: #f0f8ff;
-        }
-
-        div#commandbar {
-            padding: 15px 0px;
-        }
-
-        div#result, div#sub_result, div#place_list {
-            padding:20px 0px;
-            border-style: dashed;
-            border-width: 1px;
-            background-color: #fffff0;
-            margin: 10px 0px;
-        }
-
-        .btn {
-            border-style: outset;
-            border-width: 2px;
-            padding: 5px;
-            margin-right: 5px;
-            background-color: #dcdcdc;
-            cursor: pointer;
-        }
-
-        .parent {
-            width: 8em;
-        }
-
-        div.place {
-            line-height: 2em;
-        }
-
-        div.place span {
-            display: inline-block;
-        }
-
-        span.pk {
-            width: 3em;
-        }
-
-        span.title {
-            width: 10em;
-        }
-
-        span.parent {
-            width: 10em;
-        }
-    </style>
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
@@ -170,6 +13,8 @@
         <h2>hello yeekaa</h2>
     {% endblock %}
     <hr />
+
+    <img src="/static/img/11.png" />
 
     {% block main_menu %}
         <a href="/">主页</a>&nbsp;|&nbsp;
