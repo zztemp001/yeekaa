@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>任务 &mdash; Notebook 1 documentation</title>
+    <title>每日笔记 &mdash; Notebook 1 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -48,30 +48,192 @@
           <div class="body">
             
   <div class="section" id="id1">
-<h1>任务<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>1、scrapy
-2、分解任务
-2、文档书写工具及环境
-3、widget库结构
-4、晚上到家：虾米网下载音乐（邓丽君、龙飘飘、革命歌曲、徐小凤、小娟、蔡琴、影视主题曲、降央卓玛、粤剧等）
-5、晚上到家：找到我的notebook文件，并入github</p>
-<p>处理静态文件的步骤（使用开发服务器时）：
-1、django缺省会在项目根目录，以及每个app的static目录下找静态文件
-2、settings.py - 在INSTALLED_APPS中加入django.contrib.staticfiles
-3、urls.py -</p>
+<h1>每日笔记<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>今天任务<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>scrapy</li>
+<li>分解任务</li>
+<li>文档书写工具及环境<ol class="arabic">
+<li>adjfladfasdf</li>
+<li>asdfjadslf</li>
+<li>adsfjasdlkjfasdf</li>
+</ol>
+</li>
+<li>widget库结构</li>
+<li>晚上到家： <strong>虾米网</strong> 下载音乐（邓丽君、龙飘飘、革命歌曲、徐小凤、小娟、蔡琴、影视主题曲、降央卓玛、粤剧等）</li>
+<li>晚上到家：找到我的 <strong>notebook</strong> 文件，并入 <em>github</em></li>
+</ol>
 <blockquote>
-<div>from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-urlpatterns += staticfiles_urlpatterns()</div></blockquote>
-<p>4、模板中可以使用绝对路径来引用静态文件，或通过{{ STATIC_URL }}，后者需要确保在views中使用了RequestContext</p>
-<p># 打开git shell的颜色高亮
-git config &#8211;global color.ui &#8220;auto&#8221;</p>
-<p># 打开git的图形界面（自带的）
-git gui</p>
-<p>打开scrapy相关网页
-打开asana、gantter
-打开github issue list
-下载rst中文参考文档（最好是离线的html版）
-搜索pycharm的rst文件支持（预览）</p>
+<div><div class="line-block">
+<div class="line">打开scrapy相关网页</div>
+<div class="line">打开asana、gantter</div>
+<div class="line">打开github issue list</div>
+</div>
+<blockquote>
+<div><div class="line-block">
+<div class="line">下载rst中文参考文档（最好是离线的html版）</div>
+<div class="line">搜索pycharm的rst文件支持（预览）</div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>工作笔记<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scrapy">
+<h3>在Scrapy项目中使用代理<a class="headerlink" href="#scrapy" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">在项目的配置文件中加入代理列表（数组）</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">PROXIES</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s">&#39;ip_port&#39;</span><span class="p">:</span> <span class="s">&#39;xx.xx.xx.xx:xxxx&#39;</span><span class="p">,</span> <span class="s">&#39;user_pass&#39;</span><span class="p">:</span> <span class="s">&#39;foo:bar&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s">&#39;ip_port&#39;</span><span class="p">:</span> <span class="s">&#39;PROXY2_IP:PORT_NUMBER&#39;</span><span class="p">,</span> <span class="s">&#39;user_pass&#39;</span><span class="p">:</span> <span class="s">&#39;username:password&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s">&#39;ip_port&#39;</span><span class="p">:</span> <span class="s">&#39;PROXY3_IP:PORT_NUMBER&#39;</span><span class="p">,</span> <span class="s">&#39;user_pass&#39;</span><span class="p">:</span> <span class="s">&#39;&#39;</span><span class="p">},</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">在项目根目录中添加 <tt class="docutils literal"><span class="pre">middlewares.py</span></tt> ，添加以下内容：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">from</span> <span class="nn">settings</span> <span class="kn">import</span> <span class="n">PROXIES</span>
+
+<span class="k">class</span> <span class="nc">ProxyMiddleware</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">process_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">spider</span><span class="p">):</span>
+        <span class="n">proxy</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">PROXIES</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">proxy</span><span class="p">[</span><span class="s">&#39;user_pass&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">request</span><span class="o">.</span><span class="n">meta</span><span class="p">[</span><span class="s">&#39;proxy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;http://</span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">proxy</span><span class="p">[</span><span class="s">&#39;ip_port&#39;</span><span class="p">]</span>
+            <span class="n">encoded_user_pass</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">encodestring</span><span class="p">(</span><span class="n">proxy</span><span class="p">[</span><span class="s">&#39;user_pass&#39;</span><span class="p">])</span>
+            <span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s">&#39;Proxy-Authorization&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;Basic &#39;</span> <span class="o">+</span> <span class="n">encoded_user_pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">request</span><span class="o">.</span><span class="n">meta</span><span class="p">[</span><span class="s">&#39;proxy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;http://</span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">proxy</span><span class="p">[</span><span class="s">&#39;ip_port&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">在项目配置文件 <tt class="docutils literal"><span class="pre">settings.py</span></tt> 中添加以下内容：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">DOWNLOADER_MIDDLEWARES</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&#39;scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware&#39;</span><span class="p">:</span> <span class="mi">110</span><span class="p">,</span>
+    <span class="s">&#39;project_name.middlewares.ProxyMiddleware&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">代理的测试，增加一个用于测试的 <strong>Spider</strong> ，代码如下：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">scrapy.spider</span> <span class="kn">import</span> <span class="n">BaseSpider</span>
+<span class="kn">from</span> <span class="nn">scrapy.contrib.spiders</span> <span class="kn">import</span> <span class="n">CrawlSpider</span><span class="p">,</span> <span class="n">Rule</span>
+<span class="kn">from</span> <span class="nn">scrapy.http</span> <span class="kn">import</span> <span class="n">Request</span>
+
+<span class="k">class</span> <span class="nc">TestSpider</span><span class="p">(</span><span class="n">CrawlSpider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;test&quot;</span>
+    <span class="n">domain_name</span> <span class="o">=</span> <span class="s">&quot;whatismyip.com&quot;</span>
+    <span class="c"># The following url is subject to change, you can get the last updated one from here :</span>
+    <span class="c"># http://www.whatismyip.com/faq/automation.asp</span>
+    <span class="n">start_urls</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;http://automation.whatismyip.com/n09230945.asp&quot;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="nb">open</span><span class="p">(</span><span class="s">&#39;test.html&#39;</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><dl class="first docutils">
+<dt>参考文档：</dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="http://mahmoud.abdel-fattah.net/2012/04/07/using-scrapy-with-proxies/">http://mahmoud.abdel-fattah.net/2012/04/07/using-scrapy-with-proxies/</a></li>
+<li><a class="reference external" href="http://mahmoud.abdel-fattah.net/2012/04/16/using-scrapy-with-different-many-proxies/">http://mahmoud.abdel-fattah.net/2012/04/16/using-scrapy-with-different-many-proxies/</a></li>
+<li><a class="reference external" href="http://proxymesh.com/pricing/">代理资源1</a></li>
+<li><a class="reference external" href="http://squidproxies.com">代理资源2</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h3>处理静态文件的步骤（使用开发服务器时）<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">django缺省会在项目根目录，以及每个app的static目录下找静态文件</p>
+</li>
+<li><p class="first">settings.py - 在INSTALLED_APPS中加入django.contrib.staticfiles</p>
+</li>
+<li><p class="first">urls.py</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">django.contrib.staticfiles.urls</span> <span class="kn">import</span> <span class="n">staticfiles_urlpatterns</span>
+<span class="n">urlpatterns</span> <span class="o">+=</span> <span class="n">staticfiles_urlpatterns</span><span class="p">()</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">模板中可以使用绝对路径来引用静态文件，或通过{{ STATIC_URL }}，后者需要确保在views中使用了RequestContext</p>
+</li>
+</ol>
+</div>
+<div class="section" id="github">
+<h3>github 使用技巧<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">打开git shell的颜色高亮</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">color</span><span class="o">.</span><span class="n">ui</span> <span class="s">&quot;auto&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">打开git的图形界面（自带的）</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">git</span> <span class="n">gui</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>其他<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">源代码高亮示例</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span>
+    <span class="k">print</span> <span class="s">&#39;aldslfjfdsa&#39;</span>
+
+<span class="k">def</span> <span class="nf">asdlfj</span><span class="p">():</span>
+    <span class="k">print</span> <span class="s">&#39;ok&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">引用示例</p>
+<div class="highlight-python"><pre>Finished: An initial directory structure has been created.
+
+You should now populate your master file .\source\index.rst and create other documentation
+source files. Use the sphinx-build command to build the docs, like so:
+   sphinx-build -b builder .\source .\build
+where "builder" is one of the supported builders, e.g. html, latex or linkcheck.</pre>
+</div>
+</li>
+<li><p class="first">note &amp; warning</p>
+</li>
+</ol>
+<blockquote>
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Finished: An initial directory structure has been created.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Finished: An initial directory structure has been created.</p>
+</div>
+</div></blockquote>
+<ol class="arabic simple">
+<li>链接</li>
+</ol>
+<ul>
+<li><p class="first"><a class="reference external" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">http://docutils.sourceforge.net/docs/user/rst/quickref.html</a></p>
+</li>
+<li><p class="first"><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt">参考图</a></p>
+</li>
+<li><p class="first">去看看 <a class="reference internal" href="#id2">今天任务</a></p>
+<p>这是一个inline：<tt class="docutils literal"><span class="pre">from</span> <span class="pre">django</span> <span class="pre">import</span> <span class="pre">*</span></tt></p>
+</li>
+</ul>
+<ol class="arabic simple">
+<li>引用python文档内容</li>
+</ol>
+<blockquote>
+<div>我喜欢 <tt class="xref py py-mod docutils literal"><span class="pre">baseinfo</span></tt> 模块，里面有一个 <tt class="xref py py-class docutils literal"><span class="pre">models.Place</span></tt> 的类，这是一个函数 <tt class="xref py py-func docutils literal"><span class="pre">baseinfo.views.get_parent_info()</span></tt></div></blockquote>
+</div>
 </div>
 
 
@@ -80,6 +242,21 @@ git gui</p>
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">每日笔记</a><ul>
+<li><a class="reference internal" href="#id2">今天任务</a></li>
+<li><a class="reference internal" href="#id3">工作笔记</a><ul>
+<li><a class="reference internal" href="#scrapy">在Scrapy项目中使用代理</a></li>
+<li><a class="reference internal" href="#id6">处理静态文件的步骤（使用开发服务器时）</a></li>
+<li><a class="reference internal" href="#github">github 使用技巧</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7">其他</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="reStructureText.html"
                         title="previous chapter">reStructuredText Primer</a></p>
