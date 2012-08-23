@@ -10,7 +10,6 @@ ROOT_URLCONF = 'yeekaa.urls'
 WSGI_APPLICATION = "yeekaa.wsgi.application"
 
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
-
 TEMPLATE_DIRS = (os.path.join(SITE_ROOT, 'templates').replace('\\','/'),)
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',

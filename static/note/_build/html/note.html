@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>任务 &mdash; Notebook 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Notebook 1 documentation" href="index.html" />
+    <link rel="prev" title="reStructuredText Primer" href="reStructureText.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="reStructureText.html" title="reStructuredText Primer"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Notebook 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>任务<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>1、scrapy
+2、分解任务
+2、文档书写工具及环境
+3、widget库结构
+4、晚上到家：虾米网下载音乐（邓丽君、龙飘飘、革命歌曲、徐小凤、小娟、蔡琴、影视主题曲、降央卓玛、粤剧等）
+5、晚上到家：找到我的notebook文件，并入github</p>
+<p>处理静态文件的步骤（使用开发服务器时）：
+1、django缺省会在项目根目录，以及每个app的static目录下找静态文件
+2、settings.py - 在INSTALLED_APPS中加入django.contrib.staticfiles
+3、urls.py -</p>
+<blockquote>
+<div>from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+urlpatterns += staticfiles_urlpatterns()</div></blockquote>
+<p>4、模板中可以使用绝对路径来引用静态文件，或通过{{ STATIC_URL }}，后者需要确保在views中使用了RequestContext</p>
+<p># 打开git shell的颜色高亮
+git config &#8211;global color.ui &#8220;auto&#8221;</p>
+<p># 打开git的图形界面（自带的）
+git gui</p>
+<p>打开scrapy相关网页
+打开asana、gantter
+打开github issue list
+下载rst中文参考文档（最好是离线的html版）
+搜索pycharm的rst文件支持（预览）</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="reStructureText.html"
+                        title="previous chapter">reStructuredText Primer</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/note.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="reStructureText.html" title="reStructuredText Primer"
+             >previous</a> |</li>
+        <li><a href="index.html">Notebook 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Zhao.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

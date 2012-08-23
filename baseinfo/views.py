@@ -15,6 +15,9 @@ def default(request):
     return render_to_response('baseinfo_default.html', locals())
 
 def place(request):
+    """
+    @ param request
+    """
     if request.method == 'POST':
         form = NewPlaceForm(request.POST)
         if form.is_valid():
