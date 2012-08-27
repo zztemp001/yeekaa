@@ -2,26 +2,29 @@
 每日笔记
 ===========
 
-今天任务
+上网任务
 ===========
 
-#. scrapy
-#. 分解任务
-#. 文档书写工具及环境
+#. 下载reg文件恢复输入法设置界面
+#. 将变形金刚的连接发给老婆
+#. bootstrap
 
-   #. adjfladfasdf
-   #. asdfjadslf
-   #. adsfjasdlkjfasdf
-#. widget库结构
-#. 晚上到家： **虾米网** 下载音乐（邓丽君、龙飘飘、革命歌曲、徐小凤、小娟、蔡琴、影视主题曲、降央卓玛、粤剧等）
+   #. 打开相关网页
+   #. 下载开发包
+   #. 下载中英文文档
 #. 晚上到家：找到我的 **notebook** 文件，并入 *github*
+
+.. note::
 
   | 打开scrapy相关网页
   | 打开asana、gantter
+  | 非常好
+  | 上面来一行
+  | 再来一行
   | 打开github issue list
-
-    | 下载rst中文参考文档（最好是离线的html版）
-    | 搜索pycharm的rst文件支持（预览）
+  | vim 中文手册（cheatsheet）
+  | google 日历、文档的离线编辑
+  | 看看todolist有没有更新
 
 工作笔记
 ========
@@ -140,4 +143,4 @@ github 使用技巧
 
 #. 引用python文档内容
 
-  我喜欢 :mod:`baseinfo` 模块，里面有一个 :class:`models.Place` 的类，这是一个函数 :func:`baseinfo.views.get_parent_info`
+  我喜欢 :mod:`doctest` 模块，里面有一个 :class:`models.Place` 的类，这是一个函数 :func:`baseinfo.views.get_parent_info`
