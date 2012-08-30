@@ -5,13 +5,14 @@
 上网任务
 ===========
 
-#. 下载reg文件恢复输入法设置界面
-#. 将变形金刚的连接发给老婆
-#. bootstrap
-
-   #. 打开相关网页
-   #. 下载开发包
-   #. 下载中英文文档
+#. 下载mockup软件和组件库
+#. 下载visio2003
+#. 下载south和相关文档
+#. 捐赠todolist
+#. 购买相机数据线
+#. 打开淘宝、点评、京东、携程、蘑菇街等页面
+#. 下载python中文手册，最好是html版
+#. 下载python组件手册，最好是中文版，html版
 #. 晚上到家：找到我的 **notebook** 文件，并入 *github*
 
 .. note::
@@ -137,7 +138,7 @@ github 使用技巧
 * http://docutils.sourceforge.net/rst.html
 * http://docutils.sourceforge.net/docs/user/rst/quickref.html
 * `参考图 <http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt>`_
-* 去看看 `今天任务`_
+* 去看看 `上网任务`_
 
   这是一个inline：``from django import *``
 

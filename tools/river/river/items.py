@@ -1,11 +1,22 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# http://doc.scrapy.org/topics/items.html
+# coding=utf-8
 
 from scrapy.item import Item, Field
 
-class RiverItem(Item):
-    # define the fields for your item here like:
-    # name = Field()
-    pass
+class LocalItem(Item):
+    title = Field()
+    link = Field()
+    body = Field()
+
+class KpOriginItem(Item):
+    url = Field()
+    body = Field()
+    timestamp = Field()
+
+class KpShopItem(Item):
+    shopid = Field()
+    shopname = Field()
+    description = Field()
+    recommend = Field()
+    latitude = Field()
+    longitude = Field()
+    commercialzone = Field()
