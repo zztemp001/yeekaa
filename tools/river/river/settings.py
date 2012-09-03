@@ -35,13 +35,13 @@ PROXIES = [
     '122.72.80.100:80',
     '121.33.249.170:8080',
 ]
-'''
+"""
 PROXIES = [
         {'ip_port': 'xx.xx.xx.xx:xxxx', 'user_pass': 'foo:bar'},
         {'ip_port': 'PROXY2_IP:PORT_NUMBER', 'user_pass': 'username:password'},
         {'ip_port': 'PROXY3_IP:PORT_NUMBER', 'user_pass': ''},
 ]
-'''
+"""
 
 LOG_ENABLED = True
 LOG_ENCODING = 'utf-8'

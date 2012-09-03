@@ -15,6 +15,9 @@ class TestSpider(CrawlSpider):
     start_urls = ["http://www.myip.cn"]
 
     def parse(self, response):
+        """
+        @param response 中文注释
+        """
         self.log('Proxy: %s' % response.meta['proxy'])
         self.log('Request Status: %s' % str(response.status))
         self.log('Request Time: %s' % response.meta['download_latency'])

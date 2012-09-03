@@ -44,6 +44,8 @@ INSTALLED_APPS = (
     'yeekaa.shop',
     'yeekaa.dsource',
     'yeekaa.baseinfo',
+    'south',
+    'yeekaa.southtut',
     )
 
 MIDDLEWARE_CLASSES = (

@@ -26,6 +26,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Notebook 1 documentation" href="index.html" />
+    <link rel="next" title="基础函数库zzlib文档" href="zzlib.html" />
     <link rel="prev" title="reStructuredText Primer" href="reStructureText.html" /> 
   </head>
   <body>
@@ -35,6 +36,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="zzlib.html" title="基础函数库zzlib文档"
+             accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="reStructureText.html" title="reStructuredText Primer"
              accesskey="P">previous</a> |</li>
@@ -52,33 +59,142 @@
 <div class="section" id="id2">
 <h2>上网任务<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>下载mockup软件和组件库</li>
-<li>下载visio2003</li>
-<li>下载south和相关文档</li>
-<li>捐赠todolist</li>
-<li>购买相机数据线</li>
-<li>打开淘宝、点评、京东、携程、蘑菇街等页面</li>
-<li>下载python中文手册，最好是html版</li>
-<li>下载python组件手册，最好是中文版，html版</li>
 <li>晚上到家：找到我的 <strong>notebook</strong> 文件，并入 <em>github</em></li>
 </ol>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<div class="last line-block">
-<div class="line">打开scrapy相关网页</div>
-<div class="line">打开asana、gantter</div>
-<div class="line">非常好</div>
-<div class="line">上面来一行</div>
-<div class="line">再来一行</div>
-<div class="line">打开github issue list</div>
-<div class="line">vim 中文手册（cheatsheet）</div>
-<div class="line">google 日历、文档的离线编辑</div>
-<div class="line">看看todolist有没有更新</div>
-</div>
-</div>
 </div>
 <div class="section" id="id3">
 <h2>工作笔记<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">可以通过在 <tt class="docutils literal"><span class="pre">site-packages</span></tt> 目录中添加 <tt class="docutils literal"><span class="pre">*.pth</span></tt> 文件来讲路径自动添加到 <tt class="docutils literal"><span class="pre">sys.path</span></tt> 变量中，以便python可以找到</p>
+</li>
+<li><dl class="first docutils">
+<dt>python文档注释方法可以参考：</dt>
+<dd><ol class="first last arabic simple">
+<li><a class="reference external" href="http://packages.python.org/an_example_pypi_project/sphinx.html#is-sweaty">http://packages.python.org/an_example_pypi_project/sphinx.html#is-sweaty</a></li>
+<li><a class="reference external" href="http://packages.python.org/an_example_pypi_project/pkgcode.html">http://packages.python.org/an_example_pypi_project/pkgcode.html</a></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>fabric参考文章：</dt>
+<dd><ol class="first last arabic simple">
+<li><a class="reference external" href="http://tzangms.com/programming/2486/">http://tzangms.com/programming/2486/</a></li>
+<li><a class="reference external" href="http://docs.fabfile.org/en/1.4.3/installation.html">http://docs.fabfile.org/en/1.4.3/installation.html</a></li>
+<li><a class="reference external" href="http://docs.fabfile.org/en/1.4.3/tutorial.html">http://docs.fabfile.org/en/1.4.3/tutorial.html</a></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>python中文拼音排序：</dt>
+<dd><ol class="first last arabic simple">
+<li><a class="reference external" href="http://www.pythonclub.org/python-basic/chinese-sort">http://www.pythonclub.org/python-basic/chinese-sort</a></li>
+<li><a class="reference external" href="http://gerry.lamost.org/blog/?p=338">http://gerry.lamost.org/blog/?p=338</a></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">对字典的排序，最终都要归结为对字典的键/值列表的排序</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">sortedDictValues</span><span class="p">(</span><span class="n">adict</span><span class="p">,</span><span class="n">reverse</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+    <span class="n">keys</span> <span class="o">=</span> <span class="n">adict</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+    <span class="n">keys</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="n">reverse</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">adict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">对列表的排序，优先使用内置的 <tt class="docutils literal"><span class="pre">list.sort()</span></tt> 方法</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">a</span>
+<span class="go">[0, 1, 2, 3, 5, 7, 9]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">a</span>
+<span class="go">[9, 7, 5, 3, 2, 1, 0]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;e&#39;</span><span class="p">,</span><span class="s">&#39;a&#39;</span><span class="p">,</span><span class="s">&#39;be&#39;</span><span class="p">,</span><span class="s">&#39;ad&#39;</span><span class="p">,</span><span class="s">&#39;dab&#39;</span><span class="p">,</span><span class="s">&#39;dbc&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">b</span>
+<span class="go">[&#39;a&#39;, &#39;ad&#39;, &#39;be&#39;, &#39;dab&#39;, &#39;dbc&#39;, &#39;e&#39;]</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="section" id="south">
+<h3>south的安装和使用<a class="headerlink" href="#south" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">使用pip或easy_install均可安装</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">easy_install</span> <span class="n">South</span>  <span class="c"># 初始化安装</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">easy_install</span> <span class="o">-</span><span class="n">U</span> <span class="n">South</span>  <span class="c"># 升级</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">在 <tt class="docutils literal"><span class="pre">settings.py</span></tt> 的 <tt class="docutils literal"><span class="pre">INSTALLED_APPS</span></tt> 中添加 <tt class="docutils literal"><span class="pre">'south'</span></tt></p>
+</li>
+<li><p class="first">运行 <tt class="docutils literal"><span class="pre">manage.py</span> <span class="pre">syncdb</span></tt> 生成South所需的跟踪表，否则会产生 <tt class="docutils literal"><span class="pre">south_migrationhistory</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">exist.</span></tt> 的错误</p>
+</li>
+<li><p class="first">编辑好app的model后，实施初次跟踪（south是按app来跟踪的）</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">schemamigration</span> <span class="n">southtut</span> <span class="o">--</span><span class="n">initial</span>  <span class="c"># 对于新的app进行初次跟踪</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">convert_to_south</span> <span class="o">&lt;</span><span class="n">app_name</span><span class="o">&gt;</span>  <span class="c"># 对于已存在的app进行初次跟踪，后续即可使用south</span>
+
+<span class="go"># 以上命令将在southtut目录下生成一个migrations目录，用于后续的变更跟踪，对于没有这个目录的app，south将忽略</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">实施migration，south将生成新的表，和 <tt class="docutils literal"><span class="pre">manage.py</span> <span class="pre">syncdb</span></tt> 做的工作一样</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span> <span class="n">southtut</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">对model进行修改后，用以下命令执行migration</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">schemamigration</span> <span class="n">southtut</span> <span class="o">--</span><span class="n">auto</span>  <span class="c"># 找出app的变更</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span> <span class="n">southtut</span>  <span class="c"># 执行变更</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">恢复app的model到任一记录点</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span> <span class="o">&lt;</span><span class="n">app_name</span><span class="o">&gt;</span> <span class="mo">0016</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>1～3步是基础的、必须的</li>
+<li>对于 null = False 但又没有提供缺省值的列，south 会提示提供缺省值</li>
+<li>对于 unique = True 的列，south 会自动检测并完成变更</li>
+<li>对于 ManyToMany 字段，south 会自动检测并添加或删除相关表格</li>
+<li>参考文章：<a class="reference external" href="http://tzangms.com/programming/2484/">http://tzangms.com/programming/2484/</a></li>
+</ul>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="sqlite3">
+<h3>sqlite3的字符串编码问题<a class="headerlink" href="#sqlite3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">在使用sqlite3的时候，提示了这样的错误信息：</p>
+<div class="highlight-python"><pre>ErrorCode: You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str).
+It is highly recommended that you instead just switch your application to Unicode strings.</pre>
+</div>
+</li>
+<li><p class="first">使用 <tt class="docutils literal"><span class="pre">conn.text_factory</span></tt> 来解决：</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">datafile</span><span class="p">)</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">conn</span><span class="o">.</span><span class="n">text_factory</span> <span class="o">=</span> <span class="s">&#39;utf-8&#39;</span>  <span class="c"># 这是关键，取值可以是utf-8/str等</span>
+<span class="c"># sqlite3的blob字段是编码透明的，存进去什么，取出来就是什么，可以用来存储文件、大段文字、html页面数据等</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">参考文件：<a class="reference external" href="http://python.6.n6.nabble.com/CPyUG-sqlite3-td2828909.html">http://python.6.n6.nabble.com/CPyUG-sqlite3-td2828909.html</a></p>
+</div>
+</div>
 <div class="section" id="scrapy">
 <h3>在Scrapy项目中使用代理<a class="headerlink" href="#scrapy" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
@@ -213,25 +329,24 @@ where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 <p class="last">Finished: An initial directory structure has been created.</p>
 </div>
 </div></blockquote>
-<ol class="arabic simple">
-<li>链接</li>
-</ol>
-<ul>
-<li><p class="first"><a class="reference external" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a></p>
-</li>
-<li><p class="first"><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">http://docutils.sourceforge.net/docs/user/rst/quickref.html</a></p>
-</li>
-<li><p class="first"><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt">参考图</a></p>
-</li>
-<li><p class="first">去看看 <a class="reference internal" href="#id2">上网任务</a></p>
-<p>这是一个inline：<tt class="docutils literal"><span class="pre">from</span> <span class="pre">django</span> <span class="pre">import</span> <span class="pre">*</span></tt></p>
-</li>
-</ul>
-<ol class="arabic simple">
-<li>引用python文档内容</li>
-</ol>
+<ol class="arabic">
+<li><p class="first">链接</p>
 <blockquote>
-<div>我喜欢 <tt class="xref py py-mod docutils literal"><span class="pre">doctest</span></tt> 模块，里面有一个 <tt class="xref py py-class docutils literal"><span class="pre">models.Place</span></tt> 的类，这是一个函数 <tt class="xref py py-func docutils literal"><span class="pre">baseinfo.views.get_parent_info()</span></tt></div></blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a></li>
+<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">http://docutils.sourceforge.net/docs/user/rst/quickref.html</a></li>
+<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt">参考图</a></li>
+<li>去看看 <a class="reference internal" href="#id2">上网任务</a></li>
+</ul>
+<p>这是一个inline：<tt class="docutils literal"><span class="pre">from</span> <span class="pre">django</span> <span class="pre">import</span> <span class="pre">*</span></tt></p>
+</div></blockquote>
+</li>
+<li><p class="first">引用python文档内容</p>
+<blockquote>
+<div><p>我喜欢 <tt class="xref py py-mod docutils literal"><span class="pre">doctest</span></tt> 模块，里面有一个 <tt class="xref py py-class docutils literal"><span class="pre">models.Place</span></tt> 的类，这是一个函数 <tt class="xref py py-func docutils literal"><span class="pre">baseinfo.views.get_parent_info()</span></tt></p>
+</div></blockquote>
+</li>
+</ol>
 </div>
 </div>
 
@@ -246,6 +361,8 @@ where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 <li><a class="reference internal" href="#">每日笔记</a><ul>
 <li><a class="reference internal" href="#id2">上网任务</a></li>
 <li><a class="reference internal" href="#id3">工作笔记</a><ul>
+<li><a class="reference internal" href="#south">south的安装和使用</a></li>
+<li><a class="reference internal" href="#sqlite3">sqlite3的字符串编码问题</a></li>
 <li><a class="reference internal" href="#scrapy">在Scrapy项目中使用代理</a></li>
 <li><a class="reference internal" href="#id6">处理静态文件的步骤（使用开发服务器时）</a></li>
 <li><a class="reference internal" href="#github">github 使用技巧</a></li>
@@ -259,6 +376,9 @@ where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
   <h4>Previous topic</h4>
   <p class="topless"><a href="reStructureText.html"
                         title="previous chapter">reStructuredText Primer</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="zzlib.html"
+                        title="next chapter">基础函数库zzlib文档</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/note.txt"
@@ -287,6 +407,12 @@ where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="zzlib.html" title="基础函数库zzlib文档"
+             >next</a> |</li>
         <li class="right" >
           <a href="reStructureText.html" title="reStructuredText Primer"
              >previous</a> |</li>

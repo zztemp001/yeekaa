@@ -8,6 +8,7 @@ Contents:
 
    reStructureText
    note
+   zzlib
 
 
 
