@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" src="/static/lib/js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="/static/lib/jquery/jquery-1.7.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="/static/lib/css/bootstrap.min.css" />
-    <script type="text/javascript" src="/static/lib/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="/static/js/base.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
@@ -13,102 +13,77 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-            <div class="container">
-                <a class="brand" href="/">Hello Yeekaa!</a>
-                <ul class="nav">
-                    <li class="active">
-                        <a href="/">首页</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            优惠券<b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/coupon/contact/">联系</a></li>
-                            <li><a href="#">lalal</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            信息源<b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/dsource/add/">添加源</a></li>
-                            <li><a href="#">新功能</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            基础信息管理<b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/baseinfo/place/">地点管理</a></li>
-                            <li><a href="/baseinfo/category/">行业管理</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">链接</a></li>
-                </ul>
-                <form class="navbar-form pull-right">
-                    <input type="text" class="span3" placeholder="搜索">
-                    <button type="submit" class="btn btn-success btn-small"><i class="icon-search icon-white"></i> 搜索</button>
-                </form>
+            <a class="brand" href="/">Hello Yeekaa!</a>
+            <ul class="nav">
+                <li class="active">
+                    <a href="/">首页</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        优惠券<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/coupon/contact/">联系</a></li>
+                        <li><a href="#">lalal</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        信息源<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/dsource/add/">添加源</a></li>
+                        <li><a href="#">新功能</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        基础信息管理<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/baseinfo/place/">地点管理</a></li>
+                        <li><a href="/baseinfo/category/">行业管理</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form pull-right">
+                <input type="text" class="span3" placeholder="搜索">
+                <button type="submit" class="btn btn-success btn-small"><i class="icon-search icon-white"></i> 搜索</button>
+            </form>
+            <ul class="nav pull-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">参考文档<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/static/doc/django/index.html">django</a></li>
+                        <li><a href="/static/doc/jquery/index.html">jquery（使用IE浏览）</a></li>
+                        <li><a href="/static/doc/bootstrap/index.html">bootstrap</a></li>
+                        <li><a href="/static/doc/mybook/_build/html/note.html">我的笔记本</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row center">
+            <div class="span12">
+                {% block content %}
+
+                {% endblock %}
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span3">
-                <div class="alert alert-error">
-                    <a class="close" data-dismiss="alert">×</a>
-                    <strong>严重警告！</strong>任何公民的合法权益都受到宪法和法律保护。
-                </div>
-            </div>
-            <div class="span9">
-                <div class="alert">
-                    <a class="close" data-dismiss="alert">×</a>
-                    <strong>警告！</strong>不要拿法律<em>挡箭牌</em>。
-                </div>
-                <div class="well">
-                    <p>数码</p>
-                    <abbr title="详细的内容啊啦啦啦啦啦啦">详细</abbr>
-                </div>
-                <div class="clearfix">
-                    <blockquote cite="http://www.sina.com.cn">
-                        <p>一天吃六个胶囊，一天三次、一次两个，没有吃掉多少铬。</p>
-                        <small>卫生部合理用药专家孙忠实</small>
-                    </blockquote>
-                    <blockquote class="pull-right">
-                        <p>一天吃六个胶囊，一天三次、一次两个，没有吃掉多少铬。</p>
-                        <small>卫生部合理用药专家孙忠实</small>
-                        <br/>
-                        <p>一天吃六个胶囊，一天三次、一次两个，没有吃掉多少铬。</p>
-                        <small>卫生部合理用药专家孙忠实</small>
-                    </blockquote>
-                </div>
-                                <div>
-                    <button class="btn">按钮</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <footer class="footer clearfix">
+        <address class="pull-right">
+            <strong>姓名：<em>某某某</em></strong><br/>
+            电话：0755-88888888<br/>
+            邮件：zzzz@hotmail.com
+        </address>
+        <p>welcome to yeekaa.com</p>
+    </footer>
 
-
-    {% block content %}
-
-    {% endblock %}
-
-    {% block footer %}
-        <div class="well clearfix">
-            <address class="pull-right">
-                <strong>姓名：<em>某某某</em></strong><br/>
-                电话：0755-88888888<br/>
-                邮件：zzzz@hotmail.com
-            </address>
-            <p>welcome to yeekaa.com</p>
-        </div>
-    {% endblock %}
 </body>
 </html>

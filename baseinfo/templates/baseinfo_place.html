@@ -3,8 +3,9 @@
 {% block title %}基础信息管理：地点 - Yeekaa{% endblock %}
 
 {% block content %}
-    <div class="description">
-        <p>地点信息包括：国家、省份、城市、区域、商圈、标志性地点</p>
+    <div class="alert alert-info">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        地点信息包括：国家、省份、城市、区域、商圈、标志性地点
     </div>
 
     <div id="new_place">
@@ -19,33 +20,37 @@
             <select id="circle" level="7" class="parent">请选择</select>&nbsp;
             {{ form.parent }}
             <label for="id_title">名称：</label>{{ form.title }}&nbsp;
-            <input type="submit" value="新增">
+            <button type="submit" class="btn btn-primary">新增</button>
+            <button type="button" class="btn">取消</button>
         </form>
     </div>
     
-    <div id="place_list">
-        <div class="place">
-            <span class="pk">编号</span>
-            <span class="title">称谓</span>
-            <span class="parent">所属地点</span>
-            <span class="level">所属层级</span>
-        </div>
+    <table class="table table-striped">
+        <thead>
+            <tr><th>#</th><th>称谓</th><th>所属地点</th><th>所属层级</th></tr>
+        </thead>
+        <tbody>
         {% for p in places %}
-        <div class="place">
-            <span class="pk">{{ p.id }}</span>
-            <span class="title">{{ p.title }}</span>
-            <span class="parent">{{ p.parent.title }}</span>
-            <span class="level">{{ p.level }}</span>
-        </div>
+            <tr {% if p.parent.id == 21 %}class="info" {% endif %}>
+                <td>{{ p.id }}</td>
+                <td>{{ p.title }}</td>
+                <td>{{ p.parent.title }}</td>
+                <td>{{ p.level }}</td>
+            </tr>
         {% endfor %}
-    </div>
 
-    <div id="result">结果</div>
-    <div id="sub_result"></div>
-    <div id="commandbar">
-        <span id="getting" class="btn">GET</span>
-        <span id="posting" class="btn">POST</span>
-        <span id="json" class="btn">JSON</span>
+        </tbody>
+    </table>
+
+    <div class="alert">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <div id="result">结果</div>
+        <div id="sub_result"></div>
+        <div id="commandbar">
+            <button id="getting" class="btn">GET</button>
+            <button id="posting" class="btn">POST</button>
+            <button id="json" class="btn">JSON</button>
+        </div>
     </div>
 
 {% endblock %}

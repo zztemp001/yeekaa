@@ -342,3 +342,188 @@
 2012-08-30 18:23:15+0800 [test] INFO: Spider closed (finished)
 2012-08-30 18:23:15+0800 [scrapy] INFO: Dumping global stats:
 	{}
+2012-09-09 15:39:46+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-09-09 15:39:49+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-09-09 15:39:50+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-09-09 15:39:50+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-09-09 15:39:50+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
+2012-09-09 15:39:50+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-09-09 15:39:50+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-09-09 15:39:51+0800 [local] INFO: Spider opened
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET http://127.0.0.1>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:12+0800 [local] DEBUG: Retrying <GET https://wlan.ct10000.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:13+0800 [local] DEBUG: Discarding <GET https://wlan.ct10000.com>: max redirections reached
+2012-09-09 15:40:13+0800 [scrapy] ERROR: Shell error
+	Traceback (most recent call last):
+	  File "C:\Program Files\Python27\lib\threading.py", line 524, in __bootstrap
+	    self.__bootstrap_inner()
+	  File "C:\Program Files\Python27\lib\threading.py", line 551, in __bootstrap_inner
+	    self.run()
+	  File "C:\Program Files\Python27\lib\threading.py", line 504, in run
+	    self.__target(*self.__args, **self.__kwargs)
+	--- <exception caught here> ---
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\threadpool.py", line 167, in _worker
+	    result = context.call(ctx, function, *args, **kwargs)
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 47, in _start
+	    self.fetch(url, spider)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 88, in fetch
+	    self._schedule, request, spider)
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\threads.py", line 118, in blockingCallFromThread
+	    result.raiseException()
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\core\downloader\middleware.py", line 46, in process_response
+	    response = method(request=request, response=response, spider=spider)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\contrib\downloadermiddleware\redirect.py", line 34, in process_response
+	    return self._redirect(redirected, request, spider, response.status)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\contrib\downloadermiddleware\redirect.py", line 66, in _redirect
+	    raise IgnoreRequest
+	scrapy.exceptions.IgnoreRequest: 
+	
+2012-09-09 15:40:13+0800 [local] INFO: Closing spider (shutdown)
+2012-09-09 15:40:13+0800 [local] INFO: Dumping spider stats:
+	{'downloader/exception_count': 1,
+	 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
+	 'downloader/request_bytes': 4371,
+	 'downloader/request_count': 22,
+	 'downloader/request_method_count/GET': 22,
+	 'downloader/response_bytes': 3087,
+	 'downloader/response_count': 21,
+	 'downloader/response_status_count/302': 21,
+	 'finish_reason': 'shutdown',
+	 'finish_time': datetime.datetime(2012, 9, 9, 7, 40, 13, 234000),
+	 'scheduler/memory_enqueued': 22,
+	 'start_time': datetime.datetime(2012, 9, 9, 7, 39, 51, 484000)}
+2012-09-09 15:40:13+0800 [local] INFO: Spider closed (shutdown)
+2012-09-09 15:40:13+0800 [scrapy] INFO: Dumping global stats:
+	{}
+2012-09-09 15:40:34+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-09-09 15:40:34+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-09-09 15:40:34+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-09-09 15:40:34+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-09-09 15:40:35+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
+2012-09-09 15:40:35+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-09-09 15:40:35+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-09-09 15:40:35+0800 [local] INFO: Spider opened
+2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET http://127.0.0.1>
+2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:56+0800 [local] DEBUG: Retrying <GET https://wlan.ct10000.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2012-09-09 15:40:56+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:56+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:40:56+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:17+0800 [local] DEBUG: Retrying <GET https://wlan.ct10000.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:26+0800 [scrapy] INFO: Received SIGBREAK, shutting down gracefully. Send again to force unclean shutdown
+2012-09-09 15:41:26+0800 [local] INFO: Closing spider (shutdown)
+2012-09-09 15:41:57+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-09-09 15:41:57+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-09-09 15:41:57+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-09-09 15:41:57+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-09-09 15:41:57+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
+2012-09-09 15:41:57+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-09-09 15:41:57+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-09-09 15:41:57+0800 [local] INFO: Spider opened
+2012-09-09 15:41:57+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET http://127.0.0.1/>
+2012-09-09 15:41:58+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:41:58+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Retrying <GET https://wlan.ct10000.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
+2012-09-09 15:42:19+0800 [local] DEBUG: Discarding <GET https://wlan.ct10000.com>: max redirections reached
+2012-09-09 15:42:19+0800 [scrapy] ERROR: Shell error
+	Traceback (most recent call last):
+	  File "C:\Program Files\Python27\lib\threading.py", line 524, in __bootstrap
+	    self.__bootstrap_inner()
+	  File "C:\Program Files\Python27\lib\threading.py", line 551, in __bootstrap_inner
+	    self.run()
+	  File "C:\Program Files\Python27\lib\threading.py", line 504, in run
+	    self.__target(*self.__args, **self.__kwargs)
+	--- <exception caught here> ---
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\threadpool.py", line 167, in _worker
+	    result = context.call(ctx, function, *args, **kwargs)
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 81, in callWithContext
+	    return func(*args,**kw)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 47, in _start
+	    self.fetch(url, spider)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 88, in fetch
+	    self._schedule, request, spider)
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\threads.py", line 118, in blockingCallFromThread
+	    result.raiseException()
+	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\defer.py", line 551, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\core\downloader\middleware.py", line 46, in process_response
+	    response = method(request=request, response=response, spider=spider)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\contrib\downloadermiddleware\redirect.py", line 34, in process_response
+	    return self._redirect(redirected, request, spider, response.status)
+	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\contrib\downloadermiddleware\redirect.py", line 66, in _redirect
+	    raise IgnoreRequest
+	scrapy.exceptions.IgnoreRequest: 
+	
+2012-09-09 15:42:19+0800 [local] INFO: Closing spider (shutdown)
+2012-09-09 15:42:19+0800 [local] INFO: Dumping spider stats:
+	{'downloader/exception_count': 1,
+	 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
+	 'downloader/request_bytes': 4371,
+	 'downloader/request_count': 22,
+	 'downloader/request_method_count/GET': 22,
+	 'downloader/response_bytes': 3087,
+	 'downloader/response_count': 21,
+	 'downloader/response_status_count/302': 21,
+	 'finish_reason': 'shutdown',
+	 'finish_time': datetime.datetime(2012, 9, 9, 7, 42, 19, 609000),
+	 'scheduler/memory_enqueued': 22,
+	 'start_time': datetime.datetime(2012, 9, 9, 7, 41, 57, 953000)}
+2012-09-09 15:42:19+0800 [local] INFO: Spider closed (shutdown)
+2012-09-09 15:42:19+0800 [scrapy] INFO: Dumping global stats:
+	{}
