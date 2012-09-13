@@ -118,6 +118,15 @@
 </pre></div>
 </div>
 </li>
+<li><p class="first">jquery1.4版本以后，ajax.post函数需要指定返回数据的类型</p>
+<div class="highlight-python"><pre>$.post("test.php", {name: "Jone", time: "2pm" },
+    function(data) {
+        process(data);
+    },
+    "json"
+);</pre>
+</div>
+</li>
 </ol>
 <div class="section" id="south">
 <h3>south的安装和使用<a class="headerlink" href="#south" title="Permalink to this headline">¶</a></h3>

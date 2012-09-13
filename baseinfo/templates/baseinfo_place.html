@@ -8,7 +8,7 @@
         地点信息包括：国家、省份、城市、区域、商圈、标志性地点
     </div>
 
-    <div id="new_place">
+    <div id="new_place" class="alert alert-block">
         <form id='place_form' method="post" action="/baseinfo/place/">
             <label for="id_level">地点类型:</label>{{ form.level }}&nbsp;
             <select id="continent" level="1" class="parent">请选择</select>&nbsp;
@@ -20,8 +20,7 @@
             <select id="circle" level="7" class="parent">请选择</select>&nbsp;
             {{ form.parent }}
             <label for="id_title">名称：</label>{{ form.title }}&nbsp;
-            <button type="submit" class="btn btn-primary">新增</button>
-            <button type="button" class="btn">取消</button>
+            <input type="submit" value="新增" class="btn-primary">
         </form>
     </div>
     
@@ -41,16 +40,5 @@
 
         </tbody>
     </table>
-
-    <div class="alert">
-        <button type="button" class="close" data-dismiss="alert">×</button>
-        <div id="result">结果</div>
-        <div id="sub_result"></div>
-        <div id="commandbar">
-            <button id="getting" class="btn">GET</button>
-            <button id="posting" class="btn">POST</button>
-            <button id="json" class="btn">JSON</button>
-        </div>
-    </div>
 
 {% endblock %}

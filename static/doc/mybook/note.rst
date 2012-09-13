@@ -46,6 +46,15 @@
     >>> print b
     ['a', 'ad', 'be', 'dab', 'dbc', 'e']
 
+#. jquery1.4版本以后，ajax.post函数需要指定返回数据的类型 ::
+
+    $.post("test.php", {name: "Jone", time: "2pm" },
+        function(data) {
+            process(data);
+        },
+        "json"
+    );
+
 south的安装和使用
 -----------------
 

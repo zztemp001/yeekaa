@@ -51,19 +51,17 @@ $(document).ready(function() {
         $("select.parent").hide();
         var lv = $(this).val() - 1;
         if (lv > 0){
-            // $("#result").html(lv);
             $("select.parent:lt(" + lv +")").show();
             $.post(
                 "/baseinfo/getparent/",
                 {"level": $(this).val()},  //传递的是拟增加地点的真是层级数
                 function(data) {
-                    obj = $.parseJSON(data);
-                    alert(data);
-                    $.each(obj, function(k, v) {
-                        alert(k + ":" + v);
+                    $.each(data, function(k, v) {
+                        //alert(k + ":" + v);
                         $("select.parent:[level=" + k +"]").html(v);
                     });
-                });
+                },
+                "json");  //1.4版本后的jquery需要指定服务器返回数据的类型，可以是（(xml, json, script, or html）
             }
         $("#id_title").focus();
     });

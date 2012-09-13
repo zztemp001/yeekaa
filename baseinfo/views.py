@@ -47,25 +47,6 @@ def place(request):
         form = NewPlaceForm()
     return render_to_response('baseinfo_place.html', {'form': form, 'places': places}, context_instance=RequestContext(request, {'referer': request.META['HTTP_REFERER']}))
 
-def test_ajax(request):
-    if request.is_ajax():
-        if request.method == 'GET':
-            message = request.META['REMOTE_ADDR']
-        elif request.method == 'POST':
-            message = "This is an POST request. "
-            message += "The title is: " + request.POST['title']
-    else:
-        message = "Not a ajax request"
-    return  HttpResponse(message)
-
-def test_json(request):
-    if request.is_ajax():
-        mimetype = 'application/javascript'
-        data = serializers.serialize('json', Coupon.objects.all())
-        return HttpResponse(data, mimetype)
-    else:
-        return HttpResponse(status=400)
-
 def get_parent_info(request):
     def_set = [1, 8, 10, 16, 21, 23, 26]
     #todo:通过用户上一次提交的数据作为依据得到缺省值列表
