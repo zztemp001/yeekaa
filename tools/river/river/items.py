@@ -20,3 +20,9 @@ class KpShopItem(Item):
     latitude = Field()
     longitude = Field()
     commercialzone = Field()
+
+class PlaceItem(Item):
+    title = Field()
+    parent = Field()
+    level = Field()
+    timestamp = Field()

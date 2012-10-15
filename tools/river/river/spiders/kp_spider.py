@@ -13,9 +13,9 @@ from scrapy import log
 from river.items import KpOriginItem, KpShopItem
 
 class LocalCrawlSpider(CrawlSpider):
-    name = 'kp_crawler'
-    allowed_domains = ['site-digger.com']
-    start_urls = ['http://db.site-digger.com/csv/6469616e70696e675f6265696a696e675f3230313230375f66697273745f32303030/',]
+    name = 'place'
+    allowed_domains = ['127.0.0.1']
+    start_urls = ['http://127.0.0.1/baseinfo/place/',]
 
     rules = (
         # Rule(SgmlLinkExtractor(allow=('OpenSSL\.html')), follow=True),

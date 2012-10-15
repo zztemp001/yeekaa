@@ -45,7 +45,7 @@ def place(request):
     else:
         places = Place.objects.all()
         form = NewPlaceForm()
-    return render_to_response('baseinfo_place.html', {'form': form, 'places': places}, context_instance=RequestContext(request, {'referer': request.META['HTTP_REFERER']}))
+    return render_to_response('baseinfo_place.html', {'form': form, 'places': places}, context_instance=RequestContext(request))
 
 def get_parent_info(request):
     def_set = [1, 8, 10, 16, 21, 23, 26]

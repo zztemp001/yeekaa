@@ -9,11 +9,11 @@ USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
 
 DOWNLOADER_MIDDLEWARES = {
     'scrapy.contrib.downloadermiddleware.httpproxy.HttpProxyMiddleware': 110,
-    'river.middlewares.ProxyMiddleware': 100,
+    # 'river.middlewares.ProxyMiddleware': 100,
 }
 
 ITEM_PIPELINES = [
-    'river.pipelines.DBPipeline',
+    # 'river.pipelines.DBPipeline',
 ]
 
 # 使用Proxy：第一步，在settings文件中定义代理列表
@@ -43,8 +43,8 @@ PROXIES = [
 ]
 """
 
-LOG_ENABLED = True
+LOG_ENABLED = False
 LOG_ENCODING = 'utf-8'
-LOG_FILE = './local.log'
+LOG_FILE = './log/local.log'
 LOG_LEVEL = 'DEBUG'
 LOG_STDOUT = False  #是否将屏幕显示的信息一并log进文件，缺省为False
