@@ -1,175 +1,42 @@
-2012-08-30 18:02:13+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:02:13+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:02:13+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:02:13+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:02:13+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:02:13+0800 [test] INFO: Spider opened
-2012-08-30 18:02:13+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:02:13+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:02:13+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:02:13+0800 [test] ERROR: Error downloading <GET http://www.myip.cn>: 'ProxyMiddleware' object has no attribute 'log'
-2012-08-30 18:02:13+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:02:13+0800 [test] INFO: Dumping spider stats:
-	{'downloader/exception_count': 1,
-	 'downloader/exception_type_count/exceptions.AttributeError': 1,
-	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 2, 13, 984000),
-	 'scheduler/memory_enqueued': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 2, 13, 968000)}
-2012-08-30 18:02:13+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:02:13+0800 [scrapy] INFO: Dumping global stats:
+2012-10-18 14:33:03+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-10-18 14:33:04+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-10-18 14:33:05+0800 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-10-18 14:33:05+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-10-18 14:33:05+0800 [scrapy] DEBUG: Enabled item pipelines: 
+2012-10-18 14:33:05+0800 [dianping] INFO: Spider opened
+2012-10-18 14:33:05+0800 [dianping] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2012-10-18 14:33:05+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-10-18 14:33:05+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-10-18 14:33:06+0800 [dianping] DEBUG: Crawled (200) <GET http://127.0.0.1/static/page/dianping.htm> (referer: None)
+2012-10-18 14:33:06+0800 [dianping] DEBUG: Scraped from <200 http://127.0.0.1/static/page/dianping.htm>
 	{}
-2012-08-30 18:04:41+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:04:42+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:04:42+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:04:42+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:04:42+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:04:42+0800 [test] INFO: Spider opened
-2012-08-30 18:04:42+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:04:42+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:04:42+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:04:42+0800 [test] ERROR: Error downloading <GET http://www.myip.cn>: 'int' object is not callable
-2012-08-30 18:04:42+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:04:42+0800 [test] INFO: Dumping spider stats:
-	{'downloader/exception_count': 1,
-	 'downloader/exception_type_count/exceptions.TypeError': 1,
-	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 4, 42, 546000),
-	 'scheduler/memory_enqueued': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 4, 42, 531000)}
-2012-08-30 18:04:42+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:04:42+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-08-30 18:06:00+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:06:00+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:06:00+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:06:00+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:06:00+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:06:00+0800 [test] INFO: Spider opened
-2012-08-30 18:06:00+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:06:00+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:06:00+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:06:00+0800 [test] ERROR: Error downloading <GET http://www.myip.cn>: 'int' object is not callable
-2012-08-30 18:06:00+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:06:00+0800 [test] INFO: Dumping spider stats:
-	{'downloader/exception_count': 1,
-	 'downloader/exception_type_count/exceptions.TypeError': 1,
-	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 6, 0, 687000),
-	 'scheduler/memory_enqueued': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 6, 0, 671000)}
-2012-08-30 18:06:00+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:06:00+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-08-30 18:06:56+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:06:56+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:06:56+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:06:56+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:06:56+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:06:56+0800 [test] INFO: Spider opened
-2012-08-30 18:06:56+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:06:56+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:06:56+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:06:56+0800 [test] ERROR: Error downloading <GET http://www.myip.cn>: 'int' object is not callable
-2012-08-30 18:06:56+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:06:56+0800 [test] INFO: Dumping spider stats:
-	{'downloader/exception_count': 1,
-	 'downloader/exception_type_count/exceptions.TypeError': 1,
-	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 6, 56, 593000),
-	 'scheduler/memory_enqueued': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 6, 56, 578000)}
-2012-08-30 18:06:56+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:06:56+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-08-30 18:07:34+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:07:34+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:07:35+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:07:35+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:07:35+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:07:35+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:07:35+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:07:35+0800 [default] INFO: Spider opened
-2012-08-30 18:07:35+0800 [scrapy] ERROR: Shell error
-	Traceback (most recent call last):
-	  File "C:\Program Files\Python27\lib\threading.py", line 524, in __bootstrap
-	    self.__bootstrap_inner()
-	  File "C:\Program Files\Python27\lib\threading.py", line 551, in __bootstrap_inner
-	    self.run()
-	  File "C:\Program Files\Python27\lib\threading.py", line 504, in run
-	    self.__target(*self.__args, **self.__kwargs)
-	--- <exception caught here> ---
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\threadpool.py", line 167, in _worker
-	    result = context.call(ctx, function, *args, **kwargs)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 118, in callWithContext
-	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 81, in callWithContext
-	    return func(*args,**kw)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 47, in _start
-	    self.fetch(url, spider)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 88, in fetch
-	    self._schedule, request, spider)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\threads.py", line 118, in blockingCallFromThread
-	    result.raiseException()
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\utils\defer.py", line 39, in mustbe_deferred
-	    result = f(*args, **kw)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\core\downloader\middleware.py", line 32, in process_request
-	    response = method(request=request, spider=spider)
-	  File "D:\GitHub\yeekaa\tools\river\river\middlewares.py", line 25, in process_request
-	    log.INFO('PROXY: %s' % request.meta['proxy'])
-	exceptions.TypeError: 'int' object is not callable
-	
-2012-08-30 18:07:35+0800 [default] INFO: Closing spider (shutdown)
-2012-08-30 18:07:35+0800 [default] INFO: Dumping spider stats:
-	{'downloader/exception_count': 1,
-	 'downloader/exception_type_count/exceptions.TypeError': 1,
-	 'finish_reason': 'shutdown',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 7, 35, 171000),
-	 'scheduler/memory_enqueued': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 7, 35, 156000)}
-2012-08-30 18:07:35+0800 [default] INFO: Spider closed (shutdown)
-2012-08-30 18:07:35+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-08-30 18:08:24+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:08:24+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:08:25+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:08:25+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:08:25+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:08:25+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:08:25+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:08:25+0800 [default] INFO: Spider opened
-2012-08-30 18:08:25+0800 [default] DEBUG: Crawled (200) <GET http://www.myip.cn> (referer: None)
-2012-08-30 18:09:40+0800 [default] INFO: Closing spider (shutdown)
-2012-08-30 18:09:40+0800 [default] INFO: Dumping spider stats:
-	{'downloader/request_bytes': 194,
+2012-10-18 14:33:06+0800 [dianping] INFO: Closing spider (finished)
+2012-10-18 14:33:06+0800 [dianping] INFO: Dumping spider stats:
+	{'downloader/request_bytes': 216,
 	 'downloader/request_count': 1,
 	 'downloader/request_method_count/GET': 1,
-	 'downloader/response_bytes': 7314,
+	 'downloader/response_bytes': 142115,
 	 'downloader/response_count': 1,
 	 'downloader/response_status_count/200': 1,
-	 'finish_reason': 'shutdown',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 9, 40, 828000),
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2012, 10, 18, 6, 33, 6, 46000),
+	 'item_scraped_count': 1,
 	 'scheduler/memory_enqueued': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 8, 25, 187000)}
-2012-08-30 18:09:40+0800 [default] INFO: Spider closed (shutdown)
-2012-08-30 18:09:40+0800 [scrapy] INFO: Dumping global stats:
+	 'start_time': datetime.datetime(2012, 10, 18, 6, 33, 5, 984000)}
+2012-10-18 14:33:06+0800 [dianping] INFO: Spider closed (finished)
+2012-10-18 14:33:06+0800 [scrapy] INFO: Dumping global stats:
 	{}
-2012-08-30 18:09:47+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:09:47+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:09:47+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:09:47+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:09:47+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:09:47+0800 [test] INFO: Spider opened
-2012-08-30 18:09:47+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:09:47+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:09:47+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:10:47+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:11:47+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:12:47+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:12:47+0800 [test] DEBUG: Retrying <GET http://www.myip.cn> (failed 1 times): Getting http://www.myip.cn took longer than 180 seconds.
-2012-08-30 18:13:09+0800 [test] DEBUG: Retrying <GET http://www.myip.cn> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
-2012-08-30 18:13:16+0800 [test] DEBUG: Crawled (200) <GET http://www.myip.cn> (referer: None)
-2012-08-30 18:13:16+0800 [test] ERROR: Spider error processing <GET http://www.myip.cn>
+2012-10-18 14:47:45+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-10-18 14:47:45+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-10-18 14:47:45+0800 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-10-18 14:47:45+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-10-18 14:47:45+0800 [scrapy] DEBUG: Enabled item pipelines: 
+2012-10-18 14:47:45+0800 [dianping] INFO: Spider opened
+2012-10-18 14:47:45+0800 [dianping] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2012-10-18 14:47:45+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-10-18 14:47:45+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-10-18 14:47:45+0800 [dianping] DEBUG: Crawled (200) <GET http://127.0.0.1/static/page/dianping.htm> (referer: None)
+2012-10-18 14:47:45+0800 [dianping] ERROR: Spider error processing <GET http://127.0.0.1/static/page/dianping.htm>
 	Traceback (most recent call last):
 	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\base.py", line 1178, in mainLoop
 	    self.runUntilCurrent()
@@ -182,348 +49,23 @@
 	--- <exception caught here> ---
 	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\defer.py", line 551, in _runCallbacks
 	    current.result = callback(current.result, *args, **kw)
-	  File "D:\GitHub\yeekaa\tools\river\river\spiders\proxy_spider.py", line 18, in parse
-	    log.INFO('Proxy: %s' % response.meta['proxy'])
-	exceptions.TypeError: 'int' object is not callable
+	  File "D:\GitHub\yeekaa\tools\river\river\spiders\baseinfo.py", line 45, in parse
+	    print city.select('text()').extract()[0]
+	exceptions.IndexError: list index out of range
 	
-2012-08-30 18:13:16+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:13:16+0800 [test] INFO: Dumping spider stats:
-	{'downloader/exception_count': 2,
-	 'downloader/exception_type_count/twisted.internet.defer.TimeoutError': 1,
-	 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
-	 'downloader/request_bytes': 582,
-	 'downloader/request_count': 3,
-	 'downloader/request_method_count/GET': 3,
-	 'downloader/response_bytes': 23809,
-	 'downloader/response_count': 1,
-	 'downloader/response_status_count/200': 1,
-	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 13, 16, 687000),
-	 'scheduler/memory_enqueued': 3,
-	 'spider_exceptions/TypeError': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 9, 47, 890000)}
-2012-08-30 18:13:16+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:13:16+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-08-30 18:16:15+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:16:15+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:16:16+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:16:16+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:16:16+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:16:16+0800 [test] INFO: Spider opened
-2012-08-30 18:16:16+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:16:16+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:16:16+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:16:37+0800 [test] DEBUG: Retrying <GET http://www.myip.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
-2012-08-30 18:16:37+0800 [test] DEBUG: Crawled (200) <GET http://www.myip.cn> (referer: None)
-2012-08-30 18:16:37+0800 [test] ERROR: Spider error processing <GET http://www.myip.cn>
-	Traceback (most recent call last):
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\base.py", line 1178, in mainLoop
-	    self.runUntilCurrent()
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\base.py", line 800, in runUntilCurrent
-	    call.func(*call.args, **call.kw)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\defer.py", line 368, in callback
-	    self._startRunCallbacks(result)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\defer.py", line 464, in _startRunCallbacks
-	    self._runCallbacks()
-	--- <exception caught here> ---
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\defer.py", line 551, in _runCallbacks
-	    current.result = callback(current.result, *args, **kw)
-	  File "D:\GitHub\yeekaa\tools\river\river\spiders\proxy_spider.py", line 19, in parse
-	    log.INFO('Request Status: %s' % str(response.status))
-	exceptions.TypeError: 'int' object is not callable
-	
-2012-08-30 18:16:37+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:16:37+0800 [test] INFO: Dumping spider stats:
-	{'downloader/exception_count': 1,
-	 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
-	 'downloader/request_bytes': 388,
-	 'downloader/request_count': 2,
-	 'downloader/request_method_count/GET': 2,
-	 'downloader/response_bytes': 23635,
-	 'downloader/response_count': 1,
-	 'downloader/response_status_count/200': 1,
-	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 16, 37, 500000),
-	 'scheduler/memory_enqueued': 2,
-	 'spider_exceptions/TypeError': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 16, 16, 265000)}
-2012-08-30 18:16:37+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:16:37+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-08-30 18:18:42+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:18:43+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:18:43+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:18:43+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:18:43+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:18:43+0800 [test] INFO: Spider opened
-2012-08-30 18:18:43+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:18:43+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:18:43+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:18:49+0800 [test] DEBUG: Crawled (200) <GET http://www.myip.cn> (referer: None)
-2012-08-30 18:18:49+0800 [test] DEBUG: Proxy: http://112.25.12.39:80
-2012-08-30 18:18:49+0800 [test] DEBUG: Request Status: 200
-2012-08-30 18:18:49+0800 [test] DEBUG: Request Time: 5.42199993134
-2012-08-30 18:18:49+0800 [test] DEBUG: 鎮ㄧ殑IP鍦板潃: 112.25.12.39
-2012-08-30 18:18:49+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:18:49+0800 [test] INFO: Dumping spider stats:
-	{'downloader/request_bytes': 194,
+2012-10-18 14:47:45+0800 [dianping] INFO: Closing spider (finished)
+2012-10-18 14:47:45+0800 [dianping] INFO: Dumping spider stats:
+	{'downloader/request_bytes': 216,
 	 'downloader/request_count': 1,
 	 'downloader/request_method_count/GET': 1,
-	 'downloader/response_bytes': 23809,
+	 'downloader/response_bytes': 142115,
 	 'downloader/response_count': 1,
 	 'downloader/response_status_count/200': 1,
 	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 18, 49, 281000),
+	 'finish_time': datetime.datetime(2012, 10, 18, 6, 47, 45, 921000),
 	 'scheduler/memory_enqueued': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 18, 43, 281000)}
-2012-08-30 18:18:49+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:18:49+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-08-30 18:20:17+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:20:17+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:20:17+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:20:17+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:20:17+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:20:17+0800 [test] INFO: Spider opened
-2012-08-30 18:20:17+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:20:17+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:20:17+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:20:38+0800 [test] DEBUG: Retrying <GET http://www.myip.cn> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
-2012-08-30 18:20:59+0800 [test] DEBUG: Retrying <GET http://www.myip.cn> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
-2012-08-30 18:21:02+0800 [test] DEBUG: Crawled (200) <GET http://www.myip.cn> (referer: None)
-2012-08-30 18:21:02+0800 [test] DEBUG: Proxy: http://218.247.129.3:80
-2012-08-30 18:21:02+0800 [test] DEBUG: Request Status: 200
-2012-08-30 18:21:02+0800 [test] DEBUG: Request Time: 2.82799983025
-2012-08-30 18:21:02+0800 [test] DEBUG: 鎮ㄧ殑IP鍦板潃: 218.247.129.3
-2012-08-30 18:21:02+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:21:02+0800 [test] INFO: Dumping spider stats:
-	{'downloader/exception_count': 2,
-	 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 2,
-	 'downloader/request_bytes': 582,
-	 'downloader/request_count': 3,
-	 'downloader/request_method_count/GET': 3,
-	 'downloader/response_bytes': 8144,
-	 'downloader/response_count': 1,
-	 'downloader/response_status_count/200': 1,
-	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 21, 2, 578000),
-	 'scheduler/memory_enqueued': 3,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 20, 17, 687000)}
-2012-08-30 18:21:02+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:21:02+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-08-30 18:23:10+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-08-30 18:23:10+0800 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-08-30 18:23:10+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-08-30 18:23:10+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-08-30 18:23:10+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-08-30 18:23:10+0800 [test] INFO: Spider opened
-2012-08-30 18:23:10+0800 [test] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2012-08-30 18:23:10+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-08-30 18:23:10+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-08-30 18:23:15+0800 [test] DEBUG: Crawled (200) <GET http://www.myip.cn> (referer: None)
-2012-08-30 18:23:15+0800 [test] DEBUG: Proxy: http://203.66.187.252:80
-2012-08-30 18:23:15+0800 [test] DEBUG: Request Status: 200
-2012-08-30 18:23:15+0800 [test] DEBUG: Request Time: 0.75
-2012-08-30 18:23:15+0800 [test] DEBUG: 鎮ㄧ殑IP鍦板潃: 210.242.215.216
-2012-08-30 18:23:15+0800 [test] INFO: Closing spider (finished)
-2012-08-30 18:23:15+0800 [test] INFO: Dumping spider stats:
-	{'downloader/request_bytes': 194,
-	 'downloader/request_count': 1,
-	 'downloader/request_method_count/GET': 1,
-	 'downloader/response_bytes': 23858,
-	 'downloader/response_count': 1,
-	 'downloader/response_status_count/200': 1,
-	 'finish_reason': 'finished',
-	 'finish_time': datetime.datetime(2012, 8, 30, 10, 23, 15, 609000),
-	 'scheduler/memory_enqueued': 1,
-	 'start_time': datetime.datetime(2012, 8, 30, 10, 23, 10, 671000)}
-2012-08-30 18:23:15+0800 [test] INFO: Spider closed (finished)
-2012-08-30 18:23:15+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-09-09 15:39:46+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-09-09 15:39:49+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-09-09 15:39:50+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-09-09 15:39:50+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-09-09 15:39:50+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-09-09 15:39:50+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-09-09 15:39:50+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-09-09 15:39:51+0800 [local] INFO: Spider opened
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET http://127.0.0.1>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:39:51+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:12+0800 [local] DEBUG: Retrying <GET https://wlan.ct10000.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
-2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:13+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:13+0800 [local] DEBUG: Discarding <GET https://wlan.ct10000.com>: max redirections reached
-2012-09-09 15:40:13+0800 [scrapy] ERROR: Shell error
-	Traceback (most recent call last):
-	  File "C:\Program Files\Python27\lib\threading.py", line 524, in __bootstrap
-	    self.__bootstrap_inner()
-	  File "C:\Program Files\Python27\lib\threading.py", line 551, in __bootstrap_inner
-	    self.run()
-	  File "C:\Program Files\Python27\lib\threading.py", line 504, in run
-	    self.__target(*self.__args, **self.__kwargs)
-	--- <exception caught here> ---
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\threadpool.py", line 167, in _worker
-	    result = context.call(ctx, function, *args, **kwargs)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 118, in callWithContext
-	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 81, in callWithContext
-	    return func(*args,**kw)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 47, in _start
-	    self.fetch(url, spider)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 88, in fetch
-	    self._schedule, request, spider)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\threads.py", line 118, in blockingCallFromThread
-	    result.raiseException()
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\defer.py", line 551, in _runCallbacks
-	    current.result = callback(current.result, *args, **kw)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\core\downloader\middleware.py", line 46, in process_response
-	    response = method(request=request, response=response, spider=spider)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\contrib\downloadermiddleware\redirect.py", line 34, in process_response
-	    return self._redirect(redirected, request, spider, response.status)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\contrib\downloadermiddleware\redirect.py", line 66, in _redirect
-	    raise IgnoreRequest
-	scrapy.exceptions.IgnoreRequest: 
-	
-2012-09-09 15:40:13+0800 [local] INFO: Closing spider (shutdown)
-2012-09-09 15:40:13+0800 [local] INFO: Dumping spider stats:
-	{'downloader/exception_count': 1,
-	 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
-	 'downloader/request_bytes': 4371,
-	 'downloader/request_count': 22,
-	 'downloader/request_method_count/GET': 22,
-	 'downloader/response_bytes': 3087,
-	 'downloader/response_count': 21,
-	 'downloader/response_status_count/302': 21,
-	 'finish_reason': 'shutdown',
-	 'finish_time': datetime.datetime(2012, 9, 9, 7, 40, 13, 234000),
-	 'scheduler/memory_enqueued': 22,
-	 'start_time': datetime.datetime(2012, 9, 9, 7, 39, 51, 484000)}
-2012-09-09 15:40:13+0800 [local] INFO: Spider closed (shutdown)
-2012-09-09 15:40:13+0800 [scrapy] INFO: Dumping global stats:
-	{}
-2012-09-09 15:40:34+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-09-09 15:40:34+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-09-09 15:40:34+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-09-09 15:40:34+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-09-09 15:40:35+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-09-09 15:40:35+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-09-09 15:40:35+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-09-09 15:40:35+0800 [local] INFO: Spider opened
-2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET http://127.0.0.1>
-2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:35+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:56+0800 [local] DEBUG: Retrying <GET https://wlan.ct10000.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
-2012-09-09 15:40:56+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:56+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:40:56+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:17+0800 [local] DEBUG: Retrying <GET https://wlan.ct10000.com> (failed 2 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
-2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:17+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:26+0800 [scrapy] INFO: Received SIGBREAK, shutting down gracefully. Send again to force unclean shutdown
-2012-09-09 15:41:26+0800 [local] INFO: Closing spider (shutdown)
-2012-09-09 15:41:57+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
-2012-09-09 15:41:57+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
-2012-09-09 15:41:57+0800 [scrapy] DEBUG: Enabled downloader middlewares: ProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
-2012-09-09 15:41:57+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
-2012-09-09 15:41:57+0800 [scrapy] DEBUG: Enabled item pipelines: DBPipeline
-2012-09-09 15:41:57+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
-2012-09-09 15:41:57+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
-2012-09-09 15:41:57+0800 [local] INFO: Spider opened
-2012-09-09 15:41:57+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET http://127.0.0.1/>
-2012-09-09 15:41:58+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:41:58+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Retrying <GET https://wlan.ct10000.com> (failed 1 times): TCP connection timed out: 10060: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。.
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Redirecting (302) to <GET https://wlan.ct10000.com> from <GET https://wlan.ct10000.com>
-2012-09-09 15:42:19+0800 [local] DEBUG: Discarding <GET https://wlan.ct10000.com>: max redirections reached
-2012-09-09 15:42:19+0800 [scrapy] ERROR: Shell error
-	Traceback (most recent call last):
-	  File "C:\Program Files\Python27\lib\threading.py", line 524, in __bootstrap
-	    self.__bootstrap_inner()
-	  File "C:\Program Files\Python27\lib\threading.py", line 551, in __bootstrap_inner
-	    self.run()
-	  File "C:\Program Files\Python27\lib\threading.py", line 504, in run
-	    self.__target(*self.__args, **self.__kwargs)
-	--- <exception caught here> ---
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\threadpool.py", line 167, in _worker
-	    result = context.call(ctx, function, *args, **kwargs)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 118, in callWithContext
-	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\python\context.py", line 81, in callWithContext
-	    return func(*args,**kw)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 47, in _start
-	    self.fetch(url, spider)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\shell.py", line 88, in fetch
-	    self._schedule, request, spider)
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\threads.py", line 118, in blockingCallFromThread
-	    result.raiseException()
-	  File "C:\Program Files\Python27\lib\site-packages\twisted-12.1.0-py2.7-win32.egg\twisted\internet\defer.py", line 551, in _runCallbacks
-	    current.result = callback(current.result, *args, **kw)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\core\downloader\middleware.py", line 46, in process_response
-	    response = method(request=request, response=response, spider=spider)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\contrib\downloadermiddleware\redirect.py", line 34, in process_response
-	    return self._redirect(redirected, request, spider, response.status)
-	  File "C:\Program Files\Python27\lib\site-packages\scrapy-0.14.4-py2.7.egg\scrapy\contrib\downloadermiddleware\redirect.py", line 66, in _redirect
-	    raise IgnoreRequest
-	scrapy.exceptions.IgnoreRequest: 
-	
-2012-09-09 15:42:19+0800 [local] INFO: Closing spider (shutdown)
-2012-09-09 15:42:19+0800 [local] INFO: Dumping spider stats:
-	{'downloader/exception_count': 1,
-	 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
-	 'downloader/request_bytes': 4371,
-	 'downloader/request_count': 22,
-	 'downloader/request_method_count/GET': 22,
-	 'downloader/response_bytes': 3087,
-	 'downloader/response_count': 21,
-	 'downloader/response_status_count/302': 21,
-	 'finish_reason': 'shutdown',
-	 'finish_time': datetime.datetime(2012, 9, 9, 7, 42, 19, 609000),
-	 'scheduler/memory_enqueued': 22,
-	 'start_time': datetime.datetime(2012, 9, 9, 7, 41, 57, 953000)}
-2012-09-09 15:42:19+0800 [local] INFO: Spider closed (shutdown)
-2012-09-09 15:42:19+0800 [scrapy] INFO: Dumping global stats:
+	 'spider_exceptions/IndexError': 1,
+	 'start_time': datetime.datetime(2012, 10, 18, 6, 47, 45, 609000)}
+2012-10-18 14:47:45+0800 [dianping] INFO: Spider closed (finished)
+2012-10-18 14:47:45+0800 [scrapy] INFO: Dumping global stats:
 	{}
