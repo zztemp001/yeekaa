@@ -8,7 +8,7 @@ ROBOTSTXT_OBEY = False  # 是否遵守网站的robots.txt文件规则
 DNSCACHE_ENABLED = True  # 开启DNS缓存
 DEFAULT_RESPONSE_ENCODING = 'utf-8'  # 当文件中没有编码时使用的编码类型，仅用于TextResponse对象
 
-DEPTH_LIMIT = 3  # 爬行深度
+DEPTH_LIMIT = 4  # 爬行深度
 DOWNLOAD_DELAY = 1.25  # 下载间隔时间，以秒为单位，如果此项设置为0，则不会有任何间隔
 RANDOMIZE_DOWNLOAD_DELAY = True  # 与DOWNLOAD_DELAY共同作用，实际值为DOWNLOAD_DELAY*(0.5~1.5)
 DOWNLOAD_TIMEOUT = 180  # 下载超时设定，以秒为单位

@@ -80,6 +80,79 @@ class DianpingSpider(CrawlSpider):
         '''
         pass
 
+class NativePlaceSpider(BaseSpider):
+    ''' 抓取国内省、市、县（区）、街道信息
+    目标网址：http://www.stats.gov.cn/tjbz/cxfldm/2011/index.html
+    '''
+    name = 'nativeplace'
+    allowed_domains = ['www.stats.gov.cn']
+    start_urls = ['http://www.stats.gov.cn/tjbz/cxfldm/2011/index.html']
+    base_url = 'http://www.stats.gov.cn/tjbz/cxfldm/2011/'  # 用于生成完整的请求地址
+
+    def parse(self, response):
+        ''' 分析起始页，也就是“省”列表
+        xpath: //tr[contains(@class, "provincetr")]/td/a
+        '''
+        hxs = HtmlXPathSelector(response)
+        provinces = hxs.select('//tr[contains(@class, "provincetr")]/td/a')
+        for p in provinces[:3]:
+            province_name = p.select('text()').extract()[0]
+            province_url = p.select('@href').extract()[0]
+            print province_name + "  " + self.base_url + province_url
+            request = Request(self.base_url + province_url, callback=self.parse_city)
+            request.meta['province'] = province_name
+            yield request
+
+    def parse_city(self, response):
+        ''' 分析城市列表，如：广州、深圳
+        xpath: //tr[contains(@class, "citytr")]
+        '''
+        hxs = HtmlXPathSelector(response)
+        cities = hxs.select('//tr[contains(@class, "citytr")]')
+        for c in cities[:3]:
+            if c.select('td[2]/a') and c.select('td[1]/a'):
+                city_name = c.select('td[2]/a/text()').extract()[0]
+                city_url = c.select('td[2]/a/@href').extract()[0]
+                city_no = c.select('td[1]/a/text()').extract()[0]
+                print response.meta['province'] + "  " + city_name + "  " + city_no + "  " + self.base_url + city_url
+                request = Request(self.base_url + city_url, callback=self.parse_county)
+                request.meta['province'] = response.meta['province']
+                request.meta['city'] = city_name
+                yield request
+
+    def parse_county(self, response):
+        ''' 分析城区/县，如罗湖、福田、从化
+        xpath: //tr[contains(@class, "countytr")]
+        注意有“市辖区”无链接的情形，如深圳市的城区列表页 http://www.stats.gov.cn/tjbz/cxfldm/2011/44/4403.html
+        '''
+        hxs = HtmlXPathSelector(response)
+        url_fix = response.url.split('/')[-2]
+        counties = hxs.select('//tr[contains(@class, "countytr")]')
+        for county in counties[:3]:
+            if county.select('td[2]/a') and county.select('td[1]/a'):
+                county_name = county.select('td[2]/a/text()').extract()[0]
+                county_url = url_fix + "/" + county.select('td[2]/a/@href').extract()[0]
+                county_no = county.select('td[1]/a/text()').extract()[0]
+                print response.meta['province'] + "  " + response.meta['city'] + "  " + county_name + "  " + county_no + "  " + self.base_url + county_url
+                request = Request(self.base_url + county_url, callback=self.parse_town)
+                request.meta['province'] = response.meta['province']
+                request.meta['city'] = response.meta['city']
+                request.meta['county'] = county_name
+                yield request
+
+    def parse_town(self, response):
+        ''' 分析街道/镇，如香蜜湖、斗山镇
+        xpath: //tr[contains(@class, "towntr")]
+        '''
+        hxs = HtmlXPathSelector(response)
+        towns = hxs.select('//tr[contains(@class, "towntr")]')
+        for t in towns[:3]:
+            if t.select('td[2]/a') and t.select('td[1]/a'):
+                town_name = t.select('td[2]/a/text()').extract()[0]
+                town_url = t.select('td[2]/a/@href').extract()[0]
+                town_no = t.select('td[1]/a/text()').extract()[0]
+                print response.meta['province'] + "  " + response.meta['city'] + "  " + response.meta['county'] + "  " + town_name + "  " + town_no + "  " + self.base_url + town_url
+
 class WorldPlaceSpider(BaseSpider):
     ''' 抓取大洲/洲片区/国家
     目标网址：http://baike.baidu.com/view/4262975.htm

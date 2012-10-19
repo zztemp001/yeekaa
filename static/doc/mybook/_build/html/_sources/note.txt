@@ -21,6 +21,17 @@
     #. http://docs.fabfile.org/en/1.4.3/installation.html
     #. http://docs.fabfile.org/en/1.4.3/tutorial.html
 
+#. 从另外一个表获取数据来更新本表的数据时，使用子查询 ::
+
+    // 如果本表的parent_name与continent表的title字段相同，则使用两表的code字段拼接后来更新本表的code字段
+    update semi_continent \
+        set code = (select continent.code from continent where semi_continent.parent_name = continent.title) || code \
+        where exists (select * from continent where semi_continent.parent_name = continent.[title])
+
+    // 步骤一：语句在本表中的第一条记录上，通过where exists语句，看是否存在本表的parent_name字段和continent的title字段相等
+    // 步骤二：如果相等，则通过第一个select子查询来得到continent表该条记录的code字段值，拼接，更新本表的code字段
+    // 重复以上两个步骤，完成本表所有记录的更新
+
 #. python中文拼音排序：
     #. http://www.pythonclub.org/python-basic/chinese-sort
     #. http://gerry.lamost.org/blog/?p=338
