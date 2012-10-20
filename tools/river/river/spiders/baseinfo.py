@@ -88,37 +88,58 @@ class NativePlaceSpider(BaseSpider):
     allowed_domains = ['www.stats.gov.cn']
     start_urls = ['http://www.stats.gov.cn/tjbz/cxfldm/2011/index.html']
     base_url = 'http://www.stats.gov.cn/tjbz/cxfldm/2011/'  # 用于生成完整的请求地址
+    database = 'river\\data\\basic.sqlite'  # 用于存储数据的数据库
 
     def parse(self, response):
         ''' 分析起始页，也就是“省”列表
         xpath: //tr[contains(@class, "provincetr")]/td/a
         '''
+        self.conn = sqlite3.connect(self.database)
+        self.conn.text_factory = 'utf-8'  # 链接数据库并设置utf-8编码
+
         hxs = HtmlXPathSelector(response)
         provinces = hxs.select('//tr[contains(@class, "provincetr")]/td/a')
-        for p in provinces[-3:]:
+        for p in provinces:
             province_name = p.select('text()').extract()[0]
-            province_url = p.select('@href').extract()[0]
-            print province_name + "  " + self.base_url + province_url
-            request = Request(self.base_url + province_url, callback=self.parse_city)
+            province_url = self.base_url + p.select('@href').extract()[0]
+            print province_name + "  5  " + province_url
+            # self.conn.execute('insert into province (title, level) values (?,?)', (province_name, 5))
+            request = Request(province_url, callback=self.parse_city)
             request.meta['province'] = province_name
             yield request
+
+        # 提交并关闭数据库连接
+        if self.conn is not None:
+            self.conn.commit()
+            self.conn.close()
+            self.conn = None
 
     def parse_city(self, response):
         ''' 分析城市列表，如：广州、深圳
         xpath: //tr[contains(@class, "citytr")]
         '''
+        self.conn = sqlite3.connect(self.database)
+        self.conn.text_factory = 'utf-8'  # 链接数据库并设置utf-8编码
+
         hxs = HtmlXPathSelector(response)
         cities = hxs.select('//tr[contains(@class, "citytr")]')
-        for c in cities[:3]:
+        for c in cities:
             if c.select('td[2]/a') and c.select('td[1]/a'):
                 city_name = c.select('td[2]/a/text()').extract()[0]
-                city_url = c.select('td[2]/a/@href').extract()[0]
+                city_url = self.base_url + c.select('td[2]/a/@href').extract()[0]
                 city_no = c.select('td[1]/a/text()').extract()[0]
-                print response.meta['province'] + "  " + city_name + "  " + city_no + "  " + self.base_url + city_url
-                request = Request(self.base_url + city_url, callback=self.parse_county)
-                request.meta['province'] = response.meta['province']
-                request.meta['city'] = city_name
-                yield request
+                print response.meta['province'] + "  " + city_name + "  " + city_no + "  " + city_url
+                self.conn.execute('insert into city (title, level, parent_title, stat_code) values (?,?,?,?)', (city_name, 6, response.meta['province'], city_no))
+                # request = Request(city_url, callback=self.parse_county)
+                # request.meta['province'] = response.meta['province']
+                # request.meta['city'] = city_name
+                # yield request
+
+        # 提交并关闭数据库连接
+        if self.conn is not None:
+            self.conn.commit()
+            self.conn.close()
+            self.conn = None
 
     def parse_county(self, response):
         ''' 分析城区/县，如罗湖、福田、从化

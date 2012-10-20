@@ -28,7 +28,7 @@ def strip_tags(htmlstr):
     #去掉多余的空行
     blank_line=re.compile('\n+')
     s=blank_line.sub('\n',s)
-    s=replaceCharEntity(s)#替换实体
+    s=_replaceCharEntity(s)#替换实体
     return s
 
 def _replaceCharEntity(htmlstr):
