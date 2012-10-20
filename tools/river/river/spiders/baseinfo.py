@@ -95,7 +95,7 @@ class NativePlaceSpider(BaseSpider):
         '''
         hxs = HtmlXPathSelector(response)
         provinces = hxs.select('//tr[contains(@class, "provincetr")]/td/a')
-        for p in provinces[:3]:
+        for p in provinces[-3:]:
             province_name = p.select('text()').extract()[0]
             province_url = p.select('@href').extract()[0]
             print province_name + "  " + self.base_url + province_url
