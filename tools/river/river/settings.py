@@ -37,7 +37,7 @@ ITEM_PIPELINES = [
 ]
 
 # log服务设置
-LOG_ENABLED = False
+LOG_ENABLED = True
 LOG_ENCODING = 'utf-8'
 LOG_FILE = 'river\\log\\local.log'
 LOG_LEVEL = 'DEBUG'

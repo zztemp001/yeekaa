@@ -129,11 +129,11 @@ class NativePlaceSpider(BaseSpider):
                 city_url = self.base_url + c.select('td[2]/a/@href').extract()[0]
                 city_no = c.select('td[1]/a/text()').extract()[0]
                 print response.meta['province'] + "  " + city_name + "  " + city_no + "  " + city_url
-                self.conn.execute('insert into city (title, level, parent_title, stat_code) values (?,?,?,?)', (city_name, 6, response.meta['province'], city_no))
-                # request = Request(city_url, callback=self.parse_county)
-                # request.meta['province'] = response.meta['province']
-                # request.meta['city'] = city_name
-                # yield request
+                # self.conn.execute('insert into city (title, level, parent_title, stat_code) values (?,?,?,?)', (city_name, 6, response.meta['province'], city_no))
+                request = Request(city_url, callback=self.parse_county)
+                request.meta['province'] = response.meta['province']
+                request.meta['city'] = city_name
+                yield request
 
         # 提交并关闭数据库连接
         if self.conn is not None:
@@ -146,33 +146,54 @@ class NativePlaceSpider(BaseSpider):
         xpath: //tr[contains(@class, "countytr")]
         注意有“市辖区”无链接的情形，如深圳市的城区列表页 http://www.stats.gov.cn/tjbz/cxfldm/2011/44/4403.html
         '''
+        self.conn = sqlite3.connect(self.database)
+        self.conn.text_factory = 'utf-8'  # 链接数据库并设置utf-8编码
+
+        url_fix = response.url.split('/')[-2]  # 经分析，系统生成这一级url需要补上所在省的编号
+
         hxs = HtmlXPathSelector(response)
-        url_fix = response.url.split('/')[-2]
         counties = hxs.select('//tr[contains(@class, "countytr")]')
-        for county in counties[:3]:
+        for county in counties:
             if county.select('td[2]/a') and county.select('td[1]/a'):
                 county_name = county.select('td[2]/a/text()').extract()[0]
-                county_url = url_fix + "/" + county.select('td[2]/a/@href').extract()[0]
+                county_url = self.base_url + url_fix + "/" + county.select('td[2]/a/@href').extract()[0]
                 county_no = county.select('td[1]/a/text()').extract()[0]
-                print response.meta['province'] + "  " + response.meta['city'] + "  " + county_name + "  " + county_no + "  " + self.base_url + county_url
-                request = Request(self.base_url + county_url, callback=self.parse_town)
+                print response.meta['province'] + "  " + response.meta['city'] + "  " + county_name + "  " + county_no + "  " + county_url
+                # self.conn.execute('insert into county (title, level, parent_title, parent_parent_title, stat_code) values (?,?,?,?,?)', (county_name, 7, response.meta['city'], response.meta['province'], county_no))
+                request = Request(county_url, callback=self.parse_town)
                 request.meta['province'] = response.meta['province']
                 request.meta['city'] = response.meta['city']
                 request.meta['county'] = county_name
                 yield request
 
+        # 提交并关闭数据库连接
+        if self.conn is not None:
+            self.conn.commit()
+            self.conn.close()
+            self.conn = None
+
     def parse_town(self, response):
         ''' 分析街道/镇，如香蜜湖、斗山镇
         xpath: //tr[contains(@class, "towntr")]
         '''
+        self.conn = sqlite3.connect(self.database)
+        self.conn.text_factory = 'utf-8'  # 链接数据库并设置utf-8编码
+
         hxs = HtmlXPathSelector(response)
         towns = hxs.select('//tr[contains(@class, "towntr")]')
-        for t in towns[:3]:
+        for t in towns:
             if t.select('td[2]/a') and t.select('td[1]/a'):
                 town_name = t.select('td[2]/a/text()').extract()[0]
                 town_url = t.select('td[2]/a/@href').extract()[0]
                 town_no = t.select('td[1]/a/text()').extract()[0]
                 print response.meta['province'] + "  " + response.meta['city'] + "  " + response.meta['county'] + "  " + town_name + "  " + town_no + "  " + self.base_url + town_url
+                self.conn.execute('insert into town (title, level, parent_title, parent_parent_title, stat_code) values (?,?,?,?,?)', (town_name, 8, response.meta['county'], response.meta['city'], town_no))
+
+        # 提交并关闭数据库连接
+        if self.conn is not None:
+            self.conn.commit()
+            self.conn.close()
+            self.conn = None
 
 class WorldPlaceSpider(BaseSpider):
     ''' 抓取大洲/洲片区/国家
