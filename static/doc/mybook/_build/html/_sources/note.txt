@@ -32,6 +32,11 @@
     // 步骤二：如果相等，则通过第一个select子查询来得到continent表该条记录的code字段值，拼接，更新本表的code字段
     // 重复以上两个步骤，完成本表所有记录的更新
 
+#. 将一个表中的数据插入到一个新表中 ::
+
+    insert into new_table (col1,col2,col3) select col1,col2,col3 from old_table where ...
+    //数据列之间不要留空格
+
 #. python中文拼音排序：
     #. http://www.pythonclub.org/python-basic/chinese-sort
     #. http://gerry.lamost.org/blog/?p=338

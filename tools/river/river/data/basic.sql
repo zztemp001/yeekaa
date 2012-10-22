@@ -1,1 +1,0 @@
-update semi_continent set code = (select continent.code from continent where semi_continent.parent_name = continent.title) || code where exists (select * from continent where semi_continent.parent_name = continent.[title])
