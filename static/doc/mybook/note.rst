@@ -16,6 +16,13 @@
     #. http://packages.python.org/an_example_pypi_project/sphinx.html#is-sweaty
     #. http://packages.python.org/an_example_pypi_project/pkgcode.html
 
+#. python 几个随机数的用法::
+
+    import random
+    random.randit(1, 10)  #取得1到10之间的随机整数，包括10
+    random.sample(xrange(10000), 20]  #从1～9999之间返回一个包含20个随机数的list
+    random.shuffle(xrange(20))  #将一个列表随机打乱顺序
+
 #. fabric参考文章：
     #. http://tzangms.com/programming/2486/
     #. http://docs.fabfile.org/en/1.4.3/installation.html

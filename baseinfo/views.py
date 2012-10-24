@@ -6,7 +6,6 @@ from django.core import serializers
 from django.utils import simplejson
 from django.template import RequestContext
 from baseinfo.models import Place
-from coupon.models import Coupon
 from baseinfo.forms import NewPlaceForm
 from django.core.mail import send_mail
 
@@ -43,7 +42,7 @@ def place(request):
             info = u'数据校验不正确'
         return  render_to_response('info.html', {'info': info})
     else:
-        places = Place.objects.all()
+        places = Place.objects.all()[300:400]
         form = NewPlaceForm()
     return render_to_response('baseinfo_place.html', {'form': form, 'places': places}, context_instance=RequestContext(request))
 

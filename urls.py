@@ -5,8 +5,6 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = patterns('',
     url(r'^$', 'yeekaa.views.home'),
-    url(r'^coupon/', include('yeekaa.coupon.urls')),
-    url(r'^dsource/', include('yeekaa.dsource.urls')),
     url(r'^baseinfo/', include('yeekaa.baseinfo.urls')),
 )
 

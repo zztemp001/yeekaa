@@ -6,5 +6,3 @@
 
 """
 
-import sort
-import lunar

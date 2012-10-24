@@ -39,13 +39,9 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    'yeekaa.debug_toolbar',
-    'yeekaa.coupon',
-    'yeekaa.shop',
-    'yeekaa.dsource',
-    'yeekaa.baseinfo',
+    'debug_toolbar',
     'south',
-    'yeekaa.southtut',
+    'yeekaa.baseinfo',
     )
 
 MIDDLEWARE_CLASSES = (
@@ -81,7 +77,7 @@ DEBUG_TOOLBAR_PANELS = (
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': os.path.join(os.path.dirname(__file__), 'databases/coupon.db').replace('\\','/'),
+        'NAME': os.path.join(os.path.dirname(__file__), 'databases/yeekaa.db').replace('\\','/'),
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
