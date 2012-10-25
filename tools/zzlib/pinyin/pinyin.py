@@ -4,11 +4,11 @@ import cPickle
 
 class Pinyin():
     def __init__(self):
-        f = file('./pinyin.dat')
+        f = file('./tools/zzlib/pinyin/pinyin.dat')
         self.dict = cPickle.load(f)
         f.close()
 
-    def pinyin(self, chars, splitter=''):
+    def pinyin(self, chars, capital=True, splitter=''):
         ''' 取得字符串的拼音
         @params: chars 需要转换的中文字符串
         @params: splitter 字符拼音之间的分隔符，缺省为不分隔
@@ -18,12 +18,16 @@ class Pinyin():
         for char in chars:
             key = "%X" % ord(char)
             try:
-                result.append(self.dict[key].split("\t")[0].split(" ")[0].strip()[:-1])
+                py = self.dict[key].split("\t")[0].split(" ")[0].strip()[:-1]
+                if capital:
+                    result.append(py.capitalize())
+                else:
+                    result.append(py)
             except:
                 result.append(char)
         return splitter.join(result)
 
-    def zimu(self, chars, splitter=''):
+    def zimu(self, chars, upper=True, splitter=''):
         ''' 取得字符串各字符拼音的首个字母
         @params: chars 需要转换的中文字符串
         @params: splitter 字符拼音首位字母之间的分隔符，缺省为不分隔
@@ -33,8 +37,11 @@ class Pinyin():
         for char in chars:
             key = "%X" % ord(char)
             try:
-                pinyin = self.dict[key].split("\t")[0].split(" ")[0].strip()[:-1]
-                result.append(pinyin[:1])
+                py = self.dict[key].split("\t")[0].split(" ")[0].strip()[:-1]
+                if upper:
+                    result.append(py[:1].upper())
+                else:
+                    result.append(py[:1])
             except:
                 result.append('?')
         return splitter.join(result)

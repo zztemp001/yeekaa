@@ -40,11 +40,14 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        基础信息管理<b class="caret"></b>
+                        地点管理<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/baseinfo/place/">地点管理</a></li>
-                        <li><a href="/baseinfo/category/">行业管理</a></li>
+                        <li><a href="/baseinfo/place/list/">列表（排序/筛选/编辑/删除/分页/查找）</a></li>
+                        <li><a href="/baseinfo/place/map/alph/">按字母分类</a></li>
+                        <li><a href="/baseinfo/place/map/zone/">按地区分类</a></li>
+                        <li><a href="/baseinfo/place/country/list/">国家列表</a></li>
+                        <li><a href="/baseinfo/place/add/">添加</a></li>
                     </ul>
                 </li>
             </ul>
@@ -72,6 +75,12 @@
     <div class="container">
         <div class="row center">
             <div class="span12">
+                <div class="alert alert-info">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    {% block content_note %}
+                        首页
+                    {% endblock %}
+                </div>
                 {% block content %}
 
                 {% endblock %}

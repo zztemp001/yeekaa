@@ -9,9 +9,58 @@ from baseinfo.models import Place
 from baseinfo.forms import NewPlaceForm
 from django.core.mail import send_mail
 
-def default(request):
-    greeting = u'欢迎进入基础信息管理页面。'
-    return render_to_response('baseinfo_default.html', locals())
+def place_list(request, page=1, pagecount=50):
+    page = int(page)
+    pagecount = int(pagecount)
+
+    total = Place.objects.all().count()
+    # 计算总页数
+    if total % pagecount:
+        totalpage = total / pagecount + 1
+    else:
+        totalpage = total / pagecount
+    # 计算前一页页码
+    if page <= 1:
+        prevpage = 1
+    else:
+        prevpage = page - 1
+    # 计算后一页页码
+    if page >= totalpage:
+        nextpage = totalpage
+    else:
+        nextpage = page + 1
+    # 计算开始页
+    startpage = page - 2
+    if page < 3:
+        startpage = 1
+    if page > totalpage - 3:
+        startpage = totalpage - 5
+
+    start = (page-1)*pagecount
+    end = start + pagecount
+    places = Place.objects.all()[start : end]
+
+    return render_to_response('baseinfo_place_list.html', {
+        'places': places,
+        'page': page,
+        'pagecount': pagecount,
+        'totalpage': totalpage,
+        'prevpage': prevpage,
+        'nextpage': nextpage,
+        'pagelist': range(startpage, startpage + 5),
+    })
+
+def place_add(request):
+    return
+
+def place_city_list_alph(request):
+    return
+
+def place_city_list_zone(request):
+    return
+
+def place_country_list(request):
+    return
 
 def place(request):
     """

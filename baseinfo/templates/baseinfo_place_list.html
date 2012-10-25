@@ -1,0 +1,45 @@
+{% extends 'baseinfo_base.html' %}
+
+{% block content_note %}地理位置列表、分页、编辑、删除、查询{% endblock %}
+
+{% block content %}
+    <div class="alert alert-success" id="result">
+        结果显示区
+    </div>
+
+    <div>
+        <ul class="breadcrumb">
+            <li>面包屑导航</li>
+        </ul>
+    </div>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr><th>#</th><th>称谓</th><th>所属地点</th><th>所属层级</th></tr>
+        </thead>
+        <tbody>
+        {% for p in places %}
+            <tr {% if p.parent.id == 21 %}class="info" {% endif %}>
+                <td>{{ p.id }}</td>
+                <td>{{ p.title }}</td>
+                <td>{{ p.parent.title }}</td>
+                <td>{{ p.level }}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+    <div class="pagination pagination-right">
+        <ul>
+            <li><a href="/baseinfo/place/list/1/">First</a></li>
+            <li><a href="/baseinfo/place/list/{{ prevpage }}/">Prev</a></li>
+            {% for pl in pagelist %}
+                <li><a href="/baseinfo/place/list/{{ pl }}/">{{ pl }}</a></li>
+            {% endfor %}
+            <li><a href="/baseinfo/place/list/{{ nextpage }}/">Next</a></li>
+            <li><a href="/baseinfo/place/list/{{ totalpage }}/">Last</a></li>
+        </ul>
+    </div>
+
+{% endblock %}

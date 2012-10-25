@@ -46,6 +46,40 @@ class PlaceManager(models.Manager):
             path.append(node)
         return path
 
+    def city_by_alph(self):
+        ''' 按字母顺序，返回所有城市的列表
+        包括：直辖市/港澳台/一般城市
+        返回的格式：{'A':[(城市名称, 城市id), (城市名称, 城市id), ...], 'B':[(城市名称, 城市id)], ...}
+        '''
+        result = {}
+        # 处理所有市级城市，但不包括北京、上海、天津、重庆四个直辖市
+        for p in self.filter(level = 6).exclude(title__in = [u'市辖区', u'县', u'省直辖县级行政区划']):
+            if p.zimu not in result.keys():
+                result[p.zimu] = []
+            else:
+                result[p.zimu].append((p.title, p.id))
+        # 添加直辖市数据
+        # 添加港澳台数据
+        return result
+
+    def city_by_zone(self):
+        ''' 按所在区域排序，返回所有城市的列表
+        包括：直辖市/港澳台/一般城市
+        返回的格式：{'华南':{'广东':[(城市名称, 城市id)]}, '华东':[(城市名称, 城市id)], ...}
+        '''
+        result = {}
+        # 处理所有市级城市，但不包括北京、上海、天津、重庆四个直辖市
+        for p in self.filter(level = 6).exclude(title__in = [u'市辖区', u'县', u'省直辖县级行政区划']):
+            zone_title = p.parent.parent.title
+            province_title = p.parent.title
+            if zone_title not in result.keys():
+                result[zone_title] = {}
+            if province_title not in result[zone_title].keys():
+                result[zone_title][province_title] = []
+            result[zone_title][province_title].append((p.title, p.id))
+        # 添加直辖市数据
+        # 添加港澳台数据
+        return result
 
 class Place(models.Model):
     title = models.CharField(max_length=50)  #地点名称
