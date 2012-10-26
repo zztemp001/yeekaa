@@ -1,19 +1,25 @@
-# coding=utf-8
-__author__ = 'zhaowm'
+#coding=utf-8
 
 from django import forms
 
-class NewPlaceForm(forms.Form):
+class SearchPlaceForm(forms.Form):
     LEVEL_CHOICES = (
-        ('', u'请选择'),
-        ('2', u'国家'),
-        ('3', u'区域'),
-        ('4', u'省'),
-        ('5', u'城市'),
-        ('6', u'城区'),
-        ('7', u'商圈'),
-        ('8', u'地标')
+        ('0', u'全部'),
+        ('1', u'大洲'),
+        ('2', u'洲片区'),
+        ('3', u'国家'),
+        ('4', u'国家区域'),
+        ('5', u'省/州/直辖市'),
+        ('6', u'城市'),
+        ('7', u'县/城区'),
+        ('8', u'县镇/街道')
     )
-    level = forms.ChoiceField(choices=LEVEL_CHOICES, label='类型')
-    title = forms.CharField(max_length=60, label='新地点')
-    parent = forms.CharField(widget=forms.HiddenInput, initial="")
+    ORDER_CHOICES = (
+        ('title', u'按地理名称排序'),
+        ('level', u'按层级排序'),
+    )
+    level = forms.ChoiceField(choices=LEVEL_CHOICES, label=u'级别')
+    order = forms.ChoiceField(choices=ORDER_CHOICES, label=u'筛选')
+    keyword = forms.CharField(max_length=60, label=u'关键字')
+    page = forms.CharField(initial='1', widget=forms.HiddenInput)
+    per_page = forms.CharField(initial='20', widget=forms.HiddenInput)

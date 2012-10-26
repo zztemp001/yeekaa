@@ -3,8 +3,28 @@
 {% block content_note %}地理位置列表、分页、编辑、删除、查询{% endblock %}
 
 {% block content %}
+
+    <div class="row box">
+        <form class="form-inline" id="id_place_form" method="post">
+            <div class="span4">
+                {{ form.level }}
+                {{ form.order }}
+                {{ form.page }}
+                {{ form.per_page }}
+            </div>
+            <div class="span8">
+                <span class="pull-right">
+                    {{ form.keyword }}&nbsp;
+                    <input type="submit" value="查找" class="btn btn-primary">
+                </span>
+            </div>
+        </form>
+    </div>
+
     <div class="alert alert-success" id="result">
-        结果显示区
+        <p>当前查询地址：{% url baseinfo.views.place_list %}</p>
+        <p>关键词：{{ keyword }}</p>
+        <p>级别：{{ level }}</p>
     </div>
 
     <div>
@@ -18,27 +38,26 @@
             <tr><th>#</th><th>称谓</th><th>所属地点</th><th>所属层级</th></tr>
         </thead>
         <tbody>
-        {% for p in places %}
-            <tr {% if p.parent.id == 21 %}class="info" {% endif %}>
-                <td>{{ p.id }}</td>
-                <td>{{ p.title }}</td>
-                <td>{{ p.parent.title }}</td>
-                <td>{{ p.level }}</td>
-            </tr>
-        {% endfor %}
-
+            {% for p in places %}
+                <tr {% if p.parent.id == 21 %}class="info" {% endif %}>
+                    <td>{{ p.id }}</td>
+                    <td>{{ p.title }}</td>
+                    <td>{{ p.parent.title }}</td>
+                    <td>{{ p.level }}</td>
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
 
-    <div class="pagination pagination-right">
+    <div class="pagination pagination-right" id="id_pager">
         <ul>
-            <li><a href="/baseinfo/place/list/1/">First</a></li>
-            <li><a href="/baseinfo/place/list/{{ prevpage }}/">Prev</a></li>
-            {% for pl in pagelist %}
-                <li><a href="/baseinfo/place/list/{{ pl }}/">{{ pl }}</a></li>
+            <li><a href="#" name="1">First</a></li>
+            <li><a href="#" name="{{ pager.prev }}">Prev</a></li>
+            {% for page in pager.range %}
+                <li {% if page == pager.page %}class="active" {% endif %}><a href="#" name="{{ page }}">{{ page }}</a></li>
             {% endfor %}
-            <li><a href="/baseinfo/place/list/{{ nextpage }}/">Next</a></li>
-            <li><a href="/baseinfo/place/list/{{ totalpage }}/">Last</a></li>
+            <li><a href="#" name="{{ pager.next }}">Next</a></li>
+            <li><a href="#" name="{{ pager.total }}">Last</a></li>
         </ul>
     </div>
 

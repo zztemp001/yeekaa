@@ -1,53 +1,64 @@
-# coding=utf-8
+#coding=utf-8
 
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
 from django.core import serializers
 from django.utils import simplejson
 from django.template import RequestContext
-from baseinfo.models import Place
-from baseinfo.forms import NewPlaceForm
 from django.core.mail import send_mail
+from django.db.models import Q
 
-def place_list(request, page=1, pagecount=50):
-    page = int(page)
-    pagecount = int(pagecount)
+from zzlib.ui import pager
 
-    total = Place.objects.all().count()
-    # 计算总页数
-    if total % pagecount:
-        totalpage = total / pagecount + 1
+from baseinfo.models import Place
+from baseinfo.forms import SearchPlaceForm
+
+def default(request):
+    return render_to_response('baseinfo_base.html')
+
+def place_list(request):
+    #todo: 修复缺陷：关键字为空时，提交无反应
+    #todo: 修复缺陷：表单中的页码数字不能自动回复为1
+    #初始化默认的查询数据
+    keyword = '' #无关键字
+    level = 0  #全部
+    page = 1
+    per_page = 20
+    order = 'level' #默认按层级排序
+
+    #获取、处理用户提交的查询数据
+    if request.method == 'POST':
+        form = SearchPlaceForm(request.POST)
+        if form.is_valid():
+            fdata = form.cleaned_data
+            keyword = fdata['keyword']
+            level = int(fdata['level'])
+            page = int(fdata['page'])
+            per_page = int(fdata['per_page'])
+            order = fdata['order']
+        else:
+            render_to_response('baseinfo_base.html')
     else:
-        totalpage = total / pagecount
-    # 计算前一页页码
-    if page <= 1:
-        prevpage = 1
-    else:
-        prevpage = page - 1
-    # 计算后一页页码
-    if page >= totalpage:
-        nextpage = totalpage
-    else:
-        nextpage = page + 1
-    # 计算开始页
-    startpage = page - 2
-    if page < 3:
-        startpage = 1
-    if page > totalpage - 3:
-        startpage = totalpage - 5
+        form = SearchPlaceForm()
 
-    start = (page-1)*pagecount
-    end = start + pagecount
-    places = Place.objects.all()[start : end]
+    #生成查询条件
+    Q1 = Q2 = Q()
+    if len(keyword) > 0:
+        Q1 = Q(title__contains=keyword)
+    if level > 0:
+        Q2 = Q(level__exact=level)
 
+    total = Place.objects.filter(Q1, Q2).count()
+    start = (page - 1) * per_page
+    places = Place.objects.filter(Q1, Q2).order_by(order)[start : start + per_page]
+
+    #返回结果
     return render_to_response('baseinfo_place_list.html', {
         'places': places,
-        'page': page,
-        'pagecount': pagecount,
-        'totalpage': totalpage,
-        'prevpage': prevpage,
-        'nextpage': nextpage,
-        'pagelist': range(startpage, startpage + 5),
+        'form': form,
+        'keyword': keyword,
+        'level': level,
+        'pager': pager(page, total, per_page, 9),
     })
 
 def place_add(request):

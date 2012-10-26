@@ -1,4 +1,23 @@
 $(document).ready(function() {
+    // 点击页码时，修改表单的页码，提交表单
+    $("div#id_pager a").click(function(){
+        $("#id_page").val($(this).attr('name'));
+        $("#id_place_form").submit();
+        return false;
+    });
+
+    // 当级别下拉框改变时，重置页码，提交查询
+    $("#id_level").change(function() {
+        $("#id_page").val(1);
+        $("#id_place_form").submit();
+    });
+
+    // 当排序下拉框改变是，重置页码，提交查询
+    $("#id_order").change(function() {
+        $("#id_page").val(1);
+        $("#id_place_form").submit();
+    });
+
     $("#getting").click(function() {
         $.get("/baseinfo/testajax/", function(data) {
             // alert($("#result").html());

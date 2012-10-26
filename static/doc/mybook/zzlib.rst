@@ -8,7 +8,7 @@
 
 包括冒泡排序法等。
 
-.. automodule:: zzlib.sort
+.. automodule:: zzlib.common.sort
     :members:
 
 农历算法函数库 -- lunar.py
