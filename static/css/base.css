@@ -12,3 +12,7 @@ div#commandbar {
 div.box {
     padding: 15px 0px;
 }
+
+.right {
+    text-align: right;
+}

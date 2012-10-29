@@ -1,0 +1,64 @@
+{% extends 'baseinfo_base.html' %}
+
+{% block content_note %}地理位置详细信息页：父级、子集、所在城市、省、国家、洲，全路径，简要路径{% endblock %}
+
+{% block content %}
+
+    <div>
+        <ul class="breadcrumb">
+            {% for p in path %}
+                <li><a href="{% url baseinfo.views.place_detail p.id %}">{{ p.title }}</a></li>
+                <span class="divider">/</span>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="alert">
+        <dl>
+            <dt>父节点：</dt>
+            <dd>{% if place.level > 1 %}<a href="{% url baseinfo.views.place_detail place.parent.id %}">{{ place.parent.title }}</a>{% endif %}</dd>
+
+            <dt>地理名称：</dt><dd>{{ place.title }}</dd>
+
+            <dt>子节点集</dt>
+            <dd>
+                <select id="sub_place">
+                    {% for sub in subs %}
+                        <option value="{{ sub.id }}">{{ sub.title }}</option>
+                    {% endfor %}
+                </select>
+            </dd>
+
+            <dt>所在大洲</dt><dd></dd>
+            <dt>所在国家</dt><dd></dd>
+            <dt>所在省</dt><dd></dd>
+            <dt>所在城市</dt>
+            <dd>
+                {% if result.city %}
+                    <a href="{% url baseinfo.views.place_detail result.city.id %}">{{ result.city.title }}</a>
+                {% endif %}
+            </dd>
+
+            <dt>全路径</dt>
+            <dd>
+            <ul>
+                {% for p in path %}
+                    <li><a href="{% url baseinfo.views.place_detail p.id %}">{{ p.title }}</a></li>
+                {% endfor %}
+            </ul>
+            </dd>
+
+            <dt>简要路径</dt>
+            <dd>
+                <ul>
+                    {% for p in path %}{% if p.level in ap %}
+                        <li><a href="{% url baseinfo.views.place_detail p.id %}">{{ p.title }}</a></li>{% endif %}
+                    {% endfor %}
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    
+
+
+{% endblock %}

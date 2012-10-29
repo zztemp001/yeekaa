@@ -17,13 +17,12 @@ def default(request):
     return render_to_response('baseinfo_base.html')
 
 def place_list(request):
-    #todo: 修复缺陷：关键字为空时，提交无反应
     #todo: 修复缺陷：表单中的页码数字不能自动回复为1
     #初始化默认的查询数据
     keyword = '' #无关键字
     level = 0  #全部
     page = 1
-    per_page = 20
+    per_page = 15
     order = 'level' #默认按层级排序
 
     #获取、处理用户提交的查询数据
@@ -56,10 +55,26 @@ def place_list(request):
     return render_to_response('baseinfo_place_list.html', {
         'places': places,
         'form': form,
-        'keyword': keyword,
-        'level': level,
         'pager': pager(page, total, per_page, 9),
     })
+
+def place_detail(request, place_id):
+    place_id = int(place_id)
+    path = sub_places = []
+    continent = country = province = city = {}
+    result = {}
+    try:
+        place = Place.objects.get(id = place_id)
+        sub_places = place.childpoint.all()
+        city = Place.objects.city(place_id)
+        path = Place.objects.path(place_id)
+    except:
+        return  render_to_response('baseinfo_base.html')
+
+    result['city'] = city
+    ap = [1, 3, 5, 6, 7]
+
+    return render_to_response('baseinfo_place_detail.html', {'place': place, 'subs': sub_places, 'result': result, 'path': path, 'ap': ap},)
 
 def place_add(request):
     return

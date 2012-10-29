@@ -6,13 +6,13 @@
 
     <div class="row box">
         <form class="form-inline" id="id_place_form" method="post">
-            <div class="span4">
+            <div class="span8">
                 {{ form.level }}
                 {{ form.order }}
                 {{ form.page }}
                 {{ form.per_page }}
             </div>
-            <div class="span8">
+            <div class="span4">
                 <span class="pull-right">
                     {{ form.keyword }}&nbsp;
                     <input type="submit" value="查找" class="btn btn-primary">
@@ -23,27 +23,26 @@
 
     <div class="alert alert-success" id="result">
         <p>当前查询地址：{% url baseinfo.views.place_list %}</p>
-        <p>关键词：{{ keyword }}</p>
-        <p>级别：{{ level }}</p>
     </div>
 
-    <div>
-        <ul class="breadcrumb">
-            <li>面包屑导航</li>
-        </ul>
-    </div>
-    
     <table class="table table-striped">
         <thead>
-            <tr><th>#</th><th>称谓</th><th>所属地点</th><th>所属层级</th></tr>
+            <tr><th>#</th><th>称谓</th><th>所属地点</th><th>所属层级</th><th><div class="right">动作</div></th></tr>
         </thead>
         <tbody>
             {% for p in places %}
                 <tr {% if p.parent.id == 21 %}class="info" {% endif %}>
-                    <td>{{ p.id }}</td>
-                    <td>{{ p.title }}</td>
+                    <td><span class="badge badge-info">{{ p.id }}</span></td>
+                    <td><a href="{% url baseinfo.views.place_detail p.id %}">{{ p.title }}</a></td>
                     <td>{{ p.parent.title }}</td>
                     <td>{{ p.level }}</td>
+                    <td>
+                        <div class="right">
+                            <button class="btn btn-small btn-warning" type="button">删除</button>
+                            <button class="btn btn-small btn-primary" type="button">编辑</button>
+                            <button class="btn btn-small btn-success" type="button"><a href="{% url baseinfo.views.place_detail p.id %}">详情</a></button>
+                        </div>
+                    </td>
                 </tr>
             {% endfor %}
         </tbody>

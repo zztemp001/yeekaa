@@ -15,11 +15,11 @@ class SearchPlaceForm(forms.Form):
         ('8', u'县镇/街道')
     )
     ORDER_CHOICES = (
-        ('title', u'按地理名称排序'),
         ('level', u'按层级排序'),
+        ('title', u'按地理名称排序'),
     )
     level = forms.ChoiceField(choices=LEVEL_CHOICES, label=u'级别')
     order = forms.ChoiceField(choices=ORDER_CHOICES, label=u'筛选')
-    keyword = forms.CharField(max_length=60, label=u'关键字')
+    keyword = forms.CharField(max_length=60, label=u'关键字', required=False)
     page = forms.CharField(initial='1', widget=forms.HiddenInput)
-    per_page = forms.CharField(initial='20', widget=forms.HiddenInput)
+    per_page = forms.CharField(initial='15', widget=forms.HiddenInput)

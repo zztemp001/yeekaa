@@ -16,6 +16,8 @@
     #. http://packages.python.org/an_example_pypi_project/sphinx.html#is-sweaty
     #. http://packages.python.org/an_example_pypi_project/pkgcode.html
 
+#. django.form字段required=False时，表格可以是空的也可以提交数据。
+
 #. python 几个随机数的用法::
 
     import random

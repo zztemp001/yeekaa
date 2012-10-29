@@ -4,7 +4,7 @@ from django.db import models
 from config import PLACE_LEVEL_CODE as PLC
 
 class PlaceManager(models.Manager):
-    def get_city(self, place_id):
+    def city(self, place_id):
         ''' 给出一个地点，获取所在城市
         @params: place_id  要查询的地点
         @returns: 如果要查询的地点有所属城市，则返回城市；如果本身是城市，或者比城市更高级，则直接返回None
@@ -17,7 +17,7 @@ class PlaceManager(models.Manager):
         if p.level == 8:
             return p.parent.parent
 
-    def get_province(self, place_id):
+    def province(self, place_id):
         ''' 给出一个地点，获取所在省份
         @params: place_id  要查询的地点
         @returns: 如果要查询的地点有所属省份，则返回省份；如果本身就是省级，或者比省级更高级，则直接返回None
@@ -28,7 +28,7 @@ class PlaceManager(models.Manager):
         else:
             return self.get(path = p.path.split('C')[0])
 
-    def get_full_path(self, place_id):
+    def path(self, place_id):
         ''' 给出一个地点，获取其所在的全部路径
         @params: place_id  要查询的地点
         @returns: 返回一个路径list，每个节点是包含“title”、“level”、“id”的dict

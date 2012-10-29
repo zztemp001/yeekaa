@@ -18,6 +18,10 @@ $(document).ready(function() {
         $("#id_place_form").submit();
     });
 
+    $("#sub_place").change(function() {
+        window.open('/baseinfo/place/detail/' + $(this).val() + '/', '_self');
+    });
+
     $("#getting").click(function() {
         $.get("/baseinfo/testajax/", function(data) {
             // alert($("#result").html());
