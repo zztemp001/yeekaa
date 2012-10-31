@@ -1,6 +1,5 @@
 {% extends 'baseinfo_base.html' %}
 {% load webdesign %}
-{% load test_filter %}
 
 {% block content_note %}地理位置列表、分页、编辑、删除、查询{% endblock %}
 
@@ -26,7 +25,6 @@
     <div class="alert alert-success" id="result">
         <p>当前查询地址：{% url baseinfo.views.place_list %}</p>
         {% lorem 3 p %}
-        {{ 12.09|percent }}
         <img src="http://hiphotos.baidu.com/lvpics/pic/item/a6efce1b9d16fdfa104a2318b48f8c5494ee7b26.jpg">
     </div>
 
