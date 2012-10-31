@@ -4081,3 +4081,51 @@
 2012-10-21 13:12:00+0800 [nativeplace] INFO: Spider closed (finished)
 2012-10-21 13:12:00+0800 [scrapy] INFO: Dumping global stats:
 	{}
+2012-10-31 20:00:50+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-10-31 20:00:52+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-10-31 20:00:53+0800 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-10-31 20:00:53+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-10-31 20:00:53+0800 [scrapy] DEBUG: Enabled item pipelines: 
+2012-10-31 20:00:53+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-10-31 20:00:53+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-10-31 20:00:53+0800 [default] INFO: Spider opened
+2012-10-31 20:00:54+0800 [default] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/scene/view/7af115d8330a23088cc5b2f8#2> (referer: None)
+2012-10-31 20:01:55+0800 [default] INFO: Closing spider (shutdown)
+2012-10-31 20:01:55+0800 [default] INFO: Dumping spider stats:
+	{'downloader/request_bytes': 233,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 18673,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'shutdown',
+	 'finish_time': datetime.datetime(2012, 10, 31, 12, 1, 55, 46000),
+	 'scheduler/memory_enqueued': 1,
+	 'start_time': datetime.datetime(2012, 10, 31, 12, 0, 53, 578000)}
+2012-10-31 20:01:55+0800 [default] INFO: Spider closed (shutdown)
+2012-10-31 20:01:55+0800 [scrapy] INFO: Dumping global stats:
+	{}
+2012-10-31 20:02:03+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-10-31 20:02:03+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-10-31 20:02:04+0800 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-10-31 20:02:04+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-10-31 20:02:04+0800 [scrapy] DEBUG: Enabled item pipelines: 
+2012-10-31 20:02:04+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-10-31 20:02:04+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-10-31 20:02:04+0800 [default] INFO: Spider opened
+2012-10-31 20:02:04+0800 [default] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/scene/view/7af115d8330a23088cc5b2f8#2> (referer: None)
+2012-10-31 20:48:02+0800 [default] INFO: Closing spider (shutdown)
+2012-10-31 20:48:02+0800 [default] INFO: Dumping spider stats:
+	{'downloader/request_bytes': 233,
+	 'downloader/request_count': 1,
+	 'downloader/request_method_count/GET': 1,
+	 'downloader/response_bytes': 18673,
+	 'downloader/response_count': 1,
+	 'downloader/response_status_count/200': 1,
+	 'finish_reason': 'shutdown',
+	 'finish_time': datetime.datetime(2012, 10, 31, 12, 48, 2, 250000),
+	 'scheduler/memory_enqueued': 1,
+	 'start_time': datetime.datetime(2012, 10, 31, 12, 2, 4, 125000)}
+2012-10-31 20:48:02+0800 [default] INFO: Spider closed (shutdown)
+2012-10-31 20:48:02+0800 [scrapy] INFO: Dumping global stats:
+	{}

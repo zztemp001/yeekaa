@@ -1,0 +1,595 @@
+<div class="scene-view-wrapper">
+<ul class="lv-scene-view-path list clearfix">
+<li><a href="/">百度旅游</a></li>
+<li>&nbsp;&gt;&nbsp;</li>
+<li><a href="/scene/">目的地指南</a></li>
+<li>&nbsp;&gt;&nbsp;</li>
+<li><a href="/scene/view/3a89363b4ffbffdcdfcc98f4">江苏</a></li>
+<li>&nbsp;&gt;&nbsp;</li>
+<li><a href="/scene/view/9d6ee222608cbb0e1355a0f4">苏州</a></li>
+<li>&nbsp;&gt;&nbsp;</li>
+<li><a class="top-nav-last" href="###" title="">苏州乐园</a></li>
+</ul>
+
+<article class="view-header" id="">
+<header class="view-header-hd">
+<section class="mod scene-title clearfix">
+<header class="title-head">
+<p>苏州乐园</p>
+</header>
+<div class="scene-desc fl">
+<span class="scene-star-bg">
+<span class="scene-star-5 scene-star-top"></span>
+</span>
+</div>
+<div class="scene-btns" id="lv-scene-view-want-action">
+<div class="plan-to-wrapper">
+<a class="plan-sprite plan nslog" data-action="planTo" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;home-join-plan&quot;}" href="###" id="btn-plan-to"><em><span class="plan-icon"></span><span class="plan-btns-txt">加入计划</span></em></a>
+</div>
+<div class="scene-want-go" id="btn-will-go">
+<a class="scene-sprite nslog" data-action="wantGo" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;want-go&quot;}" href="###"><em><span class="scene-icon want-go"></span><span class="scene-btns-txt">想去<span class="view-head-gray-font">(312)</span></span></em></a>
+</div>
+<div class="scene-went" id="btn-have-gone">
+<a class="scene-sprite nslog" data-action="haveGone" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;went-yet&quot;}" href="###"><em><span class="scene-icon went"></span><span class="scene-btns-txt">去过<span class="view-head-gray-font">(297)</span></span></em></a>
+</div>
+</div>
+</section>
+<section>
+<p class="view-header-abstract">
+<span class="view-head-scene-enname">Suzhou Disneyland</span> <span class="view-head-gray-font">|</span>
+<span class="view-head-scene-abstract">
+苏州乐园以东方迪斯尼为主题，集西方游乐场的活泼、欢快和东方园林的安闲、宁静于一体，被公认为“中国第三代主题公园点睛之作”。</span>
+</p>
+</section>
+<script type="text/javascript">baidu.dom.ready(function(){var A=baidu.dom.g("lv-scene-view-want-action"),_=lv.scene.view.wantAndGo.create(A,{sname:"\u82cf\u5dde\u4e50\u56ed",sid:"7af115d8330a23088cc5b2f8",parent_sid:"9d6ee222608cbb0e1355a0f4",plan_title:null,plan_id:null,default_plan_title:"\u82cf\u5dde",ticket:"130\u5143",opentime:"9\uff1a00-17\uff1a00",travel_time:"\u6625\u590f\u79cb\u4e09\u5b63\u7686\u5b9c\uff0c\u9002\u5b9c\u8fdb\u884c\u6c34\u4e0a\u6d3b\u52a8\u3002",recommend_visit_time:"1\u5929",going_count:312,gone_count:297});_.init();});</script>
+</header>
+<section class="mod scene-slide pr clearfix">
+<div class="scene-slide-main" style="background-color: rgb(0, 0, 0); ">
+<div class="scene-slide-holder nslog-area" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;scene-highlight-big-click&quot;,&quot;test&quot;:&quot;test&quot;}" id="J_slide-holder">
+<figure data-url="/scene/photo/6c91ef410e3a1f307c0ad196" style="display: none; ">
+<div class="center-pic-link nslog-area" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;scene-highlight-big-click&quot;,&quot;test&quot;:&quot;test&quot;}">
+<a href="/scene/photo/6c91ef410e3a1f307c0ad196"><img width="980" height="330" style="margin: 0px; opacity: 0.30000000000000004; " src="http://hiphotos.baidu.com/lvpics/pic/item/b151f8198618367acd45bc512e738bd4b21ce56a.jpg" alt="西方游乐场活泼、欢快"></a></div>
+<a class="scene-slide-desc nslog " data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;,&quot;pos&quot;:&quot;scene-highlight-desc&quot;}" target="_blank">
+<span class="pr ib">
+<strong>西方游乐场活泼、欢快</strong>
+<br>
+<span class="ib">苏州乐园引进了一大批惊险刺激的高科技游乐设施，游客可以领略到缤纷绚烂的欧美风采。</span>
+</span>
+</a>
+</figure>
+<figure data-url="/scene/photo/b7811450a7dd839561cfef8a" style="display: none; ">
+<div class="center-pic-link nslog-area" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;scene-highlight-big-click&quot;,&quot;test&quot;:&quot;test&quot;}">
+<a href="/scene/photo/b7811450a7dd839561cfef8a"><img width="980" height="330" style="margin: 0px; opacity: 0.30000000000000004; " src="http://hiphotos.baidu.com/lvpics/pic/item/241f95cad1c8a786b2a340a46709c93d71cf508a.jpg" alt="现代化游乐天堂"></a></div>
+<a class="scene-slide-desc nslog " data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;,&quot;pos&quot;:&quot;scene-highlight-desc&quot;}" target="_blank">
+<span class="pr ib">
+<strong>现代化游乐天堂</strong>
+<br>
+<span class="ib">苏州乐园是一座融现代高科技设备、欧美城镇风光和自然山水景色于一体的现代化游乐天堂。</span>
+</span>
+</a>
+</figure>
+<figure data-url="/scene/photo/bef79b0cee410e3a1f30d096" style="">
+<div class="center-pic-link nslog-area" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;scene-highlight-big-click&quot;,&quot;test&quot;:&quot;test&quot;}">
+<a href="/scene/photo/bef79b0cee410e3a1f30d096"><img width="980" height="330" style="margin: 0px; opacity: 1; " src="http://hiphotos.baidu.com/lvpics/pic/item/f603918fa0ec08fa6833d12b59ee3d6d55fbda0f.jpg" alt="东方园林安闲、宁静"></a></div>
+<a class="scene-slide-desc nslog " data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;,&quot;pos&quot;:&quot;scene-highlight-desc&quot;}" target="_blank">
+<span class="pr ib">
+<strong>东方园林安闲、宁静</strong>
+<br>
+<span class="ib">苏州乐园以狮子山为依托，游乐项目依山傍水，构成了一幅具有生态特种的动态山水画卷。</span>
+</span>
+</a>
+</figure>
+<a class="slide-cover" target="_blank" href="/scene/photo/bef79b0cee410e3a1f30d096" style="opacity: 0; "></a></div>
+</div>
+<div class="scene-slide-side">
+<nav style="right:287px">
+<span class="wonder pngfix"></span>
+<ul class="scene-slide-list fl pr nslog-area" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;scene-highlight-small-click&quot;,&quot;test&quot;:&quot;test&quot;}" id="J_slide-list">
+<li style="left:0px" class="">
+<div class="center-pic-link">
+<a class="shadow-disactive" href="/scene/photo/6c91ef410e3a1f307c0ad196" target="_blank">
+</a>
+<span class="slide-fix">
+<a target="_blank" href="/scene/photo/6c91ef410e3a1f307c0ad196"><img width="113" height="38" style="margin:0px 0px 0px -27px" src="http://hiphotos.baidu.com/lvpics/abpic/item/b151f8198618367acd45bc512e738bd4b21ce56a.jpg" alt="西方游乐场活泼、欢快"></a></span>
+</div>
+</li>
+<li style="left:64px" class="">
+<div class="center-pic-link">
+<a class="shadow-disactive" href="/scene/photo/b7811450a7dd839561cfef8a" target="_blank">
+</a>
+<span class="slide-fix">
+<a target="_blank" href="/scene/photo/b7811450a7dd839561cfef8a"><img width="113" height="38" style="margin:0px 0px 0px -27px" src="http://hiphotos.baidu.com/lvpics/abpic/item/241f95cad1c8a786b2a340a46709c93d71cf508a.jpg" alt="现代化游乐天堂"></a></span>
+</div>
+</li>
+<li style="left:128px" class="slide-list-current">
+<div class="center-pic-link">
+<a class="shadow-disactive" href="/scene/photo/bef79b0cee410e3a1f30d096" target="_blank">
+</a>
+<span class="slide-fix">
+<a target="_blank" href="/scene/photo/bef79b0cee410e3a1f30d096"><img width="113" height="38" style="margin:0px 0px 0px -27px" src="http://hiphotos.baidu.com/lvpics/abpic/item/f603918fa0ec08fa6833d12b59ee3d6d55fbda0f.jpg" alt="东方园林安闲、宁静"></a></span>
+</div>
+</li>
+</ul>
+<div class="scene-view-mask-bg triggers-bg" style="width:194px"></div>
+</nav>
+<a href="/scene/photo/038039ee9fa07cef32125a1e" target="_blank">
+<span class="scene-album-more fl pr" id="highlight-more">
+<span class="divider"></span>
+<span class="text-container fl">
+<em>
+<span>更多图片</span>
+<span class="pics-count">12</span>
+</em>
+</span>
+<span class="trigle-r pngfix"></span>
+</span>
+</a>
+</div>
+<script>baidu.dom.ready(function(){baidu.lang.module("lv.session.vars.isPad",navigator.userAgent.indexOf("iPad")>-1?"iPad":"");lv.scene.view.slider.init();var D=window.location.href;lv.nslog(D,306,{page:"view",cmd:"show",pos:"scene-slide-show",ua:baidu.lang.getModule("lv.session.vars.isPad")});var C=baidu.dom.g("J_slide-holder"),B=baidu.dom.query("#J_slide-list li"),_=baidu.dom.query("img",C)[0],A;if(_){A=980;}});</script>
+</section>
+</article>
+<section class="layout grid-m0s5">
+<article class="col-main">
+<div class="main-wrap">
+<div class="main-view-mod-box">
+<section class="scene-viewpoint-hd scene-mod-section">
+<header class="scene-hd-mod viewpoint-hd " id="mod-viewpoint-abstract">
+<h1 class="icon icon-title">
+<span class="h1-word">苏州乐园简介</span>
+</h1>
+</header>
+<article>
+<div class="">
+<p class="text-p text-desc-p">苏州乐园地处苏州新区中心，规划面积94公顷，以名闻遐迩的狮子山为依托，由加拿大多伦多福莱克公司进行总体规划，由苏州新区经济发展集团总公司、香港中旅建筑有限公司、东方电视台、香港金宁有限公司等中外合资企业于1997年联合投资建成的，注册资金2400万美元。企业占地94公顷，主要经营建设娱乐、餐饮及其它旅游配套设施。</p>
+<p class="text-p text-desc-p">苏州乐园集西方游乐场的活泼、壮观和东方古典园林的安闲，宁静、自然于一体，游客来此，如入仙境，无不为之兴奋激昂。</p>
+<p class="text-p text-desc-p">而今打造以“东方迪斯尼”之名驰誉全国，深入人心，在姑苏西郊美丽自然生态环境的映衬下，苏州乐园成为成千上万的人们向往的“游乐天堂”。</p></div>
+</article>
+</section>
+<section class="scene-mod-section scene-classic-path">
+<header class="classic-path-hd scene-hd-mod" id="mod-traffic">
+<h1 class="icon icon-title">
+<span class="h1-word">交通</span>
+</h1>
+</header>
+<article>
+<article id="J-tabWrap-traffic" data-guid="TANGRAM__14"><div id="tangram-tab--TANGRAM__14" class="tangram-tab"><ul id="tangram-tab--TANGRAM__14-head-container" class="tangram-tab-head-container"><li id="tangram-tab--TANGRAM__14-headTANGRAM__16" bodyid="" class="tangram-tab-head tangram-tab-current"><a href="###" onclick="return false">地铁</a></li><li id="tangram-tab--TANGRAM__14-headTANGRAM__18" bodyid="" class="tangram-tab-head"><a href="###" onclick="return false">自驾</a></li><li id="tangram-tab--TANGRAM__14-headTANGRAM__1a" bodyid="" class="tangram-tab-head"><a href="###" onclick="return false">公交</a></li></ul><div id="tangram-tab--TANGRAM__14-body-container" class="tangram-tab-body-container"><div id="tangram-tab--TANGRAM__14-bodyTANGRAM__15" class="tangram-tab-body" style="display: block; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">乘坐地铁1号线：去往苏州乐园欢乐世界请于苏州乐园站下车。去往水上世界、糖果世界请于玉山路站下车，步行十分钟即可到达。</p></div>
+</div>
+</div><div id="tangram-tab--TANGRAM__14-bodyTANGRAM__17" class="tangram-tab-body" style="display: none; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">1、上海方向&nbsp;请从沪宁高速新区出入口下，经马运路至长江路。</p>
+<p class="text-p text-desc-p">2、南京方向&nbsp;请从东桥出入口上绕城高速东渚出入口下，走苏州太湖大道至长江路或沪宁高速新区出入口下，经马运路至长江路。</p>
+<p class="text-p text-desc-p">3、杭州方向&nbsp;请从苏嘉杭苏州城区出入口下，上南环高架北转西环高架劳动路口下，左转经竹园路至长江路。</p></div>
+</div>
+</div><div id="tangram-tab--TANGRAM__14-bodyTANGRAM__19" class="tangram-tab-body" style="display: none; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">（1）2路、游3路、33路、38路、301路、302路、303路、304路、312路、313路、324路、42路、51路、67路、68路、69路、89路停靠或直达欢乐世界。</p>
+<p class="text-p text-desc-p">（2）游3路、38路、89路停靠或直达水上世界、糖果世界。</p></div>
+</div>
+</div></div></div></article>
+</article>
+</section>
+<script type="text/javascript">baidu.dom.ready(function(){var B={"num":306,"param":{"page":"view","cmd":"show","pos":"mod-tab-traffic-show"}},D=window.location.href;lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-show"});var _=[{"head":"\u5730\u94c1","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">\u4e58\u5750\u5730\u94c11\u53f7\u7ebf\uff1a\u53bb\u5f80\u82cf\u5dde\u4e50\u56ed\u6b22\u4e50\u4e16\u754c\u8bf7\u4e8e\u82cf\u5dde\u4e50\u56ed\u7ad9\u4e0b\u8f66\u3002\u53bb\u5f80\u6c34\u4e0a\u4e16\u754c\u3001\u7cd6\u679c\u4e16\u754c\u8bf7\u4e8e\u7389\u5c71\u8def\u7ad9\u4e0b\u8f66\uff0c\u6b65\u884c\u5341\u5206\u949f\u5373\u53ef\u5230\u8fbe\u3002<\/p><\/div>\r\n<\/div>\r\n"},{"head":"\u81ea\u9a7e","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">1\u3001\u4e0a\u6d77\u65b9\u5411&nbsp;\u8bf7\u4ece\u6caa\u5b81\u9ad8\u901f\u65b0\u533a\u51fa\u5165\u53e3\u4e0b\uff0c\u7ecf\u9a6c\u8fd0\u8def\u81f3\u957f\u6c5f\u8def\u3002<\/p>\n<p class=\"text-p text-desc-p\">2\u3001\u5357\u4eac\u65b9\u5411&nbsp;\u8bf7\u4ece\u4e1c\u6865\u51fa\u5165\u53e3\u4e0a\u7ed5\u57ce\u9ad8\u901f\u4e1c\u6e1a\u51fa\u5165\u53e3\u4e0b\uff0c\u8d70\u82cf\u5dde\u592a\u6e56\u5927\u9053\u81f3\u957f\u6c5f\u8def\u6216\u6caa\u5b81\u9ad8\u901f\u65b0\u533a\u51fa\u5165\u53e3\u4e0b\uff0c\u7ecf\u9a6c\u8fd0\u8def\u81f3\u957f\u6c5f\u8def\u3002<\/p>\n<p class=\"text-p text-desc-p\">3\u3001\u676d\u5dde\u65b9\u5411&nbsp;\u8bf7\u4ece\u82cf\u5609\u676d\u82cf\u5dde\u57ce\u533a\u51fa\u5165\u53e3\u4e0b\uff0c\u4e0a\u5357\u73af\u9ad8\u67b6\u5317\u8f6c\u897f\u73af\u9ad8\u67b6\u52b3\u52a8\u8def\u53e3\u4e0b\uff0c\u5de6\u8f6c\u7ecf\u7af9\u56ed\u8def\u81f3\u957f\u6c5f\u8def\u3002<\/p><\/div>\r\n<\/div>\r\n"},{"head":"\u516c\u4ea4","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">\uff081\uff092\u8def\u3001\u6e383\u8def\u300133\u8def\u300138\u8def\u3001301\u8def\u3001302\u8def\u3001303\u8def\u3001304\u8def\u3001312\u8def\u3001313\u8def\u3001324\u8def\u300142\u8def\u300151\u8def\u300167\u8def\u300168\u8def\u300169\u8def\u300189\u8def\u505c\u9760\u6216\u76f4\u8fbe\u6b22\u4e50\u4e16\u754c\u3002<\/p>\n<p class=\"text-p text-desc-p\">\uff082\uff09\u6e383\u8def\u300138\u8def\u300189\u8def\u505c\u9760\u6216\u76f4\u8fbe\u6c34\u4e0a\u4e16\u754c\u3001\u7cd6\u679c\u4e16\u754c\u3002<\/p><\/div>\r\n<\/div>\r\n"}],E="traffic",A=baidu.g("J-tabWrap-"+E);if(A){baidu.dom.empty(A);var C=new baidu.ui.Tab({items:_,switchType:"click"});C.render(A);C.addEventListener("switch",function(_){lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-click"});});}});</script>
+<section class="scene-mod-section scene-classic-path">
+<header class="classic-path-hd scene-hd-mod" id="mod-accommodation">
+<h1 class="icon icon-title">
+<span class="h1-word">住宿</span>
+</h1>
+</header>
+<article>
+<header>
+<p class="text-p text-desc-p">在苏州乐园周边高、中、低档各类宾馆均有，价格从180元至800元不等，您可以根据自身情况进行选择。</p></header>
+<article id="J-tabWrap-accommodation" data-guid="TANGRAM__1c"><div id="tangram-tab--TANGRAM__1c" class="tangram-tab"><ul id="tangram-tab--TANGRAM__1c-head-container" class="tangram-tab-head-container"></ul><div id="tangram-tab--TANGRAM__1c-body-container" class="tangram-tab-body-container"></div></div></article>
+</article>
+</section>
+<script type="text/javascript">baidu.dom.ready(function(){var B={"num":306,"param":{"page":"view","cmd":"show","pos":"mod-tab-accommodation-show"}},D=window.location.href;lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-show"});var _=[],E="accommodation",A=baidu.g("J-tabWrap-"+E);if(A){baidu.dom.empty(A);var C=new baidu.ui.Tab({items:_,switchType:"click"});C.render(A);C.addEventListener("switch",function(_){lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-click"});});}});</script>
+<section class="scene-mod-section scene-classic-path">
+<header class="classic-path-hd scene-hd-mod" id="mod-dining">
+<h1 class="icon icon-title">
+<span class="h1-word">美食</span>
+</h1>
+</header>
+<article>
+<header>
+<p class="text-p text-desc-p">苏州乐园所在的狮山路是苏城新区的核心地带，紧邻新区CBD，新区商业街，商务、生活两相宜，而且西环高架近在咫尺，交通相当方便。</p>
+<p class="text-p text-desc-p">狮山路沿线上吃饭休闲的地方也不少，从高档的餐厅到大众化的食肆，雅致堂皇的就餐氛围到农家气息十足的环境，你都可以在沿线上找到。</p>
+<p class="text-p text-desc-p">除了这些方便的就餐场所外，乐园内也有各具特色的风味小吃，可以满足不同口味游客的需要，苏州乐园内就餐点主要有天狮餐厅，水上餐厅，马克餐厅，汉堡王餐厅等，提供各种口味的中餐，和方便快捷的快餐服务。</p>
+<p class="text-p text-desc-p">餐厅环境优美毗邻英美街和天狮湖，让您在风景如画的就餐环境之中很好的放松心情，您可以一边就餐一边欣赏优美的环境和各色新奇好玩的游乐设施，品尝苏州特色面食、西式快餐、中餐、甜点等，奶茶、里脊肉、各色新鲜水果等都会让您满意，另外在乐园各处您都可以方便买到快餐食品和饮料，这里的工作人员将微笑有礼的为您提供服务，它是您在旅游中就餐、休息补充体力的极佳场所。</p></header>
+<article id="J-tabWrap-dining" data-guid="TANGRAM__1e"><div id="tangram-tab--TANGRAM__1e" class="tangram-tab"><ul id="tangram-tab--TANGRAM__1e-head-container" class="tangram-tab-head-container"></ul><div id="tangram-tab--TANGRAM__1e-body-container" class="tangram-tab-body-container"></div></div></article>
+</article>
+</section>
+<script type="text/javascript">baidu.dom.ready(function(){var B={"num":306,"param":{"page":"view","cmd":"show","pos":"mod-tab-dining-show"}},D=window.location.href;lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-show"});var _=[],E="dining",A=baidu.g("J-tabWrap-"+E);if(A){baidu.dom.empty(A);var C=new baidu.ui.Tab({items:_,switchType:"click"});C.render(A);C.addEventListener("switch",function(_){lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-click"});});}});</script>
+<section class="scene-mod-section scene-classic-path">
+<header class="classic-path-hd scene-hd-mod" id="mod-entertainment">
+<h1 class="icon icon-title">
+<span class="h1-word">活动</span>
+</h1>
+</header>
+<article>
+<article id="J-tabWrap-entertainment" data-guid="TANGRAM__1g"><div id="tangram-tab--TANGRAM__1g" class="tangram-tab"><ul id="tangram-tab--TANGRAM__1g-head-container" class="tangram-tab-head-container"><li id="tangram-tab--TANGRAM__1g-headTANGRAM__1i" bodyid="" class="tangram-tab-head tangram-tab-current"><a href="###" onclick="return false">水上世界</a></li><li id="tangram-tab--TANGRAM__1g-headTANGRAM__1k" bodyid="" class="tangram-tab-head"><a href="###" onclick="return false">欢乐世界</a></li><li id="tangram-tab--TANGRAM__1g-headTANGRAM__1m" bodyid="" class="tangram-tab-head"><a href="###" onclick="return false">4D影院</a></li><li id="tangram-tab--TANGRAM__1g-headTANGRAM__1o" bodyid="" class="tangram-tab-head"><a href="###" onclick="return false">迷的洋馆</a></li><li id="tangram-tab--TANGRAM__1g-headTANGRAM__1q" bodyid="" class="tangram-tab-head"><a href="###" onclick="return false">乐园小火车</a></li><li id="tangram-tab--TANGRAM__1g-headTANGRAM__1s" bodyid="" class="tangram-tab-head"><a href="###" onclick="return false">苏州乐园啤酒节</a></li></ul><div id="tangram-tab--TANGRAM__1g-body-container" class="tangram-tab-body-container"><div id="tangram-tab--TANGRAM__1g-bodyTANGRAM__1h" class="tangram-tab-body" style="display: block; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">占地8公顷，位于狮子山南麓，经营主体为苏州乐园水上世界，总投资6000万元，由苏州新区经济发展集团总公司投资建造。主要项目有高架组合滑道、造浪池、戏水池夏威夷海浪和漂流河等，是国内投资规模最大、项目最齐全、设备最先进的现代化水上游乐场。水上世界于1995年7月对外开放以来，深受游人青眛，入园人数创穹顶喷泉下游乐行业的新纪录，水上乐园已经成为集约华东地区盛夏的旅游热点。</p></div>
+</div>
+</div><div id="tangram-tab--TANGRAM__1g-bodyTANGRAM__1j" class="tangram-tab-body" style="display: none; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">位于狮子山以东，占地54公顷。1997年2月开园迎宾。经营主体为苏州乐园发展有限公司。集西方游乐场的活泼、壮观和东方古典园林的安闲，宁静、自然于一体，而今打造以“东方迪斯尼”之名驰誉全国，深入人心。欢乐世界以东方迪斯尼为主题，集西方游乐场的活泼、欢快、壮观和东方园林的安闲、安静、自然的特点于一体。&nbsp;　　以""东方迪斯尼""为主题，力求集西方游乐场的活泼、欢乐、壮观和东方园林的安闲、宁静、自然的特点于一体，同时引进飞碟探险、时空飞船、宇宙大战和太空历险等一大批高科技游乐设施，全园游乐项目近百项，从而成为一座集欧美建筑风格、迪斯尼乐园风采，把现代化游乐器械和千变万化的自然景观融合在一起的综合性""游乐天堂""。回归真自然，尽享现代乐，苏州乐园欢乐世界是当前中国新生代乐园的点睛之作，成为上海东方电视台的外景基地。</p></div>
+</div>
+</div><div id="tangram-tab--TANGRAM__1g-bodyTANGRAM__1l" class="tangram-tab-body" style="display: none; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">4D影院是在传统立体影院基础上发展而来，它集机、电、液、气、声、光、影等高科技手段于一体，以三维立体电影再结合座椅的升降、振动、喷水、喷雾等特效，使影片带给观众真实、刺激的体验，仿佛身临其境。</p></div>
+</div>
+</div><div id="tangram-tab--TANGRAM__1g-bodyTANGRAM__1n" class="tangram-tab-body" style="display: none; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">本项目是采用三维音响技术，通过人的听觉，产生心灵感应现象的游乐项目。通过特制的耳机，逼真的音响效果，配合其主题内容所装饰的室内环境氛围，把人们带入到一个从未体验过的错觉世界中去。</p></div>
+</div>
+</div><div id="tangram-tab--TANGRAM__1g-bodyTANGRAM__1p" class="tangram-tab-body" style="display: none; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">苏迪号环园列车是国内首列从英国进口的仿古小火车，小火车总站设在苏迪总站，途经未来站，苏格兰站。全长2公里，运行时间大约二十分钟，列车将带您环绕乐园一周，沿途美景尽收眼底。</p></div>
+</div>
+</div><div id="tangram-tab--TANGRAM__1g-bodyTANGRAM__1r" class="tangram-tab-body" style="display: none; "><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">2008苏州乐园啤酒从7月25日至8月3日的“苏州乐园啤酒节”当中，将邀请内地新摇滚的新生力量，林伽乐队、大伢乐队、苏阳、万晓利、张铁……等等，举办一个关于摇滚的“武林大会”。同时，苏州乐园以畅饮啤酒、品尝美食为背景，以震撼抽奖和趣味竞赛为特色，以歌舞综艺、明星献演为亮点的狂欢大舞台，每位参加活动的游客都是演绎精彩剧情的表演者，用自己最喜欢、最擅长的方式，释放无限激情。“苏州乐园啤酒节”独树一帜的优势，就是欢乐世界的经典游乐项目所营造的嘉年华气氛，也是制造快乐的真正源泉，新老苏州人汇聚一园，共同享受这场高科技游乐的盛宴，25元实惠的门票价格也让更多喜爱苏州乐园的游客体验到迪斯尼式“全家共享”的天伦之乐，这也是主办方的真诚愿望——打造属于新老苏州人自己的狂欢节。</p></div>
+</div>
+</div></div></div></article>
+</article>
+</section>
+<script type="text/javascript">baidu.dom.ready(function(){var B={"num":306,"param":{"page":"view","cmd":"show","pos":"mod-tab-entertainment-show"}},D=window.location.href;lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-show"});var _=[{"head":"\u6c34\u4e0a\u4e16\u754c","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">\u5360\u57308\u516c\u9877\uff0c\u4f4d\u4e8e\u72ee\u5b50\u5c71\u5357\u9e93\uff0c\u7ecf\u8425\u4e3b\u4f53\u4e3a\u82cf\u5dde\u4e50\u56ed\u6c34\u4e0a\u4e16\u754c\uff0c\u603b\u6295\u8d446000\u4e07\u5143\uff0c\u7531\u82cf\u5dde\u65b0\u533a\u7ecf\u6d4e\u53d1\u5c55\u96c6\u56e2\u603b\u516c\u53f8\u6295\u8d44\u5efa\u9020\u3002\u4e3b\u8981\u9879\u76ee\u6709\u9ad8\u67b6\u7ec4\u5408\u6ed1\u9053\u3001\u9020\u6d6a\u6c60\u3001\u620f\u6c34\u6c60\u590f\u5a01\u5937\u6d77\u6d6a\u548c\u6f02\u6d41\u6cb3\u7b49\uff0c\u662f\u56fd\u5185\u6295\u8d44\u89c4\u6a21\u6700\u5927\u3001\u9879\u76ee\u6700\u9f50\u5168\u3001\u8bbe\u5907\u6700\u5148\u8fdb\u7684\u73b0\u4ee3\u5316\u6c34\u4e0a\u6e38\u4e50\u573a\u3002\u6c34\u4e0a\u4e16\u754c\u4e8e1995\u5e747\u6708\u5bf9\u5916\u5f00\u653e\u4ee5\u6765\uff0c\u6df1\u53d7\u6e38\u4eba\u9752\u771b\uff0c\u5165\u56ed\u4eba\u6570\u521b\u7a79\u9876\u55b7\u6cc9\u4e0b\u6e38\u4e50\u884c\u4e1a\u7684\u65b0\u7eaa\u5f55\uff0c\u6c34\u4e0a\u4e50\u56ed\u5df2\u7ecf\u6210\u4e3a\u96c6\u7ea6\u534e\u4e1c\u5730\u533a\u76db\u590f\u7684\u65c5\u6e38\u70ed\u70b9\u3002<\/p><\/div>\r\n<\/div>\r\n"},{"head":"\u6b22\u4e50\u4e16\u754c","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">\u4f4d\u4e8e\u72ee\u5b50\u5c71\u4ee5\u4e1c\uff0c\u5360\u573054\u516c\u9877\u30021997\u5e742\u6708\u5f00\u56ed\u8fce\u5bbe\u3002\u7ecf\u8425\u4e3b\u4f53\u4e3a\u82cf\u5dde\u4e50\u56ed\u53d1\u5c55\u6709\u9650\u516c\u53f8\u3002\u96c6\u897f\u65b9\u6e38\u4e50\u573a\u7684\u6d3b\u6cfc\u3001\u58ee\u89c2\u548c\u4e1c\u65b9\u53e4\u5178\u56ed\u6797\u7684\u5b89\u95f2\uff0c\u5b81\u9759\u3001\u81ea\u7136\u4e8e\u4e00\u4f53\uff0c\u800c\u4eca\u6253\u9020\u4ee5\u201c\u4e1c\u65b9\u8fea\u65af\u5c3c\u201d\u4e4b\u540d\u9a70\u8a89\u5168\u56fd\uff0c\u6df1\u5165\u4eba\u5fc3\u3002\u6b22\u4e50\u4e16\u754c\u4ee5\u4e1c\u65b9\u8fea\u65af\u5c3c\u4e3a\u4e3b\u9898\uff0c\u96c6\u897f\u65b9\u6e38\u4e50\u573a\u7684\u6d3b\u6cfc\u3001\u6b22\u5feb\u3001\u58ee\u89c2\u548c\u4e1c\u65b9\u56ed\u6797\u7684\u5b89\u95f2\u3001\u5b89\u9759\u3001\u81ea\u7136\u7684\u7279\u70b9\u4e8e\u4e00\u4f53\u3002&nbsp;\u3000\u3000\u4ee5\"\"\u4e1c\u65b9\u8fea\u65af\u5c3c\"\"\u4e3a\u4e3b\u9898\uff0c\u529b\u6c42\u96c6\u897f\u65b9\u6e38\u4e50\u573a\u7684\u6d3b\u6cfc\u3001\u6b22\u4e50\u3001\u58ee\u89c2\u548c\u4e1c\u65b9\u56ed\u6797\u7684\u5b89\u95f2\u3001\u5b81\u9759\u3001\u81ea\u7136\u7684\u7279\u70b9\u4e8e\u4e00\u4f53\uff0c\u540c\u65f6\u5f15\u8fdb\u98de\u789f\u63a2\u9669\u3001\u65f6\u7a7a\u98de\u8239\u3001\u5b87\u5b99\u5927\u6218\u548c\u592a\u7a7a\u5386\u9669\u7b49\u4e00\u5927\u6279\u9ad8\u79d1\u6280\u6e38\u4e50\u8bbe\u65bd\uff0c\u5168\u56ed\u6e38\u4e50\u9879\u76ee\u8fd1\u767e\u9879\uff0c\u4ece\u800c\u6210\u4e3a\u4e00\u5ea7\u96c6\u6b27\u7f8e\u5efa\u7b51\u98ce\u683c\u3001\u8fea\u65af\u5c3c\u4e50\u56ed\u98ce\u91c7\uff0c\u628a\u73b0\u4ee3\u5316\u6e38\u4e50\u5668\u68b0\u548c\u5343\u53d8\u4e07\u5316\u7684\u81ea\u7136\u666f\u89c2\u878d\u5408\u5728\u4e00\u8d77\u7684\u7efc\u5408\u6027\"\"\u6e38\u4e50\u5929\u5802\"\"\u3002\u56de\u5f52\u771f\u81ea\u7136\uff0c\u5c3d\u4eab\u73b0\u4ee3\u4e50\uff0c\u82cf\u5dde\u4e50\u56ed\u6b22\u4e50\u4e16\u754c\u662f\u5f53\u524d\u4e2d\u56fd\u65b0\u751f\u4ee3\u4e50\u56ed\u7684\u70b9\u775b\u4e4b\u4f5c\uff0c\u6210\u4e3a\u4e0a\u6d77\u4e1c\u65b9\u7535\u89c6\u53f0\u7684\u5916\u666f\u57fa\u5730\u3002<\/p><\/div>\r\n<\/div>\r\n"},{"head":"4D\u5f71\u9662","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">4D\u5f71\u9662\u662f\u5728\u4f20\u7edf\u7acb\u4f53\u5f71\u9662\u57fa\u7840\u4e0a\u53d1\u5c55\u800c\u6765\uff0c\u5b83\u96c6\u673a\u3001\u7535\u3001\u6db2\u3001\u6c14\u3001\u58f0\u3001\u5149\u3001\u5f71\u7b49\u9ad8\u79d1\u6280\u624b\u6bb5\u4e8e\u4e00\u4f53\uff0c\u4ee5\u4e09\u7ef4\u7acb\u4f53\u7535\u5f71\u518d\u7ed3\u5408\u5ea7\u6905\u7684\u5347\u964d\u3001\u632f\u52a8\u3001\u55b7\u6c34\u3001\u55b7\u96fe\u7b49\u7279\u6548\uff0c\u4f7f\u5f71\u7247\u5e26\u7ed9\u89c2\u4f17\u771f\u5b9e\u3001\u523a\u6fc0\u7684\u4f53\u9a8c\uff0c\u4eff\u4f5b\u8eab\u4e34\u5176\u5883\u3002<\/p><\/div>\r\n<\/div>\r\n"},{"head":"\u8ff7\u7684\u6d0b\u9986","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">\u672c\u9879\u76ee\u662f\u91c7\u7528\u4e09\u7ef4\u97f3\u54cd\u6280\u672f\uff0c\u901a\u8fc7\u4eba\u7684\u542c\u89c9\uff0c\u4ea7\u751f\u5fc3\u7075\u611f\u5e94\u73b0\u8c61\u7684\u6e38\u4e50\u9879\u76ee\u3002\u901a\u8fc7\u7279\u5236\u7684\u8033\u673a\uff0c\u903c\u771f\u7684\u97f3\u54cd\u6548\u679c\uff0c\u914d\u5408\u5176\u4e3b\u9898\u5185\u5bb9\u6240\u88c5\u9970\u7684\u5ba4\u5185\u73af\u5883\u6c1b\u56f4\uff0c\u628a\u4eba\u4eec\u5e26\u5165\u5230\u4e00\u4e2a\u4ece\u672a\u4f53\u9a8c\u8fc7\u7684\u9519\u89c9\u4e16\u754c\u4e2d\u53bb\u3002<\/p><\/div>\r\n<\/div>\r\n"},{"head":"\u4e50\u56ed\u5c0f\u706b\u8f66","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">\u82cf\u8fea\u53f7\u73af\u56ed\u5217\u8f66\u662f\u56fd\u5185\u9996\u5217\u4ece\u82f1\u56fd\u8fdb\u53e3\u7684\u4eff\u53e4\u5c0f\u706b\u8f66\uff0c\u5c0f\u706b\u8f66\u603b\u7ad9\u8bbe\u5728\u82cf\u8fea\u603b\u7ad9\uff0c\u9014\u7ecf\u672a\u6765\u7ad9\uff0c\u82cf\u683c\u5170\u7ad9\u3002\u5168\u957f2\u516c\u91cc\uff0c\u8fd0\u884c\u65f6\u95f4\u5927\u7ea6\u4e8c\u5341\u5206\u949f\uff0c\u5217\u8f66\u5c06\u5e26\u60a8\u73af\u7ed5\u4e50\u56ed\u4e00\u5468\uff0c\u6cbf\u9014\u7f8e\u666f\u5c3d\u6536\u773c\u5e95\u3002<\/p><\/div>\r\n<\/div>\r\n"},{"head":"\u82cf\u5dde\u4e50\u56ed\u5564\u9152\u8282","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">2008\u82cf\u5dde\u4e50\u56ed\u5564\u9152\u4ece7\u670825\u65e5\u81f38\u67083\u65e5\u7684\u201c\u82cf\u5dde\u4e50\u56ed\u5564\u9152\u8282\u201d\u5f53\u4e2d\uff0c\u5c06\u9080\u8bf7\u5185\u5730\u65b0\u6447\u6eda\u7684\u65b0\u751f\u529b\u91cf\uff0c\u6797\u4f3d\u4e50\u961f\u3001\u5927\u4f22\u4e50\u961f\u3001\u82cf\u9633\u3001\u4e07\u6653\u5229\u3001\u5f20\u94c1\u2026\u2026\u7b49\u7b49\uff0c\u4e3e\u529e\u4e00\u4e2a\u5173\u4e8e\u6447\u6eda\u7684\u201c\u6b66\u6797\u5927\u4f1a\u201d\u3002\u540c\u65f6\uff0c\u82cf\u5dde\u4e50\u56ed\u4ee5\u7545\u996e\u5564\u9152\u3001\u54c1\u5c1d\u7f8e\u98df\u4e3a\u80cc\u666f\uff0c\u4ee5\u9707\u64bc\u62bd\u5956\u548c\u8da3\u5473\u7ade\u8d5b\u4e3a\u7279\u8272\uff0c\u4ee5\u6b4c\u821e\u7efc\u827a\u3001\u660e\u661f\u732e\u6f14\u4e3a\u4eae\u70b9\u7684\u72c2\u6b22\u5927\u821e\u53f0\uff0c\u6bcf\u4f4d\u53c2\u52a0\u6d3b\u52a8\u7684\u6e38\u5ba2\u90fd\u662f\u6f14\u7ece\u7cbe\u5f69\u5267\u60c5\u7684\u8868\u6f14\u8005\uff0c\u7528\u81ea\u5df1\u6700\u559c\u6b22\u3001\u6700\u64c5\u957f\u7684\u65b9\u5f0f\uff0c\u91ca\u653e\u65e0\u9650\u6fc0\u60c5\u3002\u201c\u82cf\u5dde\u4e50\u56ed\u5564\u9152\u8282\u201d\u72ec\u6811\u4e00\u5e1c\u7684\u4f18\u52bf\uff0c\u5c31\u662f\u6b22\u4e50\u4e16\u754c\u7684\u7ecf\u5178\u6e38\u4e50\u9879\u76ee\u6240\u8425\u9020\u7684\u5609\u5e74\u534e\u6c14\u6c1b\uff0c\u4e5f\u662f\u5236\u9020\u5feb\u4e50\u7684\u771f\u6b63\u6e90\u6cc9\uff0c\u65b0\u8001\u82cf\u5dde\u4eba\u6c47\u805a\u4e00\u56ed\uff0c\u5171\u540c\u4eab\u53d7\u8fd9\u573a\u9ad8\u79d1\u6280\u6e38\u4e50\u7684\u76db\u5bb4\uff0c25\u5143\u5b9e\u60e0\u7684\u95e8\u7968\u4ef7\u683c\u4e5f\u8ba9\u66f4\u591a\u559c\u7231\u82cf\u5dde\u4e50\u56ed\u7684\u6e38\u5ba2\u4f53\u9a8c\u5230\u8fea\u65af\u5c3c\u5f0f\u201c\u5168\u5bb6\u5171\u4eab\u201d\u7684\u5929\u4f26\u4e4b\u4e50\uff0c\u8fd9\u4e5f\u662f\u4e3b\u529e\u65b9\u7684\u771f\u8bda\u613f\u671b\u2014\u2014\u6253\u9020\u5c5e\u4e8e\u65b0\u8001\u82cf\u5dde\u4eba\u81ea\u5df1\u7684\u72c2\u6b22\u8282\u3002<\/p><\/div>\r\n<\/div>\r\n"}],E="entertainment",A=baidu.g("J-tabWrap-"+E);if(A){baidu.dom.empty(A);var C=new baidu.ui.Tab({items:_,switchType:"click"});C.render(A);C.addEventListener("switch",function(_){lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-click"});});}});</script>
+<section class="scene-mod-section scene-classic-path">
+<header class="classic-path-hd scene-hd-mod" id="mod-geography_history">
+<h1 class="icon icon-title">
+<span class="h1-word">文化地理</span>
+</h1>
+</header>
+<article>
+<article id="J-tabWrap-new_geography_history" data-guid="TANGRAM__1u"><div id="tangram-tab--TANGRAM__1u" class="tangram-tab"><ul id="tangram-tab--TANGRAM__1u-head-container" class="tangram-tab-head-container"><li id="tangram-tab--TANGRAM__1u-headTANGRAM__1w" bodyid="" class="tangram-tab-head tangram-tab-current"><a href="###" onclick="return false">环境</a></li></ul><div id="tangram-tab--TANGRAM__1u-body-container" class="tangram-tab-body-container"><div id="tangram-tab--TANGRAM__1u-bodyTANGRAM__1v" class="tangram-tab-body" style=""><div class="mod-scene-content-template-con clearfix">
+<div class="tab-cont">
+<p class="text-p text-desc-p">苏州乐园全园以东方迪斯尼为主题，集西方游乐场的活泼、欢快、壮观和东方园林的安闲、宁静、自然的特点于一体，以“北娱乐，南观赏”为布局。</p>
+<p class="text-p text-desc-p">共分为欧美城镇、儿童世界、未来世界、苏格兰庄园、威尼斯水乡、百狮园、皇座广场等九大景区，并引进诸如飞碟探险、时空飞船、宇宙大战、太空历险、三角滑翔翼、空中飞人、高空弹射等一大批高科技游乐设备。</p>
+<p class="text-p text-desc-p">现有游乐项目及景点80多处（项），从而使苏州乐园成为一座融现代高科技设备、欧美城镇风光和秀丽的自然山水景色于一体的现代化游乐天堂：充分显示了国际现代化游乐高科技与深刻的文化内涵兼具的特点，使游客既能领略到缤纷绚烂的欧美风采，又能感受到自然醇厚的东方情调。</p></div>
+</div>
+</div></div></div></article>
+</article>
+</section>
+<script type="text/javascript">baidu.dom.ready(function(){var B={"num":306,"param":{"page":"view","cmd":"show","pos":"mod-tab-new-geography-history-show"}},D=window.location.href;lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-show"});var _=[{"head":"\u73af\u5883","body":"<div class=\"mod-scene-content-template-con clearfix\">\r\n<div class=\"tab-cont\">\r\n<p class=\"text-p text-desc-p\">\u82cf\u5dde\u4e50\u56ed\u5168\u56ed\u4ee5\u4e1c\u65b9\u8fea\u65af\u5c3c\u4e3a\u4e3b\u9898\uff0c\u96c6\u897f\u65b9\u6e38\u4e50\u573a\u7684\u6d3b\u6cfc\u3001\u6b22\u5feb\u3001\u58ee\u89c2\u548c\u4e1c\u65b9\u56ed\u6797\u7684\u5b89\u95f2\u3001\u5b81\u9759\u3001\u81ea\u7136\u7684\u7279\u70b9\u4e8e\u4e00\u4f53\uff0c\u4ee5\u201c\u5317\u5a31\u4e50\uff0c\u5357\u89c2\u8d4f\u201d\u4e3a\u5e03\u5c40\u3002<\/p>\n<p class=\"text-p text-desc-p\">\u5171\u5206\u4e3a\u6b27\u7f8e\u57ce\u9547\u3001\u513f\u7ae5\u4e16\u754c\u3001\u672a\u6765\u4e16\u754c\u3001\u82cf\u683c\u5170\u5e84\u56ed\u3001\u5a01\u5c3c\u65af\u6c34\u4e61\u3001\u767e\u72ee\u56ed\u3001\u7687\u5ea7\u5e7f\u573a\u7b49\u4e5d\u5927\u666f\u533a\uff0c\u5e76\u5f15\u8fdb\u8bf8\u5982\u98de\u789f\u63a2\u9669\u3001\u65f6\u7a7a\u98de\u8239\u3001\u5b87\u5b99\u5927\u6218\u3001\u592a\u7a7a\u5386\u9669\u3001\u4e09\u89d2\u6ed1\u7fd4\u7ffc\u3001\u7a7a\u4e2d\u98de\u4eba\u3001\u9ad8\u7a7a\u5f39\u5c04\u7b49\u4e00\u5927\u6279\u9ad8\u79d1\u6280\u6e38\u4e50\u8bbe\u5907\u3002<\/p>\n<p class=\"text-p text-desc-p\">\u73b0\u6709\u6e38\u4e50\u9879\u76ee\u53ca\u666f\u70b980\u591a\u5904\uff08\u9879\uff09\uff0c\u4ece\u800c\u4f7f\u82cf\u5dde\u4e50\u56ed\u6210\u4e3a\u4e00\u5ea7\u878d\u73b0\u4ee3\u9ad8\u79d1\u6280\u8bbe\u5907\u3001\u6b27\u7f8e\u57ce\u9547\u98ce\u5149\u548c\u79c0\u4e3d\u7684\u81ea\u7136\u5c71\u6c34\u666f\u8272\u4e8e\u4e00\u4f53\u7684\u73b0\u4ee3\u5316\u6e38\u4e50\u5929\u5802\uff1a\u5145\u5206\u663e\u793a\u4e86\u56fd\u9645\u73b0\u4ee3\u5316\u6e38\u4e50\u9ad8\u79d1\u6280\u4e0e\u6df1\u523b\u7684\u6587\u5316\u5185\u6db5\u517c\u5177\u7684\u7279\u70b9\uff0c\u4f7f\u6e38\u5ba2\u65e2\u80fd\u9886\u7565\u5230\u7f24\u7eb7\u7eda\u70c2\u7684\u6b27\u7f8e\u98ce\u91c7\uff0c\u53c8\u80fd\u611f\u53d7\u5230\u81ea\u7136\u9187\u539a\u7684\u4e1c\u65b9\u60c5\u8c03\u3002<\/p><\/div>\r\n<\/div>\r\n"}],E="new_geography_history",A=baidu.g("J-tabWrap-"+E);if(A){baidu.dom.empty(A);var C=new baidu.ui.Tab({items:_,switchType:"click"});C.render(A);C.addEventListener("switch",function(_){lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-click"});});}});</script>
+<section class="scene-mod-section scene-classic-path">
+<header class="classic-path-hd scene-hd-mod" id="mod-attention">
+<h1 class="icon icon-title">
+<span class="h1-word">小贴士</span>
+</h1>
+</header>
+<article>
+<header>
+<p class="text-p text-desc-p">为了保证游客的游玩安全，苏州乐园会根据当天雨量的大小安排游乐项目开放。如雨量不大，则正常营业；如雨量较大，超过游乐项目开放安全指标，存在安全隐患，则部分游乐项目会暂停开放。具体情况会在乐园正门口以及官方网站给出相关告示。</p></header>
+<article id="J-tabWrap-attention" data-guid="TANGRAM__1y"><div id="tangram-tab--TANGRAM__1y" class="tangram-tab"><ul id="tangram-tab--TANGRAM__1y-head-container" class="tangram-tab-head-container"></ul><div id="tangram-tab--TANGRAM__1y-body-container" class="tangram-tab-body-container"></div></div></article>
+</article>
+</section>
+<script type="text/javascript">baidu.dom.ready(function(){var B={"num":306,"param":{"page":"view","cmd":"show","pos":"mod-tab-attention-show"}},D=window.location.href;lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-show"});var _=[],E="attention",A=baidu.g("J-tabWrap-"+E);if(A){baidu.dom.empty(A);var C=new baidu.ui.Tab({items:_,switchType:"click"});C.render(A);C.addEventListener("switch",function(_){lv.nslog(D,B.num,{page:"view",cmd:"click",pos:"mod-tab-"+E+"-click"});});}});</script>
+<section class="scene-mod-section  nslog-area" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;wonder-notes-click&quot;}" id="mod-relate-notes">
+<header class="wonder-notes-hd scene-hd-mod" id="J_wonder-notes-bd" style="">
+<h1 class="icon icon-title">
+<span class="h1-word">精彩游记</span>
+</h1>
+</header>
+<div class="wonder-notes-bd">
+<div class="search-query-notes-filter" id="J_search-query-notes-filter" style="">
+<div class="filter-choosen-tab" id="J-filterTab" style="display:none">
+<div class="filter-tab-title">你已选择：</div>
+<ul class="filter-choosen-tab-list clearfix">
+<li id="J-filterSelectedDeparture" style="display:none"></li>
+<li id="J-filterSelectedMonth" style="display:none"></li>
+<li id="J-filterSelectedDays" style="display:none"></li>
+<li id="J-filterSelectedCosts" style="display:none"></li>
+</ul>
+</div>
+<div class="filter-choose-wrapper">
+<div class="filter-tab-title">游记筛选：</div>
+<div class="filter-choose-list clearfix" id="J-filterChooseList"><div class="search-query-notes-filter-month J_search-filter-type"><a href="#mod-relate-notes" class="notes-filter-title">出发时间<span class="triangle-gray"></span></a><ul class="filter-type-choose" style="display: none; " id="J-filterTypemonth"><li><a href="###" data-filtertype="month" data-index="1" data-name="3-5月">3-5月</a></li><li><a href="###" data-filtertype="month" data-index="2" data-name="6-8月">6-8月</a></li><li><a href="###" data-filtertype="month" data-index="3" data-name="9-11月">9-11月</a></li><li><a href="###" data-filtertype="month" data-index="4" data-name="12-2月">12-2月</a></li></ul></div><div class="search-query-notes-filter-days J_search-filter-type"><a href="#mod-relate-notes" class="notes-filter-title">行程天数<span class="triangle-gray"></span></a><ul class="filter-type-choose" style="display: none; " id="J-filterTypedays"><li><a href="###" data-filtertype="days" data-index="1" data-name="1天">1天</a></li><li><a href="###" data-filtertype="days" data-index="2" data-name="2天">2天</a></li><li><a href="###" data-filtertype="days" data-index="3" data-name="3-5天">3-5天</a></li><li><a href="###" data-filtertype="days" data-index="4" data-name="6-8天">6-8天</a></li><li><a href="###" data-filtertype="days" data-index="5" data-name="9-14天">9-14天</a></li><li><a href="###" data-filtertype="days" data-index="6" data-name="15天及以上">15天及以上</a></li></ul></div><div class="search-query-notes-filter-costs J_search-filter-type"><a href="#mod-relate-notes" class="notes-filter-title">费用开销<span class="triangle-gray"></span></a><ul class="filter-type-choose" style="display: none; " id="J-filterTypecosts"><li><a href="###" data-filtertype="costs" data-index="1" data-name="500以下">500以下</a></li><li><a href="###" data-filtertype="costs" data-index="2" data-name="500-1000">500-1000</a></li><li><a href="###" data-filtertype="costs" data-index="3" data-name="1000-3000">1000-3000</a></li><li><a href="###" data-filtertype="costs" data-index="4" data-name="3000-5000">3000-5000</a></li><li><a href="###" data-filtertype="costs" data-index="5" data-name="5000-10000">5000-10000</a></li><li><a href="###" data-filtertype="costs" data-index="6" data-name="10000-15000">10000-15000</a></li><li><a href="###" data-filtertype="costs" data-index="7" data-name="15000以上">15000以上</a></li></ul></div><div class="search-query-notes-filter-departure pr"><ul class="filter-departures" id="J-filterDeparturesList" style="display: none; "><li><a href="###" data-sname="深圳" data-sid="060c23d1dc24b39f0973b9f0">深圳</a></li><li><a href="###" data-sname="广东" data-sid="b0240abb6cf9c05f301acdf3">广东</a></li></ul><div class="filter-departure-input-wrap" id="J-filter-departure"><input type="text" value="" name="ooxxx" maxlength="256" class="filter-departure-input prompt-default" autocomplete="off" id="J-filterDepartureInput"></div></div></div>
+</div>
+</div>
+<div class="nslog-area nslog" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-total-click&quot;}" id="J-wonderNotesWrap"><article class="wonder-notes-item notes-item clearfix"><div class="notes-status"></div><div class="notes-content notes-item-main"><h4><a target="_blank" href="/notes/view/88b98d8b1179d8e7552911eb" title="游苏州乐园" class="nslog" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;scene&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-title&quot;}">游苏州乐园</a></h4><div class="notes-infos"><span class="notes-path" title="行程">苏州 到 苏州乐园  </span><span title="出发时间" class="notes-info-icon begin-icon">2011年05月</span><span title="总共时间" class="notes-info-icon time-icon">1天</span><span title="开销" class="notes-info-icon cost-icon">95元</span></div><p class="notes-abstract">买了学生票，带了水和面包，研究了公交路线。</p><div class="item-ft"><a class="notes-user" target="_blank" href="/user/e24a1e4648ffe72da63088a8"><img src="http://hiphotos.baidu.com/lvpics/pic/item/9c66db2ccffc1e178f987c8d4a90f603728de945.jpg" alt=""></a>作者：<a class="mr20 item-author usercard nslog" data-usercard="e24a1e4648ffe72da63088a8" target="_blank" href="/user/e24a1e4648ffe72da63088a8" data-nslog="{&quot;type&quot;:458,&quot;page&quot;:&quot;search&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-author&quot;}">981395102</a><span class="notes-info-icon view-icon" title="浏览">3711</span><span class="notes-info-icon reply-icon" title="回复">8</span><span class="notes-info-icon recommend-icon" title="推荐">5</span></div></div></article><article class="wonder-notes-item notes-item clearfix"><div class="notes-status"></div><div class="notes-content notes-item-main"><h4><a target="_blank" href="/notes/view/4d64e717700dc81fabb790d9" title="游遍姑苏——荷塘月色湿地公园" class="nslog" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;scene&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-title&quot;}">游遍姑苏——荷塘月色湿地公园</a></h4><div class="notes-infos"><span class="notes-path" title="行程">苏州 到 荷塘月色湿地公园  </span><span title="出发时间" class="notes-info-icon begin-icon">2012年07月</span><span title="总共时间" class="notes-info-icon time-icon">1天</span><span title="人均开销" class="notes-info-icon cost-icon">500以下(元)</span></div><p class="notes-abstract">...由于“苏州乐园，观前街”名气十足，被广大的驴友所“报道”，所以今天主要给大家分享的是——荷塘月色湿地公园 荷塘月色湿地公园位于苏州相城区黄桥地域太阳路以南，由300多个沉降鱼塘和200多亩荒滩废弃河道改建而成...</p><div class="notes-album-wrapper clearfix"><div class="notes-pic-item"><a target="_blank" href="/notes/view/4d64e717700dc81fabb790d9"><img width="155" height="112" style="margin:-5px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/0824ab18972bd407fd24ff6e7b899e510eb30945.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/4d64e717700dc81fabb790d9"><img width="170" height="103" style="margin:0px 0px 0px -8px" src="http://hiphotos.baidu.com/lvpics/abpic/item/b219ebc4b74543a967dad65f1e178a82b801145b.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/4d64e717700dc81fabb790d9"><img width="170" height="103" style="margin:0px 0px 0px -8px" src="http://hiphotos.baidu.com/lvpics/abpic/item/cf1b9d16fdfaaf51843dad2c8c5494eef11f7a42.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/4d64e717700dc81fabb790d9"><img width="155" height="227" style="margin:-62px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/42166d224f4a20a46629135490529822720ed069.jpg"></a></div></div><div class="item-ft"><a class="notes-user" target="_blank" href="/user/668dd9a1d8484b39f42f2886"><img src="http://hiphotos.baidu.com/lvpics/pic/item/adaf2edda3cc7cd9d29a1b4a3901213fb90e91e9.jpg" alt=""></a>作者：<a class="mr20 item-author usercard nslog" data-usercard="668dd9a1d8484b39f42f2886" target="_blank" href="/user/668dd9a1d8484b39f42f2886" data-nslog="{&quot;type&quot;:458,&quot;page&quot;:&quot;search&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-author&quot;}">eble</a><span class="notes-info-icon view-icon" title="浏览">1987</span><span class="notes-info-icon reply-icon" title="回复">1</span><span class="notes-info-icon recommend-icon" title="推荐">0</span></div></div></article><article class="wonder-notes-item notes-item clearfix"><div class="notes-status"></div><div class="notes-content notes-item-main"><h4><a target="_blank" href="/notes/view/b2a5b2ddf32d78c54d884c16" title="【梦想旅行家】一个人的流浪。搭车去上海。" class="nslog" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;scene&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-title&quot;}">【梦想旅行家】一个人的流浪。搭车去上海。</a></h4><div class="notes-infos"><span class="notes-path" title="行程">潍坊 到 上海  </span><span title="出发时间" class="notes-info-icon begin-icon">2011年07月</span><span title="总共时间" class="notes-info-icon time-icon">11天</span><span title="开销" class="notes-info-icon cost-icon">700元</span></div><p class="notes-abstract">...就在那过了夜。第二天。决定看一看苏州。但是又想回家了。于是决定回家吧。一路走。向东。看到了个足球场。还有踢球的。我就在那看了会球。话说 有点水 。哈哈。最后走到了苏州乐园。...</p><div class="notes-album-wrapper clearfix"><div class="notes-pic-item"><a target="_blank" href="/notes/view/b2a5b2ddf32d78c54d884c16"><img width="155" height="207" style="margin:-52px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/0b46f21fbe096b63d76e4e170c338744ebf8ac05.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/b2a5b2ddf32d78c54d884c16"><img width="155" height="207" style="margin:-52px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/d6ca7bcb0a46f21f9eab4f14f6246b600d33aedd.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/b2a5b2ddf32d78c54d884c16"><img width="155" height="130" style="margin:-14px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/b7003af33a87e9500fe2e22b10385343faf2b4fb.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/b2a5b2ddf32d78c54d884c16"><img width="155" height="128" style="margin:-13px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/eac4b74543a98226144b3a608a82b9014b90ebeb.jpg"></a></div></div><div class="item-ft"><a class="notes-user" target="_blank" href="/user/4f122f15f4e84c402ee363c9"><img src="http://hiphotos.baidu.com/lvpics/pic/item/0823dd54564e92584362a1a99c82d158ccbf4e26.jpg" alt=""></a>作者：<a class="mr20 item-author usercard nslog" data-usercard="4f122f15f4e84c402ee363c9" target="_blank" href="/user/4f122f15f4e84c402ee363c9" data-nslog="{&quot;type&quot;:458,&quot;page&quot;:&quot;search&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-author&quot;}">太平間小硬人</a><span class="notes-info-icon view-icon" title="浏览">18394</span><span class="notes-info-icon reply-icon" title="回复">144</span><span class="notes-info-icon recommend-icon" title="推荐">49</span></div></div></article><article class="wonder-notes-item notes-item clearfix"><div class="notes-status"></div><div class="notes-content notes-item-main"><h4><a target="_blank" href="/notes/view/7290a02bf07bd50fe6179f17" title="2011苏州行-亲子和伴老" class="nslog" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;scene&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-title&quot;}">2011苏州行-亲子和伴老</a></h4><div class="notes-infos"><span class="notes-path" title="行程">上海 到 苏州  </span><span title="出发时间" class="notes-info-icon begin-icon">2011年10月</span><span title="总共时间" class="notes-info-icon time-icon">2天</span></div><p class="notes-abstract">...置偏，如果是自驾的话建议住，如果选金鸡湖这边的酒店，就可以晚上看水幕表演，听说很不错。金鸡湖不错，人少适合一家大小玩。苏州乐园的四季悦温泉强烈推荐，因为是新造的，硬件软件都很不错，如果带孩子来，相信小朋...</p><div class="item-ft"><a class="notes-user" target="_blank" href="/user/d62bac98b94599c14e532097"><img src="http://hiphotos.baidu.com/lvpics/pic/item/0bd162d9f2d3572c4cf0639b8a13632762d0c363.jpg" alt=""></a>作者：<a class="mr20 item-author usercard nslog" data-usercard="d62bac98b94599c14e532097" target="_blank" href="/user/d62bac98b94599c14e532097" data-nslog="{&quot;type&quot;:458,&quot;page&quot;:&quot;search&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-author&quot;}">blackliu6</a><span class="notes-info-icon view-icon" title="浏览">526</span><span class="notes-info-icon reply-icon" title="回复">6</span><span class="notes-info-icon recommend-icon" title="推荐">1</span></div></div></article><article class="wonder-notes-item notes-item clearfix"><div class="notes-status"></div><div class="notes-content notes-item-main"><h4><a target="_blank" href="/notes/view/4a2cb88b3b40a4cae00750ca" title="【梦想旅行家】苏杭行记" class="nslog" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;scene&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-title&quot;}">【梦想旅行家】苏杭行记</a></h4><div class="notes-infos"><span class="notes-path" title="行程">北京 到 苏杭  </span><span title="出发时间" class="notes-info-icon begin-icon">2003年05月</span><span title="总共时间" class="notes-info-icon time-icon">2天</span></div><p class="notes-abstract">...去杭州的那种悲惨遭遇，不过就尽兴来说，却是远远的比不上了。     我们的住宿和行程是一个同学安排的，不过这个呆呆的家伙居然把我们带到苏州乐园玩了一天，而苏州最值得看的园林却只在第二天早上带我们去了留园，然...</p><div class="item-ft"><a class="notes-user" target="_blank" href="/user/54af88306083aef04a173d25"><img src="http://hiphotos.baidu.com/lvpics/pic/item/902397dda144ad34edec0b18d0a20cf430ad85da.jpg" alt=""></a>作者：<a class="mr20 item-author usercard nslog" data-usercard="54af88306083aef04a173d25" target="_blank" href="/user/54af88306083aef04a173d25" data-nslog="{&quot;type&quot;:458,&quot;page&quot;:&quot;search&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-author&quot;}">yak2010ok</a><span class="notes-info-icon view-icon" title="浏览">597</span><span class="notes-info-icon reply-icon" title="回复">4</span><span class="notes-info-icon recommend-icon" title="推荐">2</span></div></div></article><article class="wonder-notes-item notes-item clearfix"><div class="notes-status"></div><div class="notes-content notes-item-main"><h4><a target="_blank" href="/notes/view/4c95e617700dc81fabb79028" title="★伞兵★我在苏州的那些日子-攻略分享" class="nslog" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;scene&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-title&quot;}">★伞兵★我在苏州的那些日子-攻略分享</a></h4><div class="notes-infos"><span class="notes-path" title="行程">西安 到 苏州  </span><span title="出发时间" class="notes-info-icon begin-icon">2008年03月</span><span title="总共时间" class="notes-info-icon time-icon">7天</span><span title="开销" class="notes-info-icon cost-icon">610元</span></div><p class="notes-abstract">...火车站→丝绸博物馆→北寺塔→拙政园、狮子林（苏州博物馆、民俗博物馆）→苏州刺绣厂→观前街→双塔→网师园→沧浪亭→→盘门景区游3线:火车站→西园→寒山寺→新城花园酒店→苏州乐园→水上乐园游4线：火车站→丝绸...</p><div class="notes-album-wrapper clearfix"><div class="notes-pic-item"><a target="_blank" href="/notes/view/4c95e617700dc81fabb79028"><img width="155" height="103" style="margin:0px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/4bed2e738bd4b31c7990b5ff87d6277f9f2ff8c2.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/4c95e617700dc81fabb79028"><img width="155" height="103" style="margin:0px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/37d3d539b6003af372ebfd24352ac65c1038b624.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/4c95e617700dc81fabb79028"><img width="155" height="103" style="margin:0px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/342ac65c10385343b59ea6659313b07eca808824.jpg"></a></div><div class="notes-pic-item"><a target="_blank" href="/notes/view/4c95e617700dc81fabb79028"><img width="155" height="103" style="margin:0px 0px 0px 0px" src="http://hiphotos.baidu.com/lvpics/abpic/item/5243fbf2b2119313e112def465380cd791238d24.jpg"></a></div></div><div class="item-ft"><a class="notes-user" target="_blank" href="/user/b7ded3fd49be3041fa81176c"><img src="http://hiphotos.baidu.com/lvpics/pic/item/a8014c086e061d955c05c8887bf40ad162d9ca3b.jpg" alt=""></a>作者：<a class="mr20 item-author usercard nslog" data-usercard="b7ded3fd49be3041fa81176c" target="_blank" href="/user/b7ded3fd49be3041fa81176c" data-nslog="{&quot;type&quot;:458,&quot;page&quot;:&quot;search&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;notes-author&quot;}">上官图腾</a><span class="notes-info-icon view-icon" title="浏览">2059</span><span class="notes-info-icon reply-icon" title="回复">13</span><span class="notes-info-icon recommend-icon" title="推荐">5</span></div></div></article></div>
+<div class="pagelist-wrapper" id="J_pagelist-wrapper" style="">
+<span class="pagelist nslog-area" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;pagelist&quot;}" id="J_pagelist" style="" data-guid="TANGRAM__4bh"><div onclick="window['$BAIDU$']._instances['TANGRAM__4bh']._handleOnClick(event, this);" id="tangram-pager--pager" class="tangram-pager"><a class="tangram-pager-previous" page="1" target="_self" href="#1">上一页</a><a class="" page="1" target="_self" href="#1">1</a><a class="tangram-pager-current" page="2" target="_self" href="#2">2</a><a class="" page="3" target="_self" href="#3">3</a><a class="" page="4" target="_self" href="#4">4</a><a class="tangram-pager-next" page="3" target="_self" href="#3">下一页</a></div></span>
+</div>
+</div>
+<footer class="clearfix"></footer>
+</section>
+<script>baidu.dom.ready(function(){var _=window.location.href;baidu.lang.module("lv.session.vars.isPad",navigator.userAgent.indexOf("iPad")>-1?"iPad":"");lv.nslog(_,306,{page:"view",cmd:"show",pos:"wonder-notes-show",ua:lv.session.vars.isPad});lv.scene.view.notesfilter.init({sid:"7af115d8330a23088cc5b2f8",word:"\u82cf\u5dde\u4e50\u56ed"});});</script>
+</div>
+</div>
+</article>
+<aside class="col-sub">
+<section class="mod sidebar-basic pr">
+<div class="basic-info-icon"></div>
+<div class="pr">
+<div class="info-group">
+<div class="wrap price-wrap">
+<div class="info-tit">门票：</div>
+<div class="val price-value">
+<p class="text-p text-desc-p">130元</p></div>
+</div>
+</div>
+<div class="info-group">
+<div class="wrap opening_hours-wrap">
+<div class="info-tit">开放时间：</div>
+<div class="val opening_hours-value">
+<p class="text-p text-desc-p">9：00-17：00</p><a class="base-info-more nslog" data-nslog="{&quot;type&quot;:306, &quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;, &quot;pos&quot;:&quot;info-ticket-more&quot;}" href="###" id="ticket-pop">更多 »</a>
+
+<script type="text/javascript">baidu.dom.ready(function(){var _={type:306,page:"view",cmd:"show",pos:"info-ticket-more"};lv.nslog(window.location.href,_.type,_);});</script>
+</div>
+</div>
+</div>
+<div class="info-group">
+<div class="wrap recommend_visit_time-wrap">
+<span class="info-tit">建议游玩时间：</span>
+<span class="val recommend_visit_time-value">
+1天</span>
+</div>
+</div>
+<div class="info-group">
+<div class="wrap position-wrap">
+<span class="info-tit">位置：</span>
+<span class="val position-value">
+位于江苏省苏州市虎丘区</span>
+</div>
+<div class="wrap address-wrap">
+<span class="info-tit">地址：</span>
+<span class="val address-value">
+江苏省苏州市高新区金山路87号(近狮山路)</span>
+</div>
+<div class="wrap phone-wrap">
+<span class="info-tit">电话：</span>
+<span class="val phone-value">
+0512-68717107</span>
+</div>
+</div>
+<div class="info-group">
+<div class="wrap best_visit_time-wrap">
+<div class="info-tit">最佳旅游时节：</div>
+<div class="val best_visit_time-value">
+<p class="text-p text-desc-p">春夏秋三季皆宜，适宜进行水上活动。</p></div>
+</div>
+</div>
+</div>
+</section>
+<script type="text/javascript">/*<![CDATA[*/baidu.dom.ready(function(){var A=baidu.dom.g("attention-pop"),_=baidu.dom.g("ticket-pop");if(A){var C=baidu.dom.g("attention-content");baidu.event.on(A,"click",function(){baidu.dom.show(C);lv.ui.dialog.alert(C,{width:780,height:400,titleText:"\u5c0f\u8d34\u58eb",acceptText:'<span class="pl10 pr10" style="display:inline-block">\u5173\u95ed</span>',classWrapper:"info-dialog"});});}if(_){var D=baidu.dom.g("ticket-content");baidu.event.on(_,"click",function(){baidu.dom.show(D);lv.ui.dialog.alert(D,{width:780,height:400,titleText:"\u95e8\u7968\u4fe1\u606f",acceptText:'<span class="pl10 pr10" style="display:inline-block">\u5173\u95ed</span>',classWrapper:"info-dialog"});});}var B={type:306,page:"view",cmd:"show",pos:"baseinfo"};lv.nslog(window.location.href,B.type,B);});/*]]>*/</script>
+<article class="mod sidebar-mod-flight" id="J-view-sidebar-flight-wrap">
+<iframe frameborder="0" height="0" id="J-view-sidebar-flight" src="http://flight.qunar.com/site/externalAPI/forBaiduFlight.htm?sight=苏州&amp;ip=14.155.156.210&amp;ex_track=auto_4f97c0c9" width="260" style="height: 148px; ">
+</iframe>
+</article>
+<script type="text/javascript">baidu.dom.ready(function(){var _={type:306,page:"view",cmd:"show",pos:"scene-sidebar-flight-show"},A=window.location.href;lv.nslog(A,_.type,_);});</script>
+<div class="sidebar-mod">
+<article class="sidebar-mod-pad">
+<header class="sidebar-mod-hd pr clearfix">
+<h1 class="clearfix">
+<span class="fl"></span><span class="h1-word">旅游地图</span>
+</h1>
+</header>
+<div class="sidebar-map" id="map-container" style="overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left; "><div style="overflow: visible; position: absolute; z-index: 0; left: 83px; top: -54px; cursor: url(http://api.map.baidu.com/images/openhand.cur), default; "><div class="BMap_mask" style="position: absolute; left: -83px; top: 54px; z-index: 9; overflow: hidden; -webkit-user-select: none; width: 220px; height: 184px; "></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200; "><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800; "></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700; "><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 30px; height: 31px; cursor: pointer; background-image: url(http://api.map.baidu.com/images/blank.gif); left: 49px; top: 94px; z-index: -6263316; background-position: initial initial; background-repeat: initial initial; " title=""></span><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 30px; height: 31px; cursor: pointer; background-image: url(http://api.map.baidu.com/images/blank.gif); left: 66px; top: 49px; z-index: -6267748; background-position: initial initial; background-repeat: initial initial; " title=""></span><span class="BMap_Marker BMap_noprint" unselectable="on" "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 30px; height: 31px; cursor: pointer; background-image: url(http://api.map.baidu.com/images/blank.gif); left: 12px; top: 131px; z-index: -6259684; background-position: initial initial; background-repeat: initial initial; " title=""></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600; "></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500; "><label class="BMapLabel" unselectable="on" style="position: absolute; display: inline; cursor: inherit; border: none; padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -6263316; left: 74px; top: 89px; "><div style="border: 1px solid #61a9d8;background-color:#eff8ff;border-radius: 4px;padding:6px;color:#6599be;font-weight: bold;box-shadow: 2px 2px 2px #aaacad;">寒山寺</div></label><label class="BMapLabel" unselectable="on" style="position: absolute; display: inline; cursor: inherit; border: none; padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -6267748; left: 91px; top: 44px; "><div style="border: 1px solid #61a9d8;background-color:#eff8ff;border-radius: 4px;padding:6px;color:#6599be;font-weight: bold;box-shadow: 2px 2px 2px #aaacad;">虎丘</div></label><label class="BMapLabel" unselectable="on" style="position: absolute; display: inline; cursor: inherit; border: none; padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -6259684; left: 37px; top: 126px; "><div style="border: 1px solid #61a9d8;background-color:#eff8ff;border-radius: 4px;padding:6px;color:#6599be;font-weight: bold;font-size:14px;box-shadow: 2px 2px 2px #aaacad;">苏州乐园</div></label></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400; "><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 49px; top: 94px; z-index: -6263316; "><div style="position: absolute; margin: 0px; padding: 0px; width: 30px; height: 31px; overflow: hidden; "><img src="/static/scene/img/map-icon.png" style="border:none;left:0px; top:0px; position:absolute;"></div></span><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 66px; top: 49px; z-index: -6267748; "><div style="position: absolute; margin: 0px; padding: 0px; width: 30px; height: 31px; overflow: hidden; "><img src="/static/scene/img/map-icon.png" style="border:none;left:-30px; top:0px; position:absolute;"></div></span><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 12px; top: 131px; z-index: -6259684; "><div style="position: absolute; margin: 0px; padding: 0px; width: 30px; height: 31px; overflow: hidden; left: 0px; top: -18px; "><img src="/static/scene/img/map-icon.png" style="border:none;left:-60px; top:0px; position:absolute;"></div></span></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300; "></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200; "></div></div><div style="position: absolute; top: 0px; left: 0px; z-index: 1; "><div style="position: absolute; z-index: -100; left: 27px; top: 146px; "><img style="position: absolute; border: none; width: 256px; height: 256px; left: -27px; top: -70px; opacity: 1; " src="http://q2.baidu.com/it/u=x=819;y=222;z=12;v=013;type=web&amp;fm=44"><img style="position: absolute; border: none; width: 256px; height: 256px; left: -27px; top: -326px; opacity: 1; " src="http://q3.baidu.com/it/u=x=819;y=223;z=12;v=013;type=web&amp;fm=44"><img style="position: absolute; border: none; width: 256px; height: 256px; left: -283px; top: -70px; opacity: 1; " src="http://q1.baidu.com/it/u=x=818;y=222;z=12;v=013;type=web&amp;fm=44"><img style="position: absolute; border: none; width: 256px; height: 256px; left: -283px; top: -326px; opacity: 1; " src="http://q2.baidu.com/it/u=x=818;y=223;z=12;v=013;type=web&amp;fm=44"></div></div><div style="position: absolute; top: 0px; left: 0px; z-index: 2; "></div></div><div style="height: 32px; position: absolute; z-index: 10; -webkit-text-size-adjust: none; bottom: 0px; right: auto; top: auto; left: 1px; " class=" anchorBL"><a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: none; "><img style="border:none;width:77px;height:32px" src="http://api.map.baidu.com/images/copyright_logo.png"></a></div><div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api.map.baidu.com/images/openhand.cur) 8 8,default"><div class="BMap_zoomer" style="top:0;left:0;"></div><div class="BMap_zoomer" style="top:0;right:0;"></div><div class="BMap_zoomer" style="bottom:0;left:0;"></div><div class="BMap_zoomer" style="bottom:0;right:0;"></div></div><div unselectable="on" class=" BMap_stdMpCtrl BMap_stdMpType1 BMap_noprint anchorTR" style="width: 37px; height: 97px; bottom: auto; right: 10px; top: 10px; left: auto; position: absolute; z-index: 1100; -webkit-text-size-adjust: none; "><div class="BMap_stdMpPan"><div class="BMap_button BMap_panN" title="向上平移"></div><div class="BMap_button BMap_panW" title="向左平移"></div><div class="BMap_button BMap_panE" title="向右平移"></div><div class="BMap_button BMap_panS" title="向下平移"></div><div class="BMap_stdMpPanBg BMap_smcbg"></div></div><div class="BMap_stdMpZoom" style="height: 38px; width: 37px; "><div style="height: 38px; width: 37px; "><div class="BMap_button BMap_stdMpZoomIn" title="放大一级" style=""><div class="BMap_smcbg"></div></div><div class="BMap_button BMap_stdMpZoomOut" title="缩小一级" style=""><div class="BMap_smcbg"></div></div></div><div class="BMap_stdMpSlider" style="height: 0px; "><div class="BMap_stdMpSliderBgTop" style="height: 0px; "><div class="BMap_smcbg"></div></div><div class="BMap_stdMpSliderBgBot"><div class="BMap_smcbg"></div></div><div class="BMap_stdMpSliderMask" title="放置到此级别"></div><div class="BMap_stdMpSliderBar" title="拖动缩放" style="cursor: url(http://api.map.baidu.com/images/openhand.cur), default; "><div class="BMap_smcbg"></div></div></div><div class="BMap_zlHolder"><div class="BMap_zlSt"><div class="BMap_smcbg"></div></div><div class="BMap_zlCity"><div class="BMap_smcbg"></div></div><div class="BMap_zlProv"><div class="BMap_smcbg"></div></div><div class="BMap_zlCountry"><div class="BMap_smcbg"></div></div></div></div></div><div unselectable="on" class=" BMap_cpyCtrl anchorBL" style="cursor: default; white-space: nowrap; color: black; background-image: none; font-style: normal; font-variant: normal; font-weight: normal; font-size: 11px; line-height: 15px; font-family: arial, sans-serif; bottom: 2px; right: auto; top: auto; left: 81px; position: absolute; z-index: 10; -webkit-text-size-adjust: none; background-position: initial initial; background-repeat: initial initial; "><span _cid="1" style="display: inline; "><span style="font-size:11px">© 2012 Baidu</span></span></div></div>
+</article>
+<script type="text/javascript">baidu.dom.ready(function(){var H={type:306,page:"view",cmd:"show",pos:"scene-travel-map",ua:(baidu.lang.getModule("lv.session.vars.isPad")||"")};lv.nslog(window.location.href,H.type,H);var C=[{"sid":"79cdadc41efa15d8330ab4f8","sname":"\u5bd2\u5c71\u5bfa","map_x":"13422628.346427","map_y":"3651519.3116807","is_current":0,"pic_url":"0e655ca7789bfbcdd0435825","ext":{"width":1279,"height":853,"size":313634}},{"sid":"caf956c0a53ec6adcd2f8df8","sname":"\u864e\u4e18","map_x":"13423669.306312","map_y":"3654392.5336302","is_current":0,"pic_url":"389aa8fdc616e34e08244d6d","ext":{"width":960,"height":639,"size":263401}},{"sid":"7af115d8330a23088cc5b2f8","sname":"\u82cf\u5dde\u4e50\u56ed","map_x":"13420262.670189","map_y":"3649164.6528341","is_current":1,"pic_url":"9252ae7ed55756600dd7da14","ext":{"width":1279,"height":853,"size":218920}}],_={"center":{"lat":"31.325001","lng":"120.602455"},"zoom":"12"},I="7af115d8330a23088cc5b2f8",D=baidu.dom.g("map-container"),F=lv.scene.common.map.create(D);F.init();var G={label:"sname",withoutLine:true,showLabel:true,pop:false,isCurrent:function(_){if(_.sid==I){return true;}return false;}};if(C.length===1){var B=parseInt("6"),E=B>3?8:(B+7);baidu.extend(G,{zoom:E});}if(_){var A=new BMap.Point(_.center.lng,_.center.lat);baidu.extend(G,{center:A,zoom:parseInt(_.zoom)});}F.showPaths(C,G);});</script>
+<article class="sidebar-mod-pad sidebar-mod-around clearfix">
+<header class="sidebar-mod-hd">
+<h1 class="clearfix"><span class="h1-word">周边景点</span></h1>
+</header>
+<ul class="sidebar-around-scene-list clearfix nslog-area" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;,&quot;pos&quot;:&quot;scene-around-scene&quot;}">
+<li class="">
+<div class="scene-pic">
+<a href="/scene/view/79cdadc41efa15d8330ab4f8" target="_blank" title="寒山寺">
+<img alt="寒山寺" height="67" src="http://hiphotos.baidu.com/lvpics/abpic/item/0e655ca7789bfbcdd0435825.jpg" width="100">
+</a>
+</div>
+<a class="title" href="/scene/view/79cdadc41efa15d8330ab4f8" target="_blank" title="寒山寺">寒山寺</a>
+</li>
+<li class="no-margin">
+<div class="scene-pic">
+<a href="/scene/view/caf956c0a53ec6adcd2f8df8" target="_blank" title="虎丘">
+<img alt="虎丘" height="67" src="http://hiphotos.baidu.com/lvpics/abpic/item/389aa8fdc616e34e08244d6d.jpg" width="100">
+</a>
+</div>
+<a class="title" href="/scene/view/caf956c0a53ec6adcd2f8df8" target="_blank" title="虎丘">虎丘</a>
+</li>
+</ul>
+</article>
+<script type="text/javascript">baidu.dom.ready(function(){var A=!!null,_={type:306,page:"view",cmd:"show",pos:"scene-around-scene-"+(A?"inner":"index"),tpl:"2"};lv.nslog(window.location.href,_.type,_);var B={type:306,page:"view",cmd:"show",pos:"scene-around-scene",tpl:"2"};lv.nslog(window.location.href,B.type,B);});</script>
+<article class="sidebar-mod-pad sidebar-mod-fav">
+<header class="sidebar-mod-hd">
+<h1 class="clearfix"><span class="h1-word">你可能会喜欢</span></h1>
+</header>
+<ul class="sidebar-fav-list clearfix nslog-area" data-nslog="{&quot;type&quot;:306,&quot;page&quot;:&quot;view&quot;,&quot;cmd&quot;: &quot;click&quot;,&quot;pos&quot;:&quot;scene-relate-scene&quot;}">
+<li class="">
+<div class="scene-pic">
+<a href="/scene/view/960ecc8575ed2e69961327fe" target="_blank">
+<img alt="锦江乐园" height="67" src="http://hiphotos.baidu.com/lvpics/abpic/item/9252ae7edd385e600dd7da35.jpg" width="100">
+</a>
+</div>
+<a class="title" href="/scene/view/960ecc8575ed2e69961327fe" target="_blank" title="锦江乐园">锦江乐园</a>
+</li>
+<li class="no-margin">
+<div class="scene-pic">
+<a href="/scene/view/b6e9381b2120f8ccda001ffe" target="_blank">
+<img alt="欢乐谷" height="67" src="http://hiphotos.baidu.com/lvpics/abpic/item/a005b334f35c1ddad1a2d3e9.jpg" width="100">
+</a>
+</div>
+<a class="title" href="/scene/view/b6e9381b2120f8ccda001ffe" target="_blank" title="欢乐谷">欢乐谷</a>
+</li>
+</ul>
+</article>
+<script type="text/javascript">baidu.dom.ready(function(){var A=!!null,_={type:306,page:"view",cmd:"show",pos:"scene-relate-scene-"+(A?"inner":"index"),tpl:"2"};lv.nslog(window.location.href,_.type,_);var B={type:306,page:"view",cmd:"show",pos:"scene-relate-scene",tpl:"2"};lv.nslog(window.location.href,B.type,B);});</script>
+</div>
+<div class="mod-pop-sidebar nslog-area" data-nslog="{&quot;type&quot;:1201,&quot;page&quot;:&quot;index&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;pop-side-bottom-scene&quot;}">
+	<a href="/travel/appdownload" class="nslog app-promotion" target="_blank" data-nslog="{&quot;type&quot;:1100,&quot;page&quot;:&quot;index&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;travel-aside-app&quot;}">
+		<img src="http://lvyou.baidu.com/static/absolute/down-app.png">
+	</a>
+	<a href="/travel/appdownload?device=iphone" class="phone-ios" target="_blank"></a>
+	<a href="/travel/appdownload?device=android" class="phone-android" target="_blank"></a></div>
+<div class="scene-side-pop nslog-area mt10" data-nslog="{&quot;type&quot;:1200,&quot;page&quot;:&quot;scene-view&quot;,&quot;cmd&quot;:&quot;click&quot;,&quot;pos&quot;:&quot;pop-scene-view-side&quot;}" style="margin:15px auto">
+    <style type="text/css">
+        .travel-book-img {
+            border: 1px #E0E0E0 solid;
+            border-left: none;
+            border-top: none;
+            display: inline-block;
+            float: left;
+        }
+        .guide-title{
+line-height:1em;
+	font-size:16px;
+}
+.guide-title .h1-word{
+    color:#484848;
+}
+
+        .travel-book-img img {
+            padding: 5px;
+            display:block;
+            background: white;
+        }
+        .travel-book-info {
+            float: right;
+        }
+        .travel-book-num {
+           color: #F47400;
+           margin-right: 5px;
+           font: normal 16px/1.231 Arial,SimSun,sans-serif;
+           font-weight: 500;
+        }
+        .travel-book-info-item {
+            height: 20px;
+            line-height: 20px;
+            margin: 6px 0;
+        }
+        .travel-book-download-btn {
+            background: url(http://lvyou.baidu.com/static/absolute/travel-book/download-travel-book.png);
+            width: 90px;
+            height: 26px;
+            display: block;
+        }
+        .travel-book-download-btn-container {
+            margin-top: 20px;
+        }
+        .travel-book-download-times {
+            margin-top: 10px;
+        }
+        .book-download-times {
+            color: #F47400;
+        }
+        .small {
+            height: 120px;
+            border: 5px solid #FFF;
+        }
+        .small-wrapper {
+float: left;
+border-right: 1px solid #EDEDED;
+border-bottom: 1px solid #EDEDED;
+height: 130px;
+        }
+    </style>
+    <textarea id="travel-book-tpl" class="hide">            &lt;div class="sidebar-mod-pad sidebar-lushu-mod"&gt;
+            &lt;div class="sidebar-mod-hd pr clearfix"&gt;
+                &lt;h1 class="clearfix guide-title"&gt;
+                    &lt;span class="fl"&gt;&lt;/span&gt;&lt;span class="h1-word"&gt;&lt;%=title%&gt;&lt;/span&gt;
+                &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;div class="sidebar-mod-body clearfix"&gt;
+                &lt;div class="small-wrapper"&gt;
+
+                &lt;a id="travel-book-img" class="nslog" href="&lt;%=to_url%&gt;"
+                    data-nslog='{"type":306,"page":"view","cmd":"click","pos":"download-click"}'
+                    class="travel-book-img"&gt;
+                    &lt;img class="small" src="&lt;%=pic_url%&gt;" alt=""&gt;
+                &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="travel-book-info"&gt;
+                    &lt;div class="travel-book-info-item"&gt;
+                        &lt;span class="travel-book-num"&gt;&lt;%=recommend_count%&gt;&lt;/span&gt;位达人精心推荐
+                    &lt;/div&gt;
+                    &lt;div class="travel-book-info-item"&gt;
+                        &lt;span class="travel-book-num"&gt;&lt;%=line_count%&gt;&lt;/span&gt;条线路百里挑一
+                    &lt;/div&gt;
+
+                    &lt;div class="travel-book-info-item travel-book-download-btn-container"&gt;
+                        &lt;a id="travel-book-download-btn" class="nslog travel-book-download-btn"
+                            data-nslog='{"type":306,"page":"view","cmd":"click","pos":"download-click"}'
+                            href="&lt;%=pdf_url%&gt;"&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="travel-book-info-item travel-book-download-times"&gt;
+                        已有&lt;span class="book-download-times" id="J_download-count"&gt;&lt;/span&gt;人下载
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </textarea>
+    <script type="text/javascript">
+        baidu.dom.ready(function(){
+            try {
+                var loaded = false;
+
+                var getDataUrl = "/static/absolute/travel-book/data.js?t=" + (new Date()).getTime();
+                baidu.ajax.get(getDataUrl, function(r){
+                    var contents = baidu.json.parse(r.responseText);
+                    var sid =  baidu.lang.getModule("lv.scene.view.sid");
+                    baidu.array.each(contents, function(content, i){
+                        var pairs = content["pairs"];
+                        var realSid = content["sid"];
+                        baidu.array.each(pairs, function(pair){
+                            if(pair.sid == sid && !loaded){
+                                //render
+                                var tpl = baidu.dom.g("travel-book-tpl");
+                                var html = baidu.template(tpl.value, content);
+                                var sidebarBasic= baidu.dom.query('section.sidebar-basic')[0];
+                                if ( !!sidebarBasic ) {
+                                    var article = baidu.dom.create('div', {
+                                        'class': "sidebar-mod"
+                                    });
+                                    article.innerHTML = html;
+                                    sidebarBasic.parentNode.insertBefore(article, sidebarBasic);
+                                    loaded = true;
+                                    var getTotalUrl = "/scene/ajax/downbook?sid=" + realSid;
+                                    baidu.ajax.get(getTotalUrl + '&t='
+                                            + new Date().getTime(), function(res){
+                                        var json = baidu.json.parse(res.responseText);
+                                        var total = json.data.total;
+                                        baidu.dom.g("J_download-count").innerHTML = total;
+                                    });
+baidu.event.on('travel-book-download-btn', 'click', function(){   lv.nslog(window.location.href,306,{"page":"view","cmd":"click","pos":"download-click"});});
+baidu.event.on('travel-book-img', 'click', function(){   lv.nslog(window.location.href,306,{"page":"view","cmd":"click","pos":"download-click"});});
+                                lv.nslog(window.location.href,306,{"page":"scene","cmd":"show","pos":"travel-book-view-count"});
+                                } else {
+                                    var test = baidu.dom.query('.col-sub')[0];
+                                    var article = baidu.dom.create('div', {
+                                        'class': "sidebar-mod"
+                                    });
+                                    article.innerHTML = html;
+                                    baidu.dom.insertBefore( article, baidu.dom.first( test ) );
+                                    loaded = true;
+                                    var getTotalUrl = "/scene/ajax/downbook?sid=" + realSid;
+                                    baidu.ajax.get(getTotalUrl + '&t='
+                                            + new Date().getTime(), function(res){
+                                        var json = baidu.json.parse(res.responseText);
+                                        var total = json.data.total;
+                                        baidu.dom.g("J_download-count").innerHTML = total;
+
+                                    });
+baidu.event.on('travel-book-download-btn', 'click', function(){   lv.nslog(window.location.href,306,{"page":"view","cmd":"click","pos":"download-click"});});
+baidu.event.on('travel-book-img', 'click', function(){   lv.nslog(window.location.href,306,{"page":"view","cmd":"click","pos":"download-click"});});
+                                lv.nslog(window.location.href,306,{"page":"scene","cmd":"show","pos":"travel-book-view-count"});
+                                }
+                            }
+                        });
+                    });
+                });
+            }
+            catch (e){
+                cosnole.log(e);
+            }
+        });
+    </script>
+
+<a title="旅游无线产品使用有奖调查" href="http://uxsurvey.baidu.com/index.php?sid=48184&amp;newtest=Y&amp;lang=zh-Hans" target="_blank"><img width="260" height="127" src="http://hiphotos.baidu.com/baidu/pic/item/ae51f3deb48f8c5483bd8cdc3a292df5e1fe7fd2.jpg"></a>
+</div>
+<div id="J-popside-for-fastnavigation"></div>
+</aside>
+</section>
+</div>
