@@ -18,6 +18,30 @@
 
 #. django.form字段required=False时，表格可以是空的也可以提交数据。
 
+#. django template 简介：
+    #. 变量用 **{{ }}** 标识
+    #. 过滤器用 **{{ value | default: "nothing" }}**
+    #. 标签使用 **{% %}** 标识
+
+#. 缺省情况下，django的模板系统打开自动转换html字符的功能，转换以下字符 ::
+
+    < 转换为 &lt;
+    > 转换为 &gt;
+    '（单引号）转换为 &#39;
+    "（双引号）转换为 &quot;
+    & 转换为 &amp;
+
+#. 使用 ``safe`` 过滤器关闭变量的自动转换 ::
+    
+    This will be escaped: {{ data }}
+    This will not be escaped: {{ data | safe }}
+
+#. 使用 ``autoescape`` 标签关闭或打开一个模板块的自动转换 ::
+    
+    {% autoescape off %}
+        Hello {{ name }}
+    {% endautoescape %}
+
 #. python 几个随机数的用法::
 
     import random

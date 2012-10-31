@@ -75,6 +75,35 @@
 </li>
 <li><p class="first">django.form字段required=False时，表格可以是空的也可以提交数据。</p>
 </li>
+<li><dl class="first docutils">
+<dt>django template 简介：</dt>
+<dd><ol class="first last arabic simple">
+<li>变量用 <strong>{{ }}</strong> 标识</li>
+<li>过滤器用 <strong>{{ value | default: &#8220;nothing&#8221; }}</strong></li>
+<li>标签使用 <strong>{% %}</strong> 标识</li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p class="first">缺省情况下，django的模板系统打开自动转换html字符的功能，转换以下字符</p>
+<div class="highlight-python"><pre>&lt; 转换为 &amp;lt;
+&gt; 转换为 &amp;gt;
+'（单引号）转换为 &amp;#39;
+"（双引号）转换为 &amp;quot;
+&amp; 转换为 &amp;amp;</pre>
+</div>
+</li>
+<li><p class="first">使用 <tt class="docutils literal"><span class="pre">safe</span></tt> 过滤器关闭变量的自动转换</p>
+<div class="highlight-python"><pre>This will be escaped: {{ data }}
+This will not be escaped: {{ data | safe }}</pre>
+</div>
+</li>
+<li><p class="first">使用 <tt class="docutils literal"><span class="pre">autoescape</span></tt> 标签关闭或打开一个模板块的自动转换</p>
+<div class="highlight-python"><pre>{% autoescape off %}
+    Hello {{ name }}
+{% endautoescape %}</pre>
+</div>
+</li>
 <li><p class="first">python 几个随机数的用法:</p>
 <div class="highlight-python"><pre>import random
 random.randit(1, 10)  #取得1到10之间的随机整数，包括10

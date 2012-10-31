@@ -1,4 +1,6 @@
 {% extends 'baseinfo_base.html' %}
+{% load webdesign %}
+{% load test_filter %}
 
 {% block content_note %}地理位置列表、分页、编辑、删除、查询{% endblock %}
 
@@ -23,6 +25,9 @@
 
     <div class="alert alert-success" id="result">
         <p>当前查询地址：{% url baseinfo.views.place_list %}</p>
+        {% lorem 3 p %}
+        {{ 12.09|percent }}
+        <img src="http://hiphotos.baidu.com/lvpics/pic/item/a6efce1b9d16fdfa104a2318b48f8c5494ee7b26.jpg">
     </div>
 
     <table class="table table-striped">
@@ -48,16 +53,11 @@
         </tbody>
     </table>
 
-    <div class="pagination pagination-right" id="id_pager">
-        <ul>
-            <li><a href="#" name="1">First</a></li>
-            <li><a href="#" name="{{ pager.prev }}">Prev</a></li>
-            {% for page in pager.range %}
-                <li {% if page == pager.page %}class="active" {% endif %}><a href="#" name="{{ page }}">{{ page }}</a></li>
-            {% endfor %}
-            <li><a href="#" name="{{ pager.next }}">Next</a></li>
-            <li><a href="#" name="{{ pager.total }}">Last</a></li>
-        </ul>
-    </div>
+    {# 翻页器 #}
+    {% include 'snippets/pager.html' %}
+
+    {% comment %}
+    {% debug %}
+    {% endcomment %}
 
 {% endblock %}

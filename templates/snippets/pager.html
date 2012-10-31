@@ -1,0 +1,11 @@
+<div class="pagination pagination-right" id="id_pager">
+    <ul>
+        <li><a href="#" name="1">First</a></li>
+        <li><a href="#" name="{{ pager.prev }}">Prev</a></li>
+        {% for page in pager.range %}
+            <li {% if page == pager.page %}class="active" {% endif %}><a href="#" name="{{ page }}">{{ page }}</a></li>
+        {% endfor %}
+        <li><a href="#" name="{{ pager.next }}">Next</a></li>
+        <li><a href="#" name="{{ pager.total }}">Last</a></li>
+    </ul>
+</div>
