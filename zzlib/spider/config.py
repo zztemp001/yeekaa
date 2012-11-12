@@ -1,4 +1,5 @@
 #coding=utf-8
+from proxy import get_proxy_list
 
 #线程数
 THREAD_NUM = 10
@@ -14,6 +15,9 @@ SLEEP_TIME_SEED = 5
 
 #内存栈大小，32768的倍数，建议两倍以上
 STACK_SIZE = 32768 * 16
+
+#是否支持gzip抓取
+USE_GZIP = False
 
 #是否缓存DNS查询结果，如果是，则将域名第一次查询到的ip置换掉请求网址的相应部分
 CACHE_DNS = True
@@ -33,7 +37,13 @@ USE_COOKIE = True
 COOKIE_FILE_PATH = ''
 
 #是否使用代理
-USE_PROXY = False
+USE_PROXY = True
+PROXY_LIST = []
+if USE_PROXY:
+    try:
+        PROXY_LIST = get_proxy_list()  #从代理数据库中获取列表 [(proxy_type, host, port, user, password),...]
+    except Exception, error_msg:
+        print u'获取代理列表失败'
 
 #是否需要事先登录
 NEED_LOGIN = False
@@ -42,3 +52,4 @@ LOGIN_FORM_DATA = {
     'username': '',
     'password': '',
 }
+LOGIN_SUCCEED_STR = ''

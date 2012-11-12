@@ -3,13 +3,12 @@
 import re
 import sqlite3
 import urllib2
-from bs4 import BeautifulSoup
+from BeautifulSoup import BeautifulSoup
 
-from download import get_page_basic
 
 def init_db():
     conn = sqlite3.connect('proxy.db')
-    conn.execute('create table if not exists proxy (host CHAR, port CHAR, type CHAR, user CHAR, password CHAR)')
+    conn.execute('create table if not exists proxy (host CHAR, port CHAR, proxy_type CHAR, user CHAR, password CHAR, checked BOOL, speed INT, catch_from CHAR, catch_time TIME)')
     return conn
 
 def get_cnproxy_proxy():
@@ -139,13 +138,13 @@ def get_proxy_list():
     '''
     try:
         conn = sqlite3.connect('proxy.db')
-        rows = conn.execute('select host, port, type from proxy').fetchall()
-        proxies = []
-        for host, port, proxy_type in rows:
-            proxies.append({'host': host + ':' + port, 'type': proxy_type})
+        proxies = conn.execute('select proxy_type, host, port, user, password from proxy').fetchall()
         conn.close()
         conn = None
     except:
         return False
 
     return proxies
+
+if __name__ == '__main__':
+    init_db()
