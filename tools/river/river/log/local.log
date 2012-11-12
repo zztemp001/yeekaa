@@ -4129,3 +4129,56 @@
 2012-10-31 20:48:02+0800 [default] INFO: Spider closed (shutdown)
 2012-10-31 20:48:02+0800 [scrapy] INFO: Dumping global stats:
 	{}
+2012-11-12 20:56:34+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-11-12 20:56:35+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-11-12 20:56:35+0800 [scrapy] DEBUG: Enabled downloader middlewares: HttpProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-11-12 20:56:35+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-11-12 20:56:35+0800 [scrapy] DEBUG: Enabled item pipelines: 
+2012-11-12 20:56:36+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-11-12 20:56:36+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-11-12 20:56:36+0800 [default] INFO: Spider opened
+2012-11-12 20:56:46+0800 [default] DEBUG: Crawled (200) <GET http://www.myip.cn> (referer: None)
+2012-11-12 20:59:59+0800 [default] DEBUG: Crawled (200) <GET http://www.site-digger.com/html/articles/20110516/proxieslist.html> (referer: None)
+2012-11-12 21:36:58+0800 [default] INFO: Closing spider (shutdown)
+2012-11-12 21:36:58+0800 [default] INFO: Dumping spider stats:
+	{'downloader/request_bytes': 435,
+	 'downloader/request_count': 2,
+	 'downloader/request_method_count/GET': 2,
+	 'downloader/response_bytes': 48794,
+	 'downloader/response_count': 2,
+	 'downloader/response_status_count/200': 2,
+	 'finish_reason': 'shutdown',
+	 'finish_time': datetime.datetime(2012, 11, 12, 13, 36, 58, 406000),
+	 'scheduler/memory_enqueued': 2,
+	 'start_time': datetime.datetime(2012, 11, 12, 12, 56, 36, 15000)}
+2012-11-12 21:36:58+0800 [default] INFO: Spider closed (shutdown)
+2012-11-12 21:36:58+0800 [scrapy] INFO: Dumping global stats:
+	{}
+2012-11-12 21:37:37+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-11-12 21:37:37+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-11-12 21:37:37+0800 [scrapy] DEBUG: Enabled downloader middlewares: HttpProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-11-12 21:37:37+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-11-12 21:37:37+0800 [scrapy] DEBUG: Enabled item pipelines: 
+2012-11-12 21:37:37+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-11-12 21:37:37+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-11-12 21:37:37+0800 [default] INFO: Spider opened
+2012-11-12 21:37:38+0800 [default] DEBUG: Crawled (200) <GET http://www.site-digger.com/html/articles/20110516/proxieslist.html> (referer: None)
+2012-11-12 22:07:11+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-11-12 22:07:11+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-11-12 22:07:11+0800 [scrapy] DEBUG: Enabled downloader middlewares: HttpProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-11-12 22:07:11+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-11-12 22:07:11+0800 [scrapy] DEBUG: Enabled item pipelines: 
+2012-11-12 22:07:11+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-11-12 22:07:11+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-11-12 22:07:11+0800 [default] INFO: Spider opened
+2012-11-12 22:07:12+0800 [default] DEBUG: Crawled (200) <GET http://www.site-digger.com/html/articles/20110516/proxieslist.html> (referer: None)
+2012-11-12 22:13:14+0800 [scrapy] INFO: Scrapy 0.14.4 started (bot: chrome)
+2012-11-12 22:13:14+0800 [scrapy] DEBUG: Enabled extensions: TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-11-12 22:13:14+0800 [scrapy] DEBUG: Enabled downloader middlewares: HttpProxyMiddleware, HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-11-12 22:13:14+0800 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-11-12 22:13:14+0800 [scrapy] DEBUG: Enabled item pipelines: 
+2012-11-12 22:13:14+0800 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-11-12 22:13:14+0800 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-11-12 22:13:14+0800 [default] INFO: Spider opened
+2012-11-12 22:13:14+0800 [default] DEBUG: Retrying <GET http://www.site-digger.com/html/articles/20110516/proxieslist.html> (failed 1 times): DNS lookup failed: address 'www.site-digger.com' not found: [Errno 11001] getaddrinfo failed.
+2012-11-12 22:13:17+0800 [default] DEBUG: Crawled (200) <GET http://www.site-digger.com/html/articles/20110516/proxieslist.html> (referer: None)
