@@ -10,6 +10,8 @@ from zzlib.common.system import Logger
 from libxml2 import htmlParseDoc as htmlParser
 
 class MyProxy():
+    conn = sqlite3.connect('proxy.db')
+
     def __init__(self):
         socket.setdefaulttimeout(30)  #设置代理检验的超时时长
         self.logger = Logger('proxy.log')  #用于保存log信息的文件
@@ -19,7 +21,6 @@ class MyProxy():
 
         #类实例化时，打开数据库并清空数据
         try:
-            self.conn = sqlite3.connect('proxy.db')
             self.conn.execute('create table if not exists proxy (host CHAR, port CHAR, proxy_type CHAR, user CHAR, password CHAR, checked BOOL, speed INT, catch_from CHAR, catch_time TIME)')
             self.conn.execute('delete from proxy')
             self.conn.commit()
