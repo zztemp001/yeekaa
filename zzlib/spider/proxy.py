@@ -13,6 +13,8 @@ class MyProxy():
     def __init__(self):
         socket.setdefaulttimeout(30)  #设置代理检验的超时时长
         self.logger = Logger('proxy.log')  #用于保存log信息的文件
+        print '程序开始运行..'
+        print u'程序开始运行..'
         self.logger.p_log('程序开始运行...')
 
         #类实例化时，打开数据库并清空数据
@@ -172,6 +174,6 @@ class MyProxy():
 
 if __name__ == '__main__':
     job = MyProxy()
-    job.fetch_proxy()
-    job.verify_proxy()
+    #job.fetch_proxy()
+    #job.verify_proxy()
     del job
