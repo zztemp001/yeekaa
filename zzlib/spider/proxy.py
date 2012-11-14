@@ -49,51 +49,74 @@ class MyProxy():
 
     def fetch_proxy(self):
         self.__fetch_sitedigger()
-        #self.__fetch_proxylist()
+        self.__fetch_proxylist()
 
-    def verify_proxy(self):
+    def __get_ip_from_dyndns_org(self, host=None, port=None):
+        if not host or not port: return False
+        url = 'http://checkip.dyndns.org/'
+        proxy = {'http': 'http://' + host + ':' + port}
+        try:
+            content = urllib.urlopen(url, proxies=proxy).read()
+            if content:
+                ip_there = content.split(': ')[1].split('</body>')[0]
+                self.logger.p_log('检测到的代理：%s' % (ip_there))
+                return ip_there
+            else:
+                self.logger.p_log('代理 %s:%s 未能返回正确信息，校验失败' % (host, port))
+        except Exception, e:
+            self.logger.p_log('使用代理 %s:%s 打开目标网页时发生错误，准备检验下一个...' % (host, port))
+
+        return False
+
+    def __get_ip_from_myip_cn(self, host=None, port=None):
+        if not host or not port: return False
         url = 'http://www.myip.cn'
         xpath = '/html/body/center/div[4]/font[1]/b'
-        verified = []
+        proxy = {'http': 'http://' + host + ':' + port}
 
+        try:
+            html = urllib.urlopen(url, proxies=proxy).read()
+            doc = htmlParser(html, 'utf-8')
+            content = doc.xpathEval(xpath)[0].content
+            if content:
+                ip_there = content.split(' ')[1]
+                self.logger.p_log('检测到的代理：%s' % (ip_there))
+                return ip_there
+            else:
+                self.logger.p_log('代理 %s:%s 未能返回正确信息，校验失败' % (host, port))
+        except Exception, e:
+            self.logger.p_log('使用代理 %s:%s 打开目标网页时发生错误，准备检验下一个...' % (host, port))
+
+        return False
+
+    def verify_proxy(self):
         #获取需要检验的代理
         try:
             proxies = self.conn.execute('select distinct host, port from proxy').fetchall()
             self.logger.p_log('从数据库中获取到不重复的代理共 %d 个，准备逐个校验中' % len(proxies))
-            #proxies = proxies[:25]
+            proxies = proxies[20:30]
         except Exception, e:
             self.logger.p_log('读取代理数据库错误，退出...')
             return False
 
+        verified = []
         #检验代理，成功的保存在verified中
         for host, port in proxies:
             host = str(host)
             port = str(port)
-            proxy = {'http': 'http://' + host + ':' + port}
             self.logger.p_log('正在检验代理：%s:%s' % (host, port))
             start_time = time.time()
-            try:
-                html = urllib.urlopen(url, proxies=proxy).read()
-                doc = htmlParser(html, 'utf-8')
-                content = doc.xpathEval(xpath)[0].content
-                if content:
-                    ip_there = content.split(' ')[1]
-                    self.logger.p_log('检测到的代理：%s' % (ip_there))
-                    if ip_there == host:
-                        time_used = time.time() - start_time + 1
-                        verified.append((host, port, int(time_used)))
-                        self.logger.p_log('代理 %s:%s 检验通过，用时：%d 秒' % (host, port, time_used))
-                    else:
-                        self.logger.p_log('检测到的IP %s 与代理IP %s 不相符，准备检验下一个...' % (ip_there, host))
-                        continue
-                else:
-                    self.logger.p_log('代理 %s:%s 未能正确返回信息，校验失败，准备检验下一个...' % (host, port))
-            except Exception, e:
-                self.logger.p_log('使用代理 %s:%s 打开目标网页时发生错误，准备检验下一个...' % (host, port))
+            ip_there = self.__get_ip_from_myip_cn(host, port)
+            #ip_there = self.__get_ip_from_dyndns_org(host, port)
+            if ip_there:
+                time_used = time.time() - start_time + 1
+                verified.append((host, port, int(time_used)))
+                self.logger.p_log('代理 %s:%s 检验通过，用时：%d 秒' % (host, port, time_used))
+            else:
+                continue
 
         #保存校验成功的代理
         self.logger.p_log('共有 %d 个代理通过校验，正在准备更新数据库记录...' % len(verified))
-        #conn.text_factory = 'str'
         for host, port, speed in verified:
             try:
                 self.conn.execute('update proxy set speed=? where host=? and port=?', (speed, host, port))
@@ -111,6 +134,7 @@ class MyProxy():
 
 
     def __fetch_sitedigger(self):
+        catch_from = 'site-digger.net'
         url = 'http://www.site-digger.com/html/articles/20110516/proxieslist.html'
         xpath = '//*[@id="content_detail"]/div[3]/p[3]/textarea'
 
@@ -134,26 +158,36 @@ class MyProxy():
                 proxies.append(proxy)
 
         self.logger.p_log('成功获取 %d 个代理，正在准备存入数据库中...' % len(proxies))
-        self.__save_proxy(proxies)
+        self.__save_proxy(proxies, catch_from)
 
     def __fetch_proxylist(self):
-        urls = []
-        urls.append('http://www.proxylists.net/http.txt')
-        urls.append('http://www.proxylists.net/http_highanon.txt')
+        catch_from = 'proxylist.net'
+        urls = [
+            'http://www.proxylists.net/http.txt',
+            'http://www.proxylists.net/http_highanon.txt'
+        ]
 
-        matches=re.findall(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\:(\d{2,5})',html)
+        proxies = []
+        for url in urls:
+            try:
+                content = urllib2.urlopen(url).read()
+                if not content: return False
+                self.logger.p_log('成功代开网页，获取内容的长度为：%d 字节' % len(content))
+                for ip_port in content.split('\r\n')[:-1]:
+                    try:
+                        proxy = (ip_port.split(':')[0], ip_port.split(':')[1])
+                    except Exception, e:
+                        self.logger.p_log('处理记录：%s 是发生错误' % ip_port)
+                    if proxy not in proxies:
+                        proxies.append(proxy)
+            except:
+                pass
 
-        ret=[]
-        for match in matches:
-            ip=match[0]
-            port=match[1]
-            type=-1
-            area='--'
-            ret.append([ip,port,type,area])
-            if indebug:print '8',ip,port,type,area
-        return ret
+        self.logger.p_log('成功获取 %d 个代理，正在准备存入数据库中...' % len(proxies))
+        self.__save_proxy(proxies, catch_from)
 
-    def __save_proxy(self, proxies):
+
+    def __save_proxy(self, proxies, catch_from=''):
         if proxies:
             for host, port in proxies:
                 try:
@@ -165,7 +199,7 @@ class MyProxy():
                         self.logger.p_log('代理 %s:%s 已存在' % (host, port))
                         continue
                     else:
-                        self.conn.execute(u'insert into proxy (host, port, proxy_type) values (?,?,?)', (host, port, 'http'))
+                        self.conn.execute('insert into proxy (host, port, proxy_type, catch_from, catch_time) values (?,?,?,?,?)', (host, port, 'http', catch_from, time.time()))
                 except Exception, e:
                     self.logger.p_log('代理 %s:%s 保存失败' % (host, port))
             self.conn.commit()  #记得及时提交
