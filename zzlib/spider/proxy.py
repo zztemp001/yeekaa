@@ -60,7 +60,7 @@ class MyProxy():
         try:
             proxies = self.conn.execute('select distinct host, port from proxy').fetchall()
             self.logger.p_log('从数据库中获取到不重复的代理共 %d 个，准备逐个校验中' % len(proxies))
-            proxies = proxies[:5]
+            #proxies = proxies[:25]
         except Exception, e:
             self.logger.p_log('读取代理数据库错误，退出...')
             return False
