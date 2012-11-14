@@ -53,3 +53,6 @@ LOGIN_FORM_DATA = {
     'password': '',
 }
 LOGIN_SUCCEED_STR = ''
+
+#日志文件
+LOG_FILE = 'running.log'

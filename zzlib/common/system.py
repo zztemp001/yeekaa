@@ -1,6 +1,27 @@
 #coding=utf-8
 
 import subprocess, sys
+import logging
+import time
+
+class Logger:
+    log_file = 'log.txt'
+    log_level = logging.DEBUG
+    logger = logging.getLogger()
+
+    def __init__(self, log_file=None):
+        if type(log_file) is str: self.log_file = log_file  #如果指定新的记录文件
+
+        handler = logging.FileHandler(self.log_file)
+        formatter = logging.Formatter("[%(asctime)s]  %(message)s")
+
+        handler.setFormatter(formatter)
+        self.logger.addHandler(handler)
+        self.logger.setLevel(self.log_level)
+
+    def p_log(self, msg):
+        print '[ %s ]  %s' % (str(time.asctime()), msg)
+        self.logger.log(self.log_level, msg=msg)
 
 def subprocess_call(*args, **kwargs):
     # 让python在windows的隐藏子进程中运行
@@ -16,3 +37,7 @@ def subprocess_call(*args, **kwargs):
     retcode = subprocess.call(*args, **kwargs)
 
     return retcode
+
+if __name__ == "__main__":
+    logger = Logger()
+    logger.p_log('程序行ioooo')
