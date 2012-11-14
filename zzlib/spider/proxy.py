@@ -59,16 +59,18 @@ class MyProxy():
         #获取需要检验的代理
         try:
             proxies = self.conn.execute('select distinct host, port from proxy').fetchall()
-            self.logger.p_log(u'从数据库中获取到不重复的代理共 %d 个，准备逐个校验中' % len(proxies))
+            self.logger.p_log('从数据库中获取到不重复的代理共 %d 个，准备逐个校验中' % len(proxies))
             proxies = proxies[:5]
         except Exception, e:
-            self.logger.p_log(u'读取代理数据库错误，退出...')
+            self.logger.p_log('读取代理数据库错误，退出...')
             return False
 
         #检验代理，成功的保存在verified中
         for host, port in proxies:
+            host = str(host)
+            port = str(port)
             proxy = {'http': 'http://' + host + ':' + port}
-            self.logger.p_log(u'正在检验代理：%s:%s' % (host, port))
+            self.logger.p_log('正在检验代理：%s:%s' % (host, port))
             start_time = time.time()
             try:
                 html = urllib.urlopen(url, proxies=proxy).read()
@@ -76,36 +78,36 @@ class MyProxy():
                 content = doc.xpathEval(xpath)[0].content
                 if content:
                     ip_there = content.split(' ')[1]
-                    self.logger.p_log(u'检测到的代理：%s' % (ip_there))
+                    self.logger.p_log('检测到的代理：%s' % (ip_there))
                     if ip_there == host:
                         time_used = time.time() - start_time + 1
                         verified.append((host, port, int(time_used)))
-                        self.logger.p_log(u'代理 %s:%s 检验通过，用时：%d 秒' % (host, port, time_used))
+                        self.logger.p_log('代理 %s:%s 检验通过，用时：%d 秒' % (host, port, time_used))
                     else:
-                        self.logger.p_log(u'检测到的IP %s 与代理IP %s 不相符，准备检验下一个...' % (ip_there, host))
+                        self.logger.p_log('检测到的IP %s 与代理IP %s 不相符，准备检验下一个...' % (ip_there, host))
                         continue
                 else:
-                    self.logger.p_log(u'代理 %s:%s 未能正确返回信息，校验失败，准备检验下一个...' % (host, port))
+                    self.logger.p_log('代理 %s:%s 未能正确返回信息，校验失败，准备检验下一个...' % (host, port))
             except Exception, e:
-                self.logger.p_log(u'使用代理 %s:%s 打开目标网页时发生错误，准备检验下一个...' % (host, port))
+                self.logger.p_log('使用代理 %s:%s 打开目标网页时发生错误，准备检验下一个...' % (host, port))
 
         #保存校验成功的代理
-        self.logger.p_log(u'共有 %d 个代理通过校验，正在准备更新数据库记录...' % len(verified))
+        self.logger.p_log('共有 %d 个代理通过校验，正在准备更新数据库记录...' % len(verified))
         #conn.text_factory = 'str'
         for host, port, speed in verified:
             try:
                 self.conn.execute('update proxy set speed=? where host=? and port=?', (speed, host, port))
                 self.conn.commit()
-                self.logger.p_log(u'代理 %s:%s [%d 秒] 校验成功，并已成功入库' % (host, port, speed))
+                self.logger.p_log('代理 %s:%s [%d 秒] 校验成功，并已成功入库' % (host, port, speed))
             except Exception, e:
-                self.logger.p_log(u'代理 %s:%s [%d 秒] 校验成功，但在数据库更新状态时发生异常' % (host, port, speed))
+                self.logger.p_log('代理 %s:%s [%d 秒] 校验成功，但在数据库更新状态时发生异常' % (host, port, speed))
 
         #删除校验不成功的数据
         try:
             self.conn.execute('delete from proxy where speed is null')
-            self.logger.p_log(u'未通过校验的代理已从数据库中删除')
+            self.logger.p_log('未通过校验的代理已从数据库中删除')
         except Exception, e:
-            self.logger.p_log(u'从数据库中删除未通过校验的代理时发生错误')
+            self.logger.p_log('从数据库中删除未通过校验的代理时发生错误')
 
 
     def __fetch_sitedigger(self):
@@ -118,20 +120,20 @@ class MyProxy():
             doc = htmlParser(html, 'utf-8')
             content = doc.xpathEval(xpath)[0].content
             if not content: return False
-            self.logger.p_log(u'成功代开网页，获取内容的长度为：%d 字节' % len(content))
+            self.logger.p_log('成功代开网页，获取内容的长度为：%d 字节' % len(content))
         except:
-            self.logger.p_log(u'打开目标网页 %s 获取内容时出错，退出中...' % (url))
+            self.logger.p_log('打开目标网页 %s 获取内容时出错，退出中...' % (url))
 
         proxies = []
         for ip_port in content.split('\n')[2:-2]:
             try:
                 proxy = (ip_port.split(':')[0], ip_port.split(':')[1])
             except Exception, e:
-                self.logger.p_log(u'处理记录：%s 是发生错误' % ip_port)
+                self.logger.p_log('处理记录：%s 是发生错误' % ip_port)
             if proxy not in proxies:
                 proxies.append(proxy)
 
-        self.logger.p_log(u'成功获取 %d 个代理，正在准备存入数据库中...' % len(proxies))
+        self.logger.p_log('成功获取 %d 个代理，正在准备存入数据库中...' % len(proxies))
         self.__save_proxy(proxies)
 
     def __fetch_proxylist(self):
@@ -160,12 +162,12 @@ class MyProxy():
                     row = None
                 try:
                     if row:
-                        self.logger.p_log(u'代理 %s:%s 已存在' % (host, port))
+                        self.logger.p_log('代理 %s:%s 已存在' % (host, port))
                         continue
                     else:
                         self.conn.execute(u'insert into proxy (host, port, proxy_type) values (?,?,?)', (host, port, 'http'))
                 except Exception, e:
-                    self.logger.p_log(u'代理 %s:%s 保存失败' % (host, port))
+                    self.logger.p_log('代理 %s:%s 保存失败' % (host, port))
             self.conn.commit()  #记得及时提交
 
         self.logger.p_log('目标代理列表已入库，等待校验中...')
@@ -173,6 +175,6 @@ class MyProxy():
 
 if __name__ == '__main__':
     job = MyProxy()
-    #job.fetch_proxy()
-    #job.verify_proxy()
+    job.fetch_proxy()
+    job.verify_proxy()
     del job
