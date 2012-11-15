@@ -11,6 +11,13 @@
 工作笔记
 ========
 
+#. ubuntu下更改 ``/etc/vim/vimrc`` 文件，使支持中文 ::
+    
+    set encoding=utf-8
+    set fileencodings=ucs-bom,utf-8,cp936
+    set fileencoding=utf-8
+    set termencoding=utf-8
+
 #. 可以通过在 ``site-packages`` 目录中添加 ``*.pth`` 文件来讲路径自动添加到 ``sys.path`` 变量中，以便python可以找到
 #. python文档注释方法可以参考：
     #. http://packages.python.org/an_example_pypi_project/sphinx.html#is-sweaty

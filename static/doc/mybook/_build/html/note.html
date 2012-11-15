@@ -62,6 +62,13 @@
 <div class="section" id="id3">
 <h2>工作笔记<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
+<li><p class="first">ubuntu下更改 <tt class="docutils literal"><span class="pre">/etc/vim/vimrc</span></tt> 文件，使支持中文</p>
+<div class="highlight-python"><pre>set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936
+set fileencoding=utf-8
+set termencoding=utf-8</pre>
+</div>
+</li>
 <li><p class="first">可以通过在 <tt class="docutils literal"><span class="pre">site-packages</span></tt> 目录中添加 <tt class="docutils literal"><span class="pre">*.pth</span></tt> 文件来讲路径自动添加到 <tt class="docutils literal"><span class="pre">sys.path</span></tt> 变量中，以便python可以找到</p>
 </li>
 <li><dl class="first docutils">

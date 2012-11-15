@@ -5,9 +5,121 @@ import sqlite3
 import urllib, urllib2
 import time
 import socket
+import threading
+from Queue import Queue
 from zzlib.common.system import Logger
 
 from libxml2 import htmlParseDoc as htmlParser
+
+class VerifyProxy():
+    def __init__(self, pool_size=10):
+        socket.setdefaulttimeout(20)  #设置代理检验的超时时长
+        self.conn = sqlite3.connect('proxy.db')
+        self.logger = Logger('proxy.log')  #用于保存log信息的文件
+
+        self.pool_size = pool_size
+        self.lock = threading.Lock()
+        self.raw_queue = Queue()
+        self.verified_queue = Queue()
+
+    def verify_proxy(self):
+        self.logger.p_log('开始检验代理...')
+
+        #从数据库中获取需要检验的代理列表
+        try:
+            proxies = self.conn.execute('select distinct host, port from proxy').fetchall()
+            self.logger.p_log('从数据库中获取到不重复的代理共 %d 个，准备逐个校验中' % len(proxies))
+            proxies = proxies[20:30]
+        except Exception, e:
+            self.logger.p_log('读取代理数据库错误，退出...')
+            return False
+        #将获取到的待检验的代理放入序列proxy_queue中
+        for host, port in proxies:
+            self.raw_queue.put({'host': str(host), 'port': str(port)})
+
+        #生成线程池，大小为pool_size，缺省为10
+        for i in range(self.pool_size):
+            thread = threading.Thread(target=self.__verify_proxy)
+            thread.setDaemon(True)
+            thread.start()
+
+        #加入两个队列，进程开始
+        self.raw_queue.join()
+        #保存检验成功的代理到数据库
+        self.__save_proxy()
+
+    def __verify_proxy(self):
+        #检验代理，成功的保存在verified_queue中
+        while True:
+            proxy = self.raw_queue.get()
+            start_time = time.time()
+            ip_there = self.__get_ip_from_myip_cn(proxy['host'], proxy['port'])
+            #ip_there = self.__get_ip_from_dyndns_org(proxy['host'], proxy['port'])
+            time_used = time.time() - start_time + 1
+            if ip_there:
+                self.verified_queue.put((proxy['host'], proxy['port'], time_used))
+                self.logger.p_log('代理 %s:%s [%d 秒] 校验成功' % (proxy['host'], proxy['port'], time_used))
+            else:
+                self.logger.p_log('代理 %s:%s [%d 秒] 校验失败' % (proxy['host'], proxy['port'], time_used))
+            self.raw_queue.task_done()
+            time.sleep(1)
+        return
+
+    def __save_proxy(self):
+        while self.verified_queue.qsize():
+            proxy = self.verified_queue.get()
+            try:
+                self.conn.execute('update proxy set speed=? where host=? and port=?', (proxy[2], proxy[0], proxy[1]))
+                self.conn.commit()
+                self.logger.p_log('代理 %s:%s [%d 秒] 校验成功，并已成功入库' % proxy)
+            except Exception, e:
+                self.logger.p_log('代理 %s:%s [%d 秒] 校验成功，但在数据库更新状态时发生异常' % proxy)
+                self.logger.p_log(e)
+            self.verified_queue.task_done()
+
+        #删除校验不成功的数据
+        try:
+            self.conn.execute('delete from proxy where speed is null')
+            self.logger.p_log('未通过校验的代理已从数据库中删除')
+        except Exception, e:
+            self.logger.p_log('从数据库中删除未通过校验的代理时发生错误')
+
+        #关闭数据库
+        if self.conn is not None:
+            self.conn.commit()
+            self.conn.close()
+            self.conn = None
+        return
+
+
+    def __get_ip_from_dyndns_org(self, host=None, port=None):
+        if not host or not port: return False
+        url = 'http://checkip.dyndns.org/'
+        proxy = {'http': 'http://' + host + ':' + port}
+        try:
+            content = urllib.urlopen(url, proxies=proxy).read()
+            if content:
+                ip_there = content.split(': ')[1].split('</body>')[0]
+                return ip_there
+        except Exception, e:
+            return False
+
+    def __get_ip_from_myip_cn(self, host=None, port=None):
+        if not host or not port: return False
+        url = 'http://www.myip.cn'
+        xpath = '/html/body/center/div[4]/font[1]/b'
+        proxy = {'http': 'http://' + host + ':' + port}
+
+        try:
+            html = urllib.urlopen(url, proxies=proxy).read()
+            doc = htmlParser(html, 'utf-8')
+            content = doc.xpathEval(xpath)[0].content
+            if content:
+                ip_there = content.split(' ')[1]
+                return ip_there
+        except Exception, e:
+            return False
+
 
 class MyProxy():
     conn = sqlite3.connect('proxy.db')
@@ -15,7 +127,7 @@ class MyProxy():
     def __init__(self):
         socket.setdefaulttimeout(30)  #设置代理检验的超时时长
         self.logger = Logger('proxy.log')  #用于保存log信息的文件
-        self.logger.p_log('程序开始运行...')
+        self.logger.p_log('开始获取代理...')
 
         #类实例化时，打开数据库并清空数据
         try:
@@ -33,6 +145,14 @@ class MyProxy():
             self.conn = None
         self.logger.p_log('程序已退出...')
 
+    def fetch_proxy(self):
+        self.__fetch_sitedigger()
+        self.__fetch_proxylist()
+
+    def verify_proxy(self):
+        job = VerifyProxy()
+        job.verify_proxy()
+
     def get_proxy(self, speed=60):
         ''' 返回数据库的代理列表，格式为：[(host, port), ...]
         level是代理的级别，在代理验证时生成，取值范围（1，9），级别越高，速度越高
@@ -46,92 +166,6 @@ class MyProxy():
             return False
         #格式已经是[(host, port), ...]
         return proxies
-
-    def fetch_proxy(self):
-        self.__fetch_sitedigger()
-        self.__fetch_proxylist()
-
-    def __get_ip_from_dyndns_org(self, host=None, port=None):
-        if not host or not port: return False
-        url = 'http://checkip.dyndns.org/'
-        proxy = {'http': 'http://' + host + ':' + port}
-        try:
-            content = urllib.urlopen(url, proxies=proxy).read()
-            if content:
-                ip_there = content.split(': ')[1].split('</body>')[0]
-                self.logger.p_log('检测到的代理：%s' % (ip_there))
-                return ip_there
-            else:
-                self.logger.p_log('代理 %s:%s 未能返回正确信息，校验失败' % (host, port))
-        except Exception, e:
-            self.logger.p_log('使用代理 %s:%s 打开目标网页时发生错误，准备检验下一个...' % (host, port))
-
-        return False
-
-    def __get_ip_from_myip_cn(self, host=None, port=None):
-        if not host or not port: return False
-        url = 'http://www.myip.cn'
-        xpath = '/html/body/center/div[4]/font[1]/b'
-        proxy = {'http': 'http://' + host + ':' + port}
-
-        try:
-            html = urllib.urlopen(url, proxies=proxy).read()
-            doc = htmlParser(html, 'utf-8')
-            content = doc.xpathEval(xpath)[0].content
-            if content:
-                ip_there = content.split(' ')[1]
-                self.logger.p_log('检测到的代理：%s' % (ip_there))
-                return ip_there
-            else:
-                self.logger.p_log('代理 %s:%s 未能返回正确信息，校验失败' % (host, port))
-        except Exception, e:
-            self.logger.p_log('使用代理 %s:%s 打开目标网页时发生错误，准备检验下一个...' % (host, port))
-
-        return False
-
-    def verify_proxy(self):
-        #获取需要检验的代理
-        try:
-            proxies = self.conn.execute('select distinct host, port from proxy').fetchall()
-            self.logger.p_log('从数据库中获取到不重复的代理共 %d 个，准备逐个校验中' % len(proxies))
-            proxies = proxies[20:30]
-        except Exception, e:
-            self.logger.p_log('读取代理数据库错误，退出...')
-            return False
-
-        verified = []
-        #检验代理，成功的保存在verified中
-        for host, port in proxies:
-            host = str(host)
-            port = str(port)
-            self.logger.p_log('正在检验代理：%s:%s' % (host, port))
-            start_time = time.time()
-            ip_there = self.__get_ip_from_myip_cn(host, port)
-            #ip_there = self.__get_ip_from_dyndns_org(host, port)
-            if ip_there:
-                time_used = time.time() - start_time + 1
-                verified.append((host, port, int(time_used)))
-                self.logger.p_log('代理 %s:%s 检验通过，用时：%d 秒' % (host, port, time_used))
-            else:
-                continue
-
-        #保存校验成功的代理
-        self.logger.p_log('共有 %d 个代理通过校验，正在准备更新数据库记录...' % len(verified))
-        for host, port, speed in verified:
-            try:
-                self.conn.execute('update proxy set speed=? where host=? and port=?', (speed, host, port))
-                self.conn.commit()
-                self.logger.p_log('代理 %s:%s [%d 秒] 校验成功，并已成功入库' % (host, port, speed))
-            except Exception, e:
-                self.logger.p_log('代理 %s:%s [%d 秒] 校验成功，但在数据库更新状态时发生异常' % (host, port, speed))
-
-        #删除校验不成功的数据
-        try:
-            self.conn.execute('delete from proxy where speed is null')
-            self.logger.p_log('未通过校验的代理已从数据库中删除')
-        except Exception, e:
-            self.logger.p_log('从数据库中删除未通过校验的代理时发生错误')
-
 
     def __fetch_sitedigger(self):
         catch_from = 'site-digger.net'
@@ -166,7 +200,6 @@ class MyProxy():
             'http://www.proxylists.net/http.txt',
             'http://www.proxylists.net/http_highanon.txt'
         ]
-
         proxies = []
         for url in urls:
             try:
@@ -182,10 +215,8 @@ class MyProxy():
                         proxies.append(proxy)
             except:
                 pass
-
         self.logger.p_log('成功获取 %d 个代理，正在准备存入数据库中...' % len(proxies))
         self.__save_proxy(proxies, catch_from)
-
 
     def __save_proxy(self, proxies, catch_from=''):
         if proxies:
