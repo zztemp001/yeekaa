@@ -11,6 +11,8 @@
 工作笔记
 ========
 
+#. sqlite3每一行的id可以通过记录的 ``rowid`` 获得
+
 #. ubuntu下更改 ``/etc/vim/vimrc`` 文件，使支持中文 ::
     
     set encoding=utf-8
