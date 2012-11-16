@@ -13,6 +13,10 @@
 
 #. sqlite3每一行的id可以通过记录的 ``rowid`` 获得
 
+#. sqlite3通过在创建连接时加入 ``check_same_thread=False`` 支持多线程 ::
+
+    >>> conn = sqlite3.connect('some.db', check_same_thread=False)
+
 #. ubuntu下更改 ``/etc/vim/vimrc`` 文件，使支持中文 ::
     
     set encoding=utf-8
