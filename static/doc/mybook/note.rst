@@ -11,6 +11,17 @@
 工作笔记
 ========
 
+#. 通过python在后台异步执行命令行 ::
+    
+    >>> from subprocess import Popen, PIPE
+    >>> proc = Popen('command string', shell=False, stdin=PIPE, stdout=PIPE, stderr=PIPE, universal_newlines=True)
+    >>> proc.pid  #进程的pid
+    >>> proc.poll()  #如果进程执行完毕，则返回一个0/1代码，否则为空
+    >>> proc.stdin.write('something\n')  #如果程序尚未执行完，可向进程发送输入内容，换行符是'\n'（universal_newlines参数）
+    >>> a, b = proc.communicate()  #得到进程的输出内容，其中a是进程的屏幕输出，b是出错信息（这个函数会block主进程）
+    >>> a = proc.stdout.read()  #同上面的a功能，同样会block主进程
+    >>> b = proc.stderr.read()  #同上面的b功能，同样会block主进程
+
 #. sqlite3每一行的id可以通过记录的 ``rowid`` 获得
 
 #. sqlite3通过在创建连接时加入 ``check_same_thread=False`` 支持多线程 ::

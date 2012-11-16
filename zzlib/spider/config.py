@@ -1,5 +1,5 @@
 #coding=utf-8
-from proxy import get_proxy_list
+#from proxy import get_proxy_list
 
 #线程数
 THREAD_NUM = 10
@@ -41,7 +41,8 @@ USE_PROXY = True
 PROXY_LIST = []
 if USE_PROXY:
     try:
-        PROXY_LIST = get_proxy_list()  #从代理数据库中获取列表 [(proxy_type, host, port, user, password),...]
+        pass
+        #PROXY_LIST = get_proxy_list()  #从代理数据库中获取列表 [(proxy_type, host, port, user, password),...]
     except Exception, error_msg:
         print u'获取代理列表失败'
 

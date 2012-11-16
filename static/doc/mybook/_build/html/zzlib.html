@@ -36,6 +36,9 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
           <a href="note.html" title="每日笔记"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Notebook 1 documentation</a> &raquo;</li> 
@@ -47,15 +50,77 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="zzlib">
-<h1>基础函数库zzlib文档<a class="headerlink" href="#zzlib" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-zzlib">
+<span id="zzlib"></span><h1>基础函数库zzlib文档<a class="headerlink" href="#module-zzlib" title="Permalink to this headline">¶</a></h1>
+<p>基础函数库</p>
 <div class="section" id="sort-py">
 <h2>排序算法函数库 &#8211; sort.py<a class="headerlink" href="#sort-py" title="Permalink to this headline">¶</a></h2>
 <p>包括冒泡排序法等。</p>
+<span class="target" id="module-zzlib.common.sort"></span><span class="target" id="module-sort"></span><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">platform:</th><td class="field-body">Unix, Windows</td>
+</tr>
+<tr class="field-even field"><th class="field-name">synopsis:</th><td class="field-body">排序算法</td>
+</tr>
+</tbody>
+</table>
+<dl class="function">
+<dt id="zzlib.common.sort.bubbleSort">
+<tt class="descclassname">zzlib.common.sort.</tt><tt class="descname">bubbleSort</tt><big>(</big><em>seq</em><big>)</big><a class="headerlink" href="#zzlib.common.sort.bubbleSort" title="Permalink to this definition">¶</a></dt>
+<dd><p>冒泡排序</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="zzlib.common.sort.directInsertSort">
+<tt class="descclassname">zzlib.common.sort.</tt><tt class="descname">directInsertSort</tt><big>(</big><em>seq</em><big>)</big><a class="headerlink" href="#zzlib.common.sort.directInsertSort" title="Permalink to this definition">¶</a></dt>
+<dd><p>直接插入排序</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>seq (list): 要进行排序的列表</dd>
+<dt>Returns:</dt>
+<dd><p class="first">list. 返回的代码</p>
+<div class="last highlight-python"><pre>0 -- 成功！
+1 -- 一般！</pre>
+</div>
+</dd>
+<dt>Raises:</dt>
+<dd>AttributeError, KeyError</dd>
+</dl>
+<p>使用方法</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">asdfjsaldfjasfdj</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">juestisdfjasd</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="zzlib.common.sort.directSelectSort">
+<tt class="descclassname">zzlib.common.sort.</tt><tt class="descname">directSelectSort</tt><big>(</big><em>seq</em><big>)</big><a class="headerlink" href="#zzlib.common.sort.directSelectSort" title="Permalink to this definition">¶</a></dt>
+<dd><p>直接选择排序</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="zzlib.common.sort.quickSort">
+<tt class="descclassname">zzlib.common.sort.</tt><tt class="descname">quickSort</tt><big>(</big><em>seq</em><big>)</big><a class="headerlink" href="#zzlib.common.sort.quickSort" title="Permalink to this definition">¶</a></dt>
+<dd><p>快速排序包裹函数</p>
+</dd></dl>
+
 </div>
 <div class="section" id="lunar-py">
 <h2>农历算法函数库 &#8211; lunar.py<a class="headerlink" href="#lunar-py" title="Permalink to this headline">¶</a></h2>
 <p>万年历、节气等。</p>
+<span class="target" id="module-zzlib.lunar"></span><span class="target" id="module-lunar"></span><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">synopsis:</th><td class="field-body">农历算法实现</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -105,6 +170,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
         <li class="right" >
           <a href="note.html" title="每日笔记"
              >previous</a> |</li>
