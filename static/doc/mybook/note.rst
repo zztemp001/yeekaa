@@ -11,6 +11,21 @@
 工作笔记
 ========
 
+#. ubuntu下查看硬件信息的命令 ::
+
+    >>> sudo lshw  #查看一般的硬件信息
+    >>> sudo fdisk -l  #查看分区情况
+    >>> df -h  #查看硬盘分区大小
+    >>> du -h  #查看硬盘使用情况
+
+#. 要使特定EC2实例能够连接到RDS实例，需要在RDS实例的 ``Security Group`` 设定 ``CIDR`` 规则和所需使用的 ``Security Group``
+
+#. 通过以下命令连接到RDS实例，重要的参数是 ``RDS_Endpoint`` 和 ``Master_Name`` ，都可以在console中得到 ::
+
+    >>> mysql -h RDS_Endpoint -P 3306 -u Master_Name -p
+
+#. EC2产生的 ``key-pair.pem`` 如果是通过putty访问，需要用putty自带的 ``puttygen.exe`` 来转换为 ``key-pair.ppk`` 格式
+
 #. 通过python在后台异步执行命令行 ::
     
     >>> from subprocess import Popen, PIPE

@@ -65,6 +65,23 @@
 <div class="section" id="id3">
 <h2>工作笔记<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
+<li><p class="first">ubuntu下查看硬件信息的命令</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sudo</span> <span class="n">lshw</span>  <span class="c">#查看一般的硬件信息</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sudo</span> <span class="n">fdisk</span> <span class="o">-</span><span class="n">l</span>  <span class="c">#查看分区情况</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">-</span><span class="n">h</span>  <span class="c">#查看硬盘分区大小</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">du</span> <span class="o">-</span><span class="n">h</span>  <span class="c">#查看硬盘使用情况</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">要使特定EC2实例能够连接到RDS实例，需要在RDS实例的 <tt class="docutils literal"><span class="pre">Security</span> <span class="pre">Group</span></tt> 设定 <tt class="docutils literal"><span class="pre">CIDR</span></tt> 规则和所需使用的 <tt class="docutils literal"><span class="pre">Security</span> <span class="pre">Group</span></tt></p>
+</li>
+<li><p class="first">通过以下命令连接到RDS实例，重要的参数是 <tt class="docutils literal"><span class="pre">RDS_Endpoint</span></tt> 和 <tt class="docutils literal"><span class="pre">Master_Name</span></tt> ，都可以在console中得到</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">mysql</span> <span class="o">-</span><span class="n">h</span> <span class="n">RDS_Endpoint</span> <span class="o">-</span><span class="n">P</span> <span class="mi">3306</span> <span class="o">-</span><span class="n">u</span> <span class="n">Master_Name</span> <span class="o">-</span><span class="n">p</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">EC2产生的 <tt class="docutils literal"><span class="pre">key-pair.pem</span></tt> 如果是通过putty访问，需要用putty自带的 <tt class="docutils literal"><span class="pre">puttygen.exe</span></tt> 来转换为 <tt class="docutils literal"><span class="pre">key-pair.ppk</span></tt> 格式</p>
+</li>
 <li><p class="first">通过python在后台异步执行命令行</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">Popen</span><span class="p">,</span> <span class="n">PIPE</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">proc</span> <span class="o">=</span> <span class="n">Popen</span><span class="p">(</span><span class="s">&#39;command string&#39;</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">stdin</span><span class="o">=</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">universal_newlines</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
