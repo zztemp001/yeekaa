@@ -11,6 +11,16 @@
 工作笔记
 ========
 
+#. ubuntu的磁盘管理命令 ::
+
+    >>> fdisk /dev/xvdf  #给硬盘设备 xvdf 分区
+    >>> mkfs.ext4 /dev/xvdf1  #给分好的分区xvdf1做格式化，格式为 ext4
+    >>> mount /dev/xvdf1 /mnt/data  #将目录 /mnt/data 加载到 xvdf1 分区
+    >>> mount  #不带参数的mount命令可以察看加载情况
+    >>> vim /etc/fstab  #如果需要开机就加载数据到分区中，则可以修改 /etc/fstab 文件
+    >>> df -h  #查看分区大小、使用情况
+
+    
 #. ubuntu下查看硬件信息的命令 ::
 
     >>> sudo lshw  #查看一般的硬件信息
