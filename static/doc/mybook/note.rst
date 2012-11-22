@@ -11,6 +11,10 @@
 工作笔记
 ========
 
+#. python三元赋值表达式用法 ::
+
+    >>> value = 'True Value' if True else 'False Value'
+
 #. ubuntu的磁盘管理命令 ::
 
     >>> fdisk /dev/xvdf  #给硬盘设备 xvdf 分区
