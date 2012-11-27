@@ -65,6 +65,27 @@
 <div class="section" id="id3">
 <h2>工作笔记<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
+<li><p class="first">从两个表格选择一些不同的字段，存入一个新生成的表格中</p>
+<div class="highlight-python"><pre>&gt;&gt;&gt; CREATE TABLE new_table_name AS SELECT old_table_01.somefields, old_table_02.somefields from old_table_01 join old_table_02 on old_table_01.ID = old_table_02.ID</pre>
+</div>
+</li>
+<li><p class="first">如果需要选择一个表格的所有字段，则可以是用通配符 <tt class="docutils literal"><span class="pre">table_name.*</span></tt></p>
+</li>
+<li><p class="first">python三元赋值表达式用法</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">value</span> <span class="o">=</span> <span class="s">&#39;True Value&#39;</span> <span class="k">if</span> <span class="bp">True</span> <span class="k">else</span> <span class="s">&#39;False Value&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">ubuntu的磁盘管理命令</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">fdisk</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">xvdf</span>  <span class="c">#给硬盘设备 xvdf 分区</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mkfs</span><span class="o">.</span><span class="n">ext4</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">xvdf1</span>  <span class="c">#给分好的分区xvdf1做格式化，格式为 ext4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mount</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">xvdf1</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">data</span>  <span class="c">#将目录 /mnt/data 加载到 xvdf1 分区</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mount</span>  <span class="c">#不带参数的mount命令可以察看加载情况</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vim</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">fstab</span>  <span class="c">#如果需要开机就加载数据到分区中，则可以修改 /etc/fstab 文件</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">-</span><span class="n">h</span>  <span class="c">#查看分区大小、使用情况</span>
+</pre></div>
+</div>
+</li>
 <li><p class="first">ubuntu下查看硬件信息的命令</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sudo</span> <span class="n">lshw</span>  <span class="c">#查看一般的硬件信息</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sudo</span> <span class="n">fdisk</span> <span class="o">-</span><span class="n">l</span>  <span class="c">#查看分区情况</span>

@@ -11,6 +11,12 @@
 工作笔记
 ========
 
+#. 从两个表格选择一些不同的字段，存入一个新生成的表格中 ::
+
+    >>> CREATE TABLE new_table_name AS SELECT old_table_01.somefields, old_table_02.somefields from old_table_01 join old_table_02 on old_table_01.ID = old_table_02.ID
+
+#. 如果需要选择一个表格的所有字段，则可以是用通配符 ``table_name.*``
+
 #. python三元赋值表达式用法 ::
 
     >>> value = 'True Value' if True else 'False Value'
